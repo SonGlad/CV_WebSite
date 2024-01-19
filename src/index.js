@@ -17,7 +17,7 @@ root.render(
   <React.StrictMode>
     {/* <Provider store = {store}> */}
       {/* <PersistGate loading={null} persistor={{persistor}}> */}
-        <BrowserRouter basename='/react_template'>
+        <BrowserRouter basename='/CV_WebSite'>
           <ThemeProvider theme={theme}>
             <GlobalStyle/>
             <App />

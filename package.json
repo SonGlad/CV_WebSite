@@ -1,8 +1,8 @@
 {
-  "name": "react_template",
+  "name": "cv_website",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://SonGlad.github.io/react_template/",
+  "homepage": "https://SonGlad.github.io/CV_WebSite/",
   "dependencies": {
     "@babel/plugin-transform-private-property-in-object": "^7.23.4",
     "@reduxjs/toolkit": "^2.0.1",
