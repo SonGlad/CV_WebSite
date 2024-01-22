@@ -14,7 +14,7 @@ export const Header = () => {
     const mobileMenu = useRef();
 
 
-    const togglemenuBox = () => {
+    const toggleMenuBox = () => {
         setMobMenu(!mobMenu);
     };
 
@@ -62,12 +62,12 @@ export const Header = () => {
                         <LogoSvg className="header-logo" width={34} height={34}/>
                     </NavLink>
                     <div className="mobilemenu" ref={mobileMenu} onClick={stopPropagation}>
-                        <button type='button' className="mob-menu-btn" onClick={togglemenuBox}>
+                        <button type='button' className="mob-menu-btn" onClick={toggleMenuBox}>
                             {changeIcon()}
                         </button>
                         <div className={`mob-menu ${toggleMobMenuCont()}`}>
                             <nav className="navigation">
-                                <LinkList togglemenuBox={togglemenuBox}/>
+                                <LinkList toggleMenuBox={toggleMenuBox}/>
                             </nav>
                         </div>
                     </div>

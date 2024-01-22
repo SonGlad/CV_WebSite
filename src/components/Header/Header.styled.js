@@ -4,6 +4,10 @@ import { styled } from "styled-components";
 export const StyledHeader = styled.header`
     @media screen and (max-width: 768px){
         position: relative; 
+        width: 100%;
+        /* position: fixed;
+        background-color: transparent;
+        width: 100vw; */
     }
 
     .header-container{
@@ -22,22 +26,12 @@ export const StyledHeader = styled.header`
         } 
     }
 
-
-    .nav-link.active{
-        color: ${p => p.theme.color.main_color};
-    }
-
-
     .mob-menu-btn{
         display: flex;
         align-items: center;
         justify-content: center;
         background-color: transparent;
-
-        @media screen and (min-width: 768px){
-            display: none;
-        }
-        
+       
         .burger-icon{
             stroke: ${p => p.theme.color.text_color};
         }
@@ -45,6 +39,10 @@ export const StyledHeader = styled.header`
         .menu-close-icon{
             fill: transparent;
             stroke: ${p => p.theme.color.text_color};
+        }
+
+        @media screen and (min-width: 768px){
+            display: none;
         }
     }
 

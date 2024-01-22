@@ -1,0 +1,5 @@
+<svg class="icon icon-facebook1"><use xlink:href="#icon-facebook1"></use>
+    <symbol id="icon-facebook1" viewBox="0 0 32 32">
+        <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.2857" d="M24 2.667h-4c-1.768 0-3.464 0.702-4.714 1.953s-1.953 2.946-1.953 4.714v4h-4v5.333h4v10.667h5.333v-10.667h4l1.333-5.333h-5.333v-4c0-0.354 0.14-0.693 0.39-0.943s0.589-0.391 0.943-0.391h4v-5.333z"></path>
+    </symbol>
+</svg>

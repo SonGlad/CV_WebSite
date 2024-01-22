@@ -3,26 +3,26 @@ import { LinkListStyled } from "./Link-List.styled";
 
 
 
-export const LinkList = ({togglemenuBox}) => {
+export const LinkList = ({toggleMenuBox}) => {
     return(
         <LinkListStyled>
             <li className="link-list-item">
-                <NavLink className='nav-link' to='/' onClick={togglemenuBox}>Home</NavLink>
+                <NavLink className='nav-link' to='/' onClick={toggleMenuBox}>Home</NavLink>
             </li>
             <li className="link-list-item">
-                <NavLink className='nav-link' to='/about' onClick={togglemenuBox}>About</NavLink>
+                <NavLink className='nav-link' to='/about' onClick={toggleMenuBox}>About</NavLink>
             </li>
             <li className="link-list-item">
-                <NavLink className='nav-link' to='/education' onClick={togglemenuBox}>Education</NavLink>
+                <NavLink className='nav-link' to='/education' onClick={toggleMenuBox}>Education</NavLink>
             </li>
             <li className="link-list-item">
-                <NavLink className='nav-link' to='/skills' onClick={togglemenuBox}>Skills</NavLink>
+                <NavLink className='nav-link' to='/skills' onClick={toggleMenuBox}>Skills</NavLink>
             </li>
             <li className="link-list-item">
-                <NavLink className='nav-link' to='/portfolio' onClick={togglemenuBox}>Portfolio</NavLink>
+                <NavLink className='nav-link' to='/portfolio' onClick={toggleMenuBox}>Portfolio</NavLink>
             </li>
             <li className="link-list-item">
-                <NavLink className='nav-link' to='/contact' onClick={togglemenuBox}>Contact</NavLink>
+                <NavLink className='nav-link' to='/contact' onClick={toggleMenuBox}>Contact</NavLink>
             </li>
         </LinkListStyled>
     )

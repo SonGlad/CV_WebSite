@@ -3,7 +3,10 @@ export const theme = {
         bg_color: '#081b29',
         second_bg_color: '#112e42',
         text_color: '#ededed',
-        main_color: '#00abf0',
+        main_color: '#cc3900',
+        main_color_rust: '#b7410e',
+        main_color_rust_lighter: '#d05a27',
+        main_color_blue: '#00abf0',
     },
 
     transition: {
