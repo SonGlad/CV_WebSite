@@ -1,20 +1,26 @@
 {
   "files": {
     "main.css": "/CV_WebSite/static/css/main.7cda0caf.css",
-    "main.js": "/CV_WebSite/static/js/main.3363949b.js",
-    "static/js/544.4090948a.chunk.js": "/CV_WebSite/static/js/544.4090948a.chunk.js",
+    "main.js": "/CV_WebSite/static/js/main.d686ee11.js",
+    "static/js/76.a5ed03ea.chunk.js": "/CV_WebSite/static/js/76.a5ed03ea.chunk.js",
     "static/js/104.4c5cc996.chunk.js": "/CV_WebSite/static/js/104.4c5cc996.chunk.js",
     "static/js/978.9132f075.chunk.js": "/CV_WebSite/static/js/978.9132f075.chunk.js",
     "static/js/415.02832b20.chunk.js": "/CV_WebSite/static/js/415.02832b20.chunk.js",
     "static/js/793.d30f924d.chunk.js": "/CV_WebSite/static/js/793.d30f924d.chunk.js",
     "static/js/617.292cb37b.chunk.js": "/CV_WebSite/static/js/617.292cb37b.chunk.js",
+    "static/media/my_photo_1.png": "/CV_WebSite/static/media/my_photo_1.a3ee5300531661a3ad83.png",
+    "static/media/iReX_logo.png": "/CV_WebSite/static/media/iReX_logo.bb7640ae2d9d84190796.png",
     "static/media/banner.svg": "/CV_WebSite/static/media/banner.5f1d1c916786af0feb7e82a2c8da17d1.svg",
     "index.html": "/CV_WebSite/index.html",
+    "static/media/github.svg": "/CV_WebSite/static/media/github.0bf91b9aef33e192fc3bdc185198844d.svg",
+    "static/media/linkedin.svg": "/CV_WebSite/static/media/linkedin.606282e12ab767864dbb0743c356aff5.svg",
+    "static/media/facebook.svg": "/CV_WebSite/static/media/facebook.ad8b1fc37beefba45afd2835dc2b658c.svg",
     "static/media/close.svg": "/CV_WebSite/static/media/close.9cb1a87627ef012af4a24f1b68fb9e45.svg",
     "static/media/mobile-menu.svg": "/CV_WebSite/static/media/mobile-menu.f823daac856b5e7553524935093cdd2c.svg",
+    "static/media/telegram.svg": "/CV_WebSite/static/media/telegram.ecc0c5ffa75177b1302974012eae0af8.svg",
     "main.7cda0caf.css.map": "/CV_WebSite/static/css/main.7cda0caf.css.map",
-    "main.3363949b.js.map": "/CV_WebSite/static/js/main.3363949b.js.map",
-    "544.4090948a.chunk.js.map": "/CV_WebSite/static/js/544.4090948a.chunk.js.map",
+    "main.d686ee11.js.map": "/CV_WebSite/static/js/main.d686ee11.js.map",
+    "76.a5ed03ea.chunk.js.map": "/CV_WebSite/static/js/76.a5ed03ea.chunk.js.map",
     "104.4c5cc996.chunk.js.map": "/CV_WebSite/static/js/104.4c5cc996.chunk.js.map",
     "978.9132f075.chunk.js.map": "/CV_WebSite/static/js/978.9132f075.chunk.js.map",
     "415.02832b20.chunk.js.map": "/CV_WebSite/static/js/415.02832b20.chunk.js.map",
@@ -23,6 +29,6 @@
   },
   "entrypoints": [
     "static/css/main.7cda0caf.css",
-    "static/js/main.3363949b.js"
+    "static/js/main.d686ee11.js"
   ]
 }
