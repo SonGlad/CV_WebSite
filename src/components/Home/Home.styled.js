@@ -52,18 +52,35 @@ export const HomeStyledContainer = styled.div`
         font-weight: 700;
         margin: 30px 0;
         color: ${p => p.theme.color.main_color};
-        text-shadow: 1px -1px 5px ${p => p.theme.color.text_color};
+        text-shadow: 0px 0px 40px ${p => p.theme.main_color_rust_lighter};
         text-align: center;
 
         @media screen and (min-width: 768px){
             text-align: start;
+            font-size: 30px;
+            font-weight: 600;
         }
+        @media screen and (min-width: 910px){
+            font-size: 37px;
+            font-weight: 600;
+        }
+        @media screen and (min-width: 1050px){
+            font-size: 44px;
+            font-weight: 700;
+        }
+    }
+
+    .Typewriter__cursor{
+        font-size: 44px;
+        font-weight: 300;
+        color: ${p => p.theme.color.text_color};
     }
 
     .text-description{
         font-size: 16px;
         line-height: 24px;
         text-indent: 20px;
+        text-align: justify;
 
         &::first-letter {
             font-size: 32px;
@@ -113,7 +130,7 @@ export const HomeStyledContainer = styled.div`
 
     .right-container{
 
-        @media screen and (max-width: 768px){
+        @media screen and (max-width: 767px){
             width: 100%;
             height: 500px;
             -webkit-box-shadow: 0px 0px 25px 40px rgba(8, 27, 41, 1) inset;
@@ -127,7 +144,7 @@ export const HomeStyledContainer = styled.div`
         border-radius: 12px;
         background-image: url(${Photo});
         background-size: cover;
-        background-position: center center;
+        background-position: center;
         background-repeat: no-repeat;
        -webkit-box-shadow: 20px 0px 25px 40px rgba(8, 27, 41, 1) inset;
         -moz-box-shadow: 20px 0px 25px 40px rgba(8, 27, 41, 1) inset;

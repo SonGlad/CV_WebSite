@@ -5,7 +5,7 @@ export const FooterStyled = styled.footer`
     padding-bottom: 3px;
 
     .footer-container{
-        padding: 50px 0;
+        padding: 40px 0;
 
         @media screen and (min-width: 768px){
             display: flex;
@@ -25,7 +25,10 @@ export const FooterStyled = styled.footer`
 
         @media screen and (min-width: 768px){
             margin-bottom: 0;
-        }        
+        }
+        @media screen and (min-width: 981px){
+            margin-right: 0;
+        }         
     }
 
     @media screen and (min-width: 768px){
@@ -40,7 +43,7 @@ export const FooterStyled = styled.footer`
        }
     }
     
-    @media screen and (min-width: 975px){
+    @media screen and (min-width: 981px){
        .order-one{
         order:1;
        }
@@ -59,6 +62,10 @@ export const FooterStyled = styled.footer`
         font-weight: 400;
         font-size: 16px;
         line-height: calc(24/16);
+    }
+
+    .footer-text-right span{
+        color: ${p => p.theme.color.main_color};
     }
 
     .footer-link{

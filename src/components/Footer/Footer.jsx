@@ -75,7 +75,7 @@ export const Footer = () => {
                         </div>
                     </div>
                     <div className="footer-right-cont order-three">
-                        <p className="footer-text-right">Find me on:</p>
+                        <p className="footer-text-right">Find <span>me</span> On:</p>
                         <ul className="footer-social-list">
                             <li className="footer-social-item">
                                 <NavLink className="footer-social-link" to='https://github.com/SonGlad'

@@ -58,4 +58,13 @@ export const GlobalStyle = createGlobalStyle`
     *{
     box-sizing: border-box;
     }
+
+    ::-webkit-scrollbar {
+        width: 6px;
+        background-color: ${p => p.theme.color.main_color_rust_lighter};
+    }
+    ::-webkit-scrollbar-thumb {
+        border-radius: 5px;
+        background-color: ${p => p.theme.color.main_color};
+    }
 `;
