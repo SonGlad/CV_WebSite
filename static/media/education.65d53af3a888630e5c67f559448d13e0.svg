@@ -1,0 +1,5 @@
+<svg class="icon icon-education"><use xlink:href="#icon-education"></use>
+    <symbol id="icon-education" viewBox="0 0 20 22">
+        <path d="M3.33 8l6.67 4 10-6-10-6-10 6h10v2h-6.67zM0 8v8l2-2.22v-4.58l-2-1.2zM10 20l-7-4.2v-6l7 4.2 7-4.2v6l-7 4.2z"></path>
+    </symbol>
+</svg>
