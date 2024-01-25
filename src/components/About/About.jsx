@@ -4,6 +4,10 @@ import { RightAnimation } from "./RightAnimation/RightAnimation";
 import MyPicture from "../../images/images/my_photo_2.png";
 import profile from "../../utils/profile.json";
 import GitHubCalendar from 'react-github-calendar';
+import React from 'react';
+import { Tooltip as ReactTooltip } from 'react-tooltip';
+// import 'react-tooltip/dist/react-tooltip.css';
+
 
 
 
@@ -52,7 +56,15 @@ export const AboutSection = () => {
                         showWeekdayLabels='true'
                         weekStart={1}
                         fontSize={16}
+                        renderBlock={(block, activity) =>
+                            React.cloneElement(block, {
+                            style: { cursor: 'pointer'},
+                            'data-tooltip-id': 'react-tooltip',
+                            'data-tooltip-html': `${activity.count} activities on ${activity.date}`,
+                            })
+                        }
                     />
+                    <ReactTooltip id="react-tooltip" className="tool-tip"/>
                 </div>
             </div>
         </AboutStyled>

@@ -197,4 +197,8 @@ export const AboutStyled = styled.div`
             color: ${p => p.theme.color.main_color};
         }
     }
+
+    .tool-tip{
+        color: ${p => p.theme.color.main_color};
+    }
 `
