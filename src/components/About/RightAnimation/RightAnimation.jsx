@@ -1,59 +1,124 @@
-import { useCallback, useEffect, useState } from "react";
+import { useEffect, useRef} from "react";
 import { RightAnimationStyled } from "./RightAnimation.styled";
-// import anime from 'animejs/lib/anime.es.js';
-
+import anime from 'animejs/lib/anime.es.js';
 
 
 
 export const RightAnimation = () => {
+    const keyboardElements = useRef();
 
-
-    // const wrapper = document.querySelector('.mac-wrapper');
-    // setInterval(() => {
-    //     console.log('restart')
-    //     wrapper.classList.remove('start');
-    //     setTimeout(() => {
-    //         wrapper.classList.add('start');
-    //     }, 50)
-    // }, 30000);
-
-
-    const [animation, setAnimation] = useState(false);
-    console.log(animation);
-
-
-    const toggleSwitch = useCallback(() => {
-        setAnimation(!animation);
-    }, [animation]);
-
-    
-    const toggleStart = () => {
-        return animation ? 'start' : '';
-    };
-    
 
     useEffect(() => {
+
+        // KEYBOARD ANIMATION//////
+        const keys = keyboardElements.current.children;
+        
+        const shuffleArray = (array) => {
+            const shuffled = array.slice();
+            for (let i = shuffled.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+            }
+            return shuffled;
+        };
+        
+        const shuffledKeys = shuffleArray(Array.from(keys));
+
+        const keyboardAnim = {
+            targets: shuffledKeys,
+            fillOpacity: [
+                { value: 0.1, duration: 0 },
+                { value: 0.5, duration: 100 },
+                { value: 0.1, duration: 100 }
+            ],
+            easing: 'linear',
+            delay: anime.stagger(100),
+        };
+        
+        const keyboard = anime.timeline({
+            loop: true,
+        });
+        // keyboard.pause(keyboardAnim);
+        // keyboard.play(keyboardAnim);
+        
+        setTimeout(() => {
+            keyboard.add(keyboardAnim);
+        }, 1750);
+
+        setTimeout(() => {
+            keyboard.reset(keyboardAnim);
+        }, 16250);
+
         setInterval(() => {
-            toggleSwitch();
             setTimeout(() => {
-                toggleSwitch();
-            }, 0)
-        }, 5000)
-    }, [toggleSwitch]);
+                keyboard.add(keyboardAnim);
+            }, 1750);
+            
+            setTimeout(() => {
+                keyboard.reset(keyboardAnim);
+            }, 16250)
+            
+        }, 17500);
+        // //////////////////////////////////////
+
+
+    
+    // SCREEN ANIMATION/////////////////////////
+        const screen = {
+            targets: '#laptop-animation #CodeEditorWindow',
+            scale: [
+                { value: 0, duration: 0},
+                { value: 1, duration: 500 }
+            ],
+            easing: 'linear',
+            // delay: anime.stagger(100) // increase delay by 100ms for each elements.
+        };
+    
+        const tl = anime.timeline({
+            loop: true,
+            delay: 1000,
+        });
+    
+        // screen in
+        tl.add(screen);
+
+
+        // code
+        tl.add({
+            targets: '#laptop-animation #Code *',
+            scaleX: [
+                { value: 0, duration: 0 },
+                { value: 1, duration: 100 }
+            ],
+            easing: 'linear',
+            delay: anime.stagger(125)
+        });
+
+
+        // screen out
+        tl.add({
+            targets: '#laptop-animation #CodeEditorWindow',
+            scale: [
+                { value: 1, duration: 0},
+                { value: 0, duration: 500 }
+            ],
+            easing: 'linear',
+            // delay: anime.stagger(2000)
+        });
+        // //////////////////////////////////////////
+          
+    },[]);
 
 
     
     return (
 
         <RightAnimationStyled>
-                <div className={`mac-wrapper ${toggleStart()}`}>
+                <div className='mac-wrapper'>
                 <svg className="animated-svg" width="100%" height="100%" viewBox="0 0 321 230" version="1.1" id="laptop-animation"
-                    // xmlns="http://www.w3.org/2000/svg"
-                    // xmlns:xlink="http://www.w3.org/1999/xlink"
-                    // xml:space="preserve"
                     style={{fillRule:'evenodd', clipRule:'evenodd', strokeLinejoin:'round', strokeMiterlimit:'1.41421'}}>
                     <g id="MacBook">
-                        <path id="Monitor" d="M43.492,0.054C43.492,0.054 33.882,-0.78 33.99,9.755C34.098,20.291 36.873,168.94 36.873,168.94C36.873,168.94 36.413,174.74 40.46,174.657C43.484,174.595 284.414,174.657 284.414,174.657C284.414,174.657 287.802,174.446 287.636,166.691C287.471,158.926 290.232,7.403 290.232,7.403C290.232,7.403 289.322,0.176 284.414,0.054C279.507,-0.068 43.492,0.054 43.492,0.054Z" style={{fill:'#d05a27'}}/>
+                        <path id="Monitor" d="M43.492,0.054C43.492,0.054 33.882,-0.78 33.99,9.755C34.098,20.291 36.873,168.94 36.873,168.94C36.873,168.94 36.413,174.74 40.46,174.657C43.484,174.595 284.414,174.657 284.414,174.657C284.414,174.657 287.802,174.446 287.636,166.691C287.471,158.926 290.232,7.403 290.232,7.403C290.232,7.403 289.322,0.176 284.414,0.054C279.507,-0.068 43.492,0.054 43.492,0.054Z" style={{fill:'#cc3900'}}/>
                         <clipPath id="_clip1">
                             <path d="M43.492,0.054C43.492,0.054 33.882,-0.78 33.99,9.755C34.098,20.291 36.873,168.94 36.873,168.94C36.873,168.94 36.413,174.74 40.46,174.657C43.484,174.595 284.414,174.657 284.414,174.657C284.414,174.657 287.802,174.446 287.636,166.691C287.471,158.926 290.232,7.403 290.232,7.403C290.232,7.403 289.322,0.176 284.414,0.054C279.507,-0.068 43.492,0.054 43.492,0.054Z"/>
                         </clipPath>
@@ -66,7 +131,7 @@ export const RightAnimation = () => {
                             <path d="M0.148,221.598C0.133,220.574 0.83,219.636 0.83,219.636L33.989,175.534C35.497,173.386 39.911,173.514 39.911,173.514C39.911,173.514 279.422,173.479 284.325,173.514C289.228,173.549 290.232,175.939 290.232,175.939C290.232,175.939 315.123,211.433 319.185,217.682C320.328,219.442 320.103,221.711 320.1,222.9C319.997,228.085 317.079,229.881 317.079,229.881C317.079,229.881 6.437,229.948 3.992,229.881C1.546,229.814 0.988,228.339 0.348,226.959C-0.293,225.578 0.148,221.598 0.148,221.598L0.148,221.598Z"/>
                         </clipPath>
                         <g style={{clipPath:'url(#_clip2)'}} >
-                            <g id="Keyboard">
+                            <g id="Keyboard" ref={keyboardElements}>
                                 <path id="keyboard-space" d="M224.966,198.091L96.562,198.091L98.348,193.116L223.477,193.096L224.966,198.091Z" style={{fill:'#0d0000', fillOpacity:'0.1'}}/>
                                 <path id="keyboard49" d="M49.783,193.124L46.783,198.091L31.419,198.091L34.773,193.126L49.783,193.124Z" style={{fill:'#0d0000', fillOpacity:'0.1'}}/>
                                 <path id="keyboard48" d="M62.925,198.091L48.992,198.091L51.992,193.123L65.545,193.121L62.925,198.091Z" style={{fill:'#0d0000', fillOpacity:'0.1'}}/>
@@ -119,8 +184,8 @@ export const RightAnimation = () => {
                                 <path id="keyboard1" d="M268.434,185.345L253.514,185.347L251.303,181.278L266.223,181.276L268.434,185.345Z" style={{fill:'#0d0000', fillOpacity:'0.1'}}/>
                                 <path id="keyboard-return" d="M270.064,180.07L264.955,180.062L263.264,176.95L277.847,176.977L279.763,180.06L279.755,180.06L283.054,185.343L272.992,185.358L270.064,180.07Z" style={{fill:'#0d0000', fillOpacity:'0.1'}}/>
                             </g>
-                            <path id="Trackpad" d="M96.136,199.49L88.014,221.323L231.405,222L225.178,199.49L96.136,199.49Z" style={{fill:'#f0f0f0'}}/>
-                            <path id="BaseFront" d="M320.12,220.574L326.048,224.74L323.687,235.617L0,235.617L-5.255,221.437L0.628,220.574C0.628,220.574 -1.201,223.94 8.606,224.039C18.414,224.138 133.47,224.039 133.47,224.039L136.171,228.295L184.19,228.295L187.105,224.039L313.932,224.74C317.877,224.854 320.241,223.706 320.12,220.574Z" style={{fill:'#d05a27'}}/>
+                            <path id="Trackpad" d="M96.136,199.49L88.014,221.323L231.405,222L225.178,199.49L96.136,199.49Z" style={{fill:'#0d0000', fillOpacity:'0.1'}}/>
+                            <path id="BaseFront" d="M320.12,220.574L326.048,224.74L323.687,235.617L0,235.617L-5.255,221.437L0.628,220.574C0.628,220.574 -1.201,223.94 8.606,224.039C18.414,224.138 133.47,224.039 133.47,224.039L136.171,228.295L184.19,228.295L187.105,224.039L313.932,224.74C317.877,224.854 320.241,223.706 320.12,220.574Z" style={{fill:'#cc3900'}}/>
                             <path id="Shadow" d="M135.535,224.21L137.498,226.92L183.378,226.92L185.338,224.21L135.535,224.21Z" style={{fill:'#cc3900'}}/>
                         </g>
                         <g id="CodeEditorWindow">
@@ -209,15 +274,15 @@ export const RightAnimation = () => {
                                                 <path d="M216.575,42.295L196.503,42.295L196.56,44.175L216.632,44.175L216.575,42.295Z" style={{fill:'#eac130'}}/>
                                             </g>
                                             <g id="codeline3">
-                                                <path d="M171.63,46.363L163.561,46.363L163.619,48.243L171.687,48.243L171.63,46.363Z" style={{fill:'#ed427f'}}/>
-                                                <path d="M161.789,46.363L146.313,46.363L146.371,48.243L161.846,48.243L161.789,46.363Z" style={{fill:'#306aea'}}/>
                                                 <path d="M144.541,46.363L139.086,46.363L139.143,48.243L144.598,48.243L144.541,46.363Z" style={{fill:'#eac130'}}/>
+                                                <path d="M161.789,46.363L146.313,46.363L146.371,48.243L161.846,48.243L161.789,46.363Z" style={{fill:'#306aea'}}/>
+                                                <path d="M171.63,46.363L163.561,46.363L163.619,48.243L171.687,48.243L171.63,46.363Z" style={{fill:'#ed427f'}}/>
                                             </g>
                                             <g id="codeline4">
+                                                <path d="M156.143,49.835L141.745,49.835L141.803,51.715L156.2,51.715L156.143,49.835Z" style={{fill:'#306aea'}}/>
                                                 <path d="M180.314,49.835L157.404,49.835L157.461,51.715L180.371,51.715L180.314,49.835Z" style={{fill:'#ed427f'}}/>
                                                 <path d="M194.608,49.835L181.673,49.835L181.73,51.715L194.665,51.715L194.608,49.835Z" style={{fill:'#306aea'}}/>
                                                 <path d="M219.267,49.796L196.395,49.796L196.452,51.676L219.324,51.676L219.267,49.796Z" style={{fill:'#2dcd47'}}/>
-                                                <path d="M156.143,49.835L141.745,49.835L141.803,51.715L156.2,51.715L156.143,49.835Z" style={{fill:'#306aea'}}/>
                                             </g>
                                             <g id="codeline5">
                                                 <path d="M140.503,53.307L132.023,53.307L132.08,55.187L140.561,55.187L140.503,53.307Z" style={{fill:'#ed427f'}}/>
@@ -230,8 +295,8 @@ export const RightAnimation = () => {
                                                 <path d="M176.742,56.664L166.138,56.664L166.195,58.545L176.799,58.545L176.742,56.664Z" style={{fill:'#eac130'}}/>
                                             </g>
                                             <g id="codeline7">
-                                                <path d="M160.927,60.25L145.654,60.25L145.712,62.13L160.984,62.13L160.927,60.25Z" style={{fill:'#ed427f'}}/>
                                                 <path d="M143.967,60.25L139.231,60.25L139.289,62.13L144.025,62.13L143.967,60.25Z" style={{fill:'#306aea'}}/>
+                                                <path d="M160.927,60.25L145.654,60.25L145.712,62.13L160.984,62.13L160.927,60.25Z" style={{fill:'#ed427f'}}/>
                                                 <path d="M178.368,60.136L162.613,60.136L162.67,62.016L178.425,62.016L178.368,60.136Z" style={{fill:'#2dcd47'}}/>
                                             </g>
                                             <g id="codeline8">
@@ -247,15 +312,15 @@ export const RightAnimation = () => {
                                                 <path d="M191.559,69.699L171.487,69.699L171.545,71.579L191.617,71.579L191.559,69.699Z" style={{fill:'#eac130'}}/>
                                             </g>
                                             <g id="codeline10">
-                                                <path d="M171.917,73.767L163.848,73.767L163.906,75.647L171.974,75.647L171.917,73.767Z" style={{fill:'#ed427f'}}/>
-                                                <path d="M162.076,73.767L146.6,73.767L146.658,75.647L162.133,75.647L162.076,73.767Z" style={{fill:'#306aea'}}/>
                                                 <path d="M144.828,73.767L139.373,73.767L139.43,75.647L144.885,75.647L144.828,73.767Z" style={{fill:'#eac130'}}/>
+                                                <path d="M162.076,73.767L146.6,73.767L146.658,75.647L162.133,75.647L162.076,73.767Z" style={{fill:'#306aea'}}/>
+                                                <path d="M171.917,73.767L163.848,73.767L163.906,75.647L171.974,75.647L171.917,73.767Z" style={{fill:'#ed427f'}}/>
                                                 <path d="M193.13,73.767L173.058,73.767L173.115,75.647L193.187,75.647L193.13,73.767Z" style={{fill:'#306aea'}}/>
                                             </g>
                                             <g id="codeline11">
+                                                <path d="M156.43,77.239L142.032,77.239L142.09,79.119L156.487,79.119L156.43,77.239Z" style={{fill:'#306aea'}}/>
                                                 <path d="M180.601,77.239L157.691,77.239L157.748,79.119L180.658,79.119L180.601,77.239Z" style={{fill:'#ed427f'}}/>
                                                 <path d="M194.895,77.239L181.96,77.239L182.017,79.119L194.952,79.119L194.895,77.239Z" style={{fill:'#306aea'}}/>
-                                                <path d="M156.43,77.239L142.032,77.239L142.09,79.119L156.487,79.119L156.43,77.239Z" style={{fill:'#306aea'}}/>
                                             </g>
                                             <g id="codeline12">
                                                 <path d="M140.79,80.711L132.31,80.711L132.367,82.591L140.848,82.591L140.79,80.711Z" style={{fill:'#ed427f'}}/>
@@ -263,8 +328,8 @@ export const RightAnimation = () => {
                                                 <path d="M184.47,80.711L164.398,80.711L164.455,82.591L184.527,82.591L184.47,80.711Z" style={{fill:'#306aea'}}/>
                                             </g>
                                             <g id="codeline13">
-                                                <path d="M165.832,83.932L154.561,83.932L154.608,85.812L165.879,85.812L165.832,83.932Z" style={{fill:'#ed427f'}}/>
                                                 <path d="M153.403,83.932L139.479,83.932L139.537,85.812L153.461,85.812L153.403,83.932Z" style={{fill:'#306aea'}}/>
+                                                <path d="M165.832,83.932L154.561,83.932L154.608,85.812L165.879,85.812L165.832,83.932Z" style={{fill:'#ed427f'}}/>
                                                 <path d="M178.606,83.932L166.979,83.932L167.027,85.812L178.654,85.812L178.606,83.932Z" style={{fill:'#2dcd47'}}/>
                                             </g>
                                             <g id="codeline14">
@@ -281,14 +346,14 @@ export const RightAnimation = () => {
                                                 <path d="M216.575,94.024L196.503,94.024L196.56,95.904L216.632,95.904L216.575,94.024Z" style={{fill:'#eac130'}}/>
                                             </g>
                                             <g id="codeline16">
-                                                <path d="M171.63,98.092L163.561,98.092L163.619,99.972L171.687,99.972L171.63,98.092Z" style={{fill:'#ed427f'}}/>
-                                                <path d="M161.789,98.092L146.313,98.092L146.371,99.972L161.846,99.972L161.789,98.092Z" style={{fill:'#306aea'}}/>
                                                 <path d="M144.541,98.092L139.086,98.092L139.143,99.972L144.598,99.972L144.541,98.092Z" style={{fill:'#eac130'}}/>
+                                                <path d="M161.789,98.092L146.313,98.092L146.371,99.972L161.846,99.972L161.789,98.092Z" style={{fill:'#306aea'}}/>
+                                                <path d="M171.63,98.092L163.561,98.092L163.619,99.972L171.687,99.972L171.63,98.092Z" style={{fill:'#ed427f'}}/>
                                             </g>
                                             <g id="codeline17">
+                                                <path d="M156.143,101.564L141.745,101.564L141.803,103.444L156.2,103.444L156.143,101.564Z" style={{fill:'#306aea'}}/>
                                                 <path d="M180.314,101.564L157.404,101.564L157.461,103.444L180.371,103.444L180.314,101.564Z" style={{fill:'#ed427f'}}/>
                                                 <path d="M194.608,101.564L181.673,101.564L181.73,103.444L194.665,103.444L194.608,101.564Z" style={{fill:'#306aea'}}/>
-                                                <path d="M156.143,101.564L141.745,101.564L141.803,103.444L156.2,103.444L156.143,101.564Z" style={{fill:'#306aea'}}/>
                                             </g>
                                             <g id="codeline18">
                                                 <path d="M140.503,105.036L132.023,105.036L132.08,106.916L140.561,106.916L140.503,105.036Z" style={{fill:'#ed427f'}}/>
@@ -301,8 +366,8 @@ export const RightAnimation = () => {
                                                 <path d="M176.742,108.394L166.138,108.394L166.195,110.274L176.799,110.274L176.742,108.394Z" style={{fill:'#eac130'}}/>
                                             </g>
                                             <g id="codeline20">
-                                                <path d="M160.927,111.979L145.654,111.979L145.712,113.86L160.984,113.86L160.927,111.979Z" style={{fill:'#ed427f'}}/>
                                                 <path d="M143.967,111.979L139.231,111.979L139.289,113.86L144.025,113.86L143.967,111.979Z" style={{fill:'#306aea'}}/>
+                                                <path d="M160.927,111.979L145.654,111.979L145.712,113.86L160.984,113.86L160.927,111.979Z" style={{fill:'#ed427f'}}/>
                                                 <path d="M178.368,111.865L162.613,111.865L162.67,113.745L178.425,113.745L178.368,111.865Z" style={{fill:'#2dcd47'}}/>
                                             </g>
                                             <g id="codeline21">
@@ -318,15 +383,15 @@ export const RightAnimation = () => {
                                                 <path d="M191.559,121.428L171.487,121.428L171.545,123.308L191.617,123.308L191.559,121.428Z" style={{fill:'#eac130'}}/>
                                             </g>
                                             <g id="codeline23">
-                                                <path d="M171.917,125.496L163.848,125.496L163.906,127.376L171.974,127.376L171.917,125.496Z" style={{fill:'#ed427f'}}/>
-                                                <path d="M162.076,125.496L146.6,125.496L146.658,127.376L162.133,127.376L162.076,125.496Z" style={{fill:'#306aea'}}/>
                                                 <path d="M144.828,125.496L139.373,125.496L139.43,127.376L144.885,127.376L144.828,125.496Z" style={{fill:'#eac130'}}/>
+                                                <path d="M162.076,125.496L146.6,125.496L146.658,127.376L162.133,127.376L162.076,125.496Z" style={{fill:'#306aea'}}/>
+                                                <path d="M171.917,125.496L163.848,125.496L163.906,127.376L171.974,127.376L171.917,125.496Z" style={{fill:'#ed427f'}}/>
                                                 <path d="M193.13,125.496L173.058,125.496L173.115,127.376L193.187,127.376L193.13,125.496Z" style={{fill:'#306aea'}}/>
                                             </g>
                                             <g id="codeline24">
+                                                <path d="M156.43,128.968L142.032,128.968L142.09,130.848L156.487,130.848L156.43,128.968Z" style={{fill:'#306aea'}}/>
                                                 <path d="M180.601,128.968L157.691,128.968L157.748,130.848L180.658,130.848L180.601,128.968Z" style={{fill:'#ed427f'}}/>
                                                 <path d="M194.895,128.968L181.96,128.968L182.017,130.848L194.952,130.848L194.895,128.968Z" style={{fill:'#306aea'}}/>
-                                                <path d="M156.43,128.968L142.032,128.968L142.09,130.848L156.487,130.848L156.43,128.968Z" style={{fill:'#306aea'}}/>
                                             </g>
                                             <g id="codeline25">
                                                 <path d="M140.79,132.44L132.31,132.44L132.367,134.32L140.848,134.32L140.79,132.44Z" style={{fill:'#ed427f'}}/>
@@ -334,8 +399,8 @@ export const RightAnimation = () => {
                                                 <path d="M184.47,132.44L164.398,132.44L164.455,134.32L184.527,134.32L184.47,132.44Z" style={{fill:'#306aea'}}/>
                                             </g>
                                             <g id="codeline26">
-                                                <path d="M165.832,135.661L154.561,135.661L154.608,137.541L165.879,137.541L165.832,135.661Z" style={{fill:'#ed427f'}}/>
                                                 <path d="M153.403,135.661L139.479,135.661L139.537,137.541L153.461,137.541L153.403,135.661Z" style={{fill:'#306aea'}}/>
+                                                <path d="M165.832,135.661L154.561,135.661L154.608,137.541L165.879,137.541L165.832,135.661Z" style={{fill:'#ed427f'}}/>
                                                 <path d="M178.606,135.661L166.979,135.661L167.027,137.541L178.654,137.541L178.606,135.661Z" style={{fill:'#2dcd47'}}/>
                                             </g>
                                         </g>

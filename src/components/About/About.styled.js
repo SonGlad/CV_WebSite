@@ -20,7 +20,8 @@ export const AboutStyled = styled.div`
         }
     }
 
-    .about-cont{
+    .about-cont,
+    .coding-container-right{
         margin-bottom: 30px;
 
         @media screen and (min-width: 768px){
@@ -31,6 +32,8 @@ export const AboutStyled = styled.div`
     }
 
     .coding-container-left{
+        margin-bottom: 30px;
+
         @media screen and (min-width: 768px){
             display: flex;
             align-items: center;
@@ -47,6 +50,9 @@ export const AboutStyled = styled.div`
 
     .animation-container{
         margin-bottom: 30px;
+        @media screen and (min-width: 768px){
+            margin-bottom: 50px;
+        }
     }
  
     .about-img-cont{
@@ -158,6 +164,37 @@ export const AboutStyled = styled.div`
 
         @media screen and (min-width: 768px){
             max-width: 50%;
+        }
+    }
+
+    .github-data{
+        @media screen and (min-width: 1230px    ){
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+    
+    ::-webkit-scrollbar {
+        height: 8px;
+        border-radius: 5px;
+        background-color: ${p => p.theme.color.light_theme1};
+    }
+    ::-webkit-scrollbar-thumb {
+        border-radius: 4px;
+        background-color: ${p => p.theme.color.light_theme5};
+    }
+
+    
+    .github-title{
+        text-align: center;
+        font-size: 56px;
+        line-height: 120%;
+        font-weight: 700;
+        margin-bottom: 30px;
+        & span{
+            color: ${p => p.theme.color.main_color};
         }
     }
 `

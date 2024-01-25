@@ -7,6 +7,16 @@ export const theme = {
         main_color_rust: '#b7410e',
         main_color_rust_lighter: '#d05a27',
         main_color_blue: '#00abf0',
+        light_theme1: '#333333',
+        light_theme2: '#5C5C5C',
+        light_theme3: '#898989',
+        light_theme4: '#B9B9B9',
+        light_theme5: '#EBEBEB',
+        dark_theme1: '#241206',
+        dark_theme2: '#64230b',
+        dark_theme3: '#852b0a',
+        dark_theme4: '#a83206',
+        dark_theme5: '#cc3900',
     },
 
     transition: {
