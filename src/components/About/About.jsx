@@ -1,13 +1,11 @@
 import { AboutStyled } from "./About.styled";
 import { LeftAnimation } from "./LeftAnimation/LeftAnimation";
 import { RightAnimation } from "./RightAnimation/RightAnimation";
-import MyPicture from "../../images/images/my_photo_2.png";
+import MyPicture from "../../images/images/my_photo_2.jpg";
 import profile from "../../utils/profile.json";
 import GitHubCalendar from 'react-github-calendar';
 import React from 'react';
 import { Tooltip as ReactTooltip } from 'react-tooltip';
-// import 'react-tooltip/dist/react-tooltip.css';
-
 
 
 
@@ -20,27 +18,38 @@ export const AboutSection = () => {
     };
 
 
-
     return (
         <AboutStyled>
             <h1 className="about-title">About <span>Me</span></h1>
             <div className="animation-container">
                 <div className="about-cont">
-                    <div className="about-img-cont">
-                        <img className="about-img" src={MyPicture} alt="my_picture" width={280} />
-                        <span className="circle-filter"></span>
-                        <span className="circle-spin1"></span>
-                        <span className="circle-spin2"></span>
+                    <div className="shadow0">
+                        <div className="about-img-cont">
+                            <img className="about-img" src={MyPicture} alt="my_picture" width={280} />
+                            <span className="circle-filter"></span>
+                            <span className="circle-spin1"></span>
+                            <span className="circle-spin2"></span>
+                        </div>
                     </div>
-                    <p className="about-content-text">{about1}</p>
+                    <div className='shadow-div'>
+                        <p className="about-content-text">{about1}</p>
+                    </div>
                 </div>
                 <div className="coding-container-left">
-                    <LeftAnimation/>
-                    <p className="about-content-text order-two">{about2}</p>
+                    <div className='shadow1 order-one'>
+                        <LeftAnimation />
+                    </div>
+                    <div className='shadow-div  order-two'>
+                        <p className="about-content-text">{about2}</p>
+                    </div>
                 </div>
                 <div className="coding-container-right">
-                    <RightAnimation />
-                    <p className="about-content-text">{about3}</p>
+                    <div className="shadow2">
+                     <RightAnimation />
+                    </div>
+                    <div className='shadow-div'>
+                        <p className="about-content-text">{about3}</p>
+                    </div>
                 </div>
             </div>
             <div className="github-cont">

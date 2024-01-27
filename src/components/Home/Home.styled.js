@@ -1,5 +1,5 @@
 import { styled } from "styled-components";
-import Photo from "../../images/images/my_photo_1.png";
+import Photo from "../../images/images/my_photo_1.jpg";
 
 
 

@@ -88,7 +88,7 @@ export const LeftAnimation = () => {
 
 
     return (
-        <LeftAnimationStyled className="order-one">
+        <LeftAnimationStyled>
             <svg id="webdev-animation"
                 viewBox="40 20 600 512.14">
                 <defs>
