@@ -6,6 +6,7 @@ import Photo from "../../images/images/my_photo_1.jpg";
 export const HomeStyledContainer = styled.div`
     display: flex;
     flex-direction: column;
+    min-height: 80vh;
 
     .order-one{
         order: 2;
@@ -30,7 +31,7 @@ export const HomeStyledContainer = styled.div`
         padding: 50px 0;
 
         @media screen and (min-width: 768px){
-            padding: 100px 0;
+            padding: 100px 0 50px 0;
             max-width: 50%;
         }
     }
@@ -102,17 +103,17 @@ export const HomeStyledContainer = styled.div`
     }
 
     .btn-cont{
-        @media screen and (max-width: 768px){
+        height: 54px;
+        display: flex;
+        align-items: center;
+
+        @media screen and (max-width: 767px){
             width: 100%;
             display: flex;
         }
     }
 
-    .download-btn{
-        @media screen and (max-width: 768px){
-            margin: auto;
-        }
-
+    .download-btn{ 
         padding: 14px 28px;
         border-radius: 15px;
         font-size: 16px;
@@ -130,6 +131,10 @@ export const HomeStyledContainer = styled.div`
             background-color: ${p => p.theme.color.main_color};
             color: ${p => p.theme.color.text_color};
             box-shadow: none
+        }
+
+        @media screen and (max-width: 767px){
+            margin: auto;
         }
     }
 

@@ -7,12 +7,14 @@ import { ReactComponent as FacebookIcon } from "../../images/svg-icons/facebook.
 import { ReactComponent as TelegramIcon } from "../../images/svg-icons/telegram.svg";
 import { ReactComponent as LinkedinIcon } from "../../images/svg-icons/linkedin.svg";
 import Logo from "../../images/images/iReX_logo.png";
+import Profile from "../../utils/profile.json";
 import { useCallback, useEffect, useRef, useState } from "react";
 
 
 
 
 export const Footer = () => {
+    const {github_link, facebook_link, linkedin_link, telegram_link} = Profile;
     const [footerPicture, setFooterPicture] = useState(false);
     const contRef = useRef();
 
@@ -78,7 +80,7 @@ export const Footer = () => {
                         <p className="footer-text-right">Find <span>me</span> On:</p>
                         <ul className="footer-social-list">
                             <li className="footer-social-item">
-                                <NavLink className="footer-social-link" to='https://github.com/SonGlad'
+                                <NavLink className="footer-social-link" to={github_link}
                                     aria-label="Github link"
                                     target="_blank"
                                     rel="noreferrer noopener">
@@ -86,7 +88,7 @@ export const Footer = () => {
                                 </NavLink>
                             </li>
                             <li className="footer-social-item">
-                                <NavLink className="footer-social-link" to='https://www.facebook.com/profile.php?id=100024930558745'
+                                <NavLink className="footer-social-link" to={facebook_link}
                                     aria-label="Facebook link"
                                     target="_blank"
                                     rel="noreferrer noopener">
@@ -94,7 +96,7 @@ export const Footer = () => {
                                 </NavLink>
                             </li>
                             <li className="footer-social-item">
-                                <NavLink className="footer-social-link" to='https://www.linkedin.com/in/oleg-koshevy/'
+                                <NavLink className="footer-social-link" to={linkedin_link}
                                     aria-label="Linkedin link"
                                     target="_blank"
                                     rel="noreferrer noopener">
@@ -102,7 +104,7 @@ export const Footer = () => {
                                 </NavLink>
                             </li>
                             <li className="footer-social-item">
-                                <NavLink className="footer-social-link" to='https://t.me/SonGlad'
+                                <NavLink className="footer-social-link" to={telegram_link}
                                     aria-label="Telegram link"
                                     target="_blank"
                                     rel="noreferrer noopener">

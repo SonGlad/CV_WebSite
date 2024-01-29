@@ -3,6 +3,7 @@ import { ReactComponent as CalendarIcon } from "../../images/svg-icons/calendar.
 import { NavLink } from "react-router-dom";
 import { ReactComponent as FacebookIcon } from "../../images/svg-icons/facebook.svg";
 import Profile from "../../utils/profile.json";
+import { SwiperComponent } from "./Swiper-Slider/Swiper";
 
 
 
@@ -14,7 +15,7 @@ export const EducationComponent = () => {
         <EducationStyled>
             <h1 className="education-title"><span>My </span>Journey</h1>
             <ul className="education-list">
-                {education.map(({ id, year, degree, university, description, img_url, web_link, social_link}) => (
+                {education.map(({ id, year, degree, university, description, img_url, web_link, social_link}, index) => (
                     <li className="education-item" key={id}>
                         <div className="education-cont">
                             <div className="education-text-cont">
@@ -39,9 +40,7 @@ export const EducationComponent = () => {
                                     </NavLink>
                                 </div>
                             </div>
-                            <div className="education-picture-cont">
-                                <img className="education-picture" src={img_url} alt="mktf_picture" />
-                            </div>
+                            <SwiperComponent img_url={img_url} index={index}/>
                         </div>
                     </li>
                 ))}

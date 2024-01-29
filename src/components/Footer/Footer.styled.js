@@ -8,6 +8,7 @@ export const FooterStyled = styled.footer`
         padding: 40px 0;
 
         @media screen and (min-width: 768px){
+            padding: 40px 0 20px 0;
             display: flex;
             align-items: center;
             justify-content: space-between;

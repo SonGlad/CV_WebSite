@@ -1,12 +1,12 @@
 import { HomeStyledContainer } from "./Home.styled"
-import profile from "../../utils/profile.json";
+import Profile from "../../utils/profile.json";
 import { NavLink } from "react-router-dom";
 import Typewriter from 'typewriter-effect';
 
 
 
 export const HomeSection = () => {
-    const { name, position1, position2, about1, about2 } = profile;
+    const { name, position1, position2, about1, about2, download_link } = Profile;
 
 
     const TypeWriterFunction = () => {
@@ -33,15 +33,14 @@ export const HomeSection = () => {
                 <p className="text-description upper-text">{about1}</p>
                 <p className="text-description lower-text">{about2}</p>
                 <div className="btn-cont">
-                    <NavLink className="download-btn" to='https://drive.google.com/file/d/1kqb4M8RBzufNXjXk9Qft2puyAM6Vet6g/view?usp=sharing'
+                    <NavLink className="download-btn" to={download_link}
                         aria-label="CV Douwnload link"
                         target="_blank"
                         rel="noreferrer noopener"
                     >Download CV</NavLink>
                 </div>
             </div>
-            <div className="right-container order-two">
-            </div>
+            <div className="right-container order-two"/>
         </HomeStyledContainer>
     )
 };

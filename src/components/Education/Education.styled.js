@@ -1,7 +1,6 @@
 import { styled } from "styled-components";
 
 
-
 export const EducationStyled = styled.div`
     padding: 20px 0;
 
@@ -17,16 +16,13 @@ export const EducationStyled = styled.div`
 
     .education-cont{
         margin-bottom: 60px;
-
+        
         @media screen and (min-width: 768px){
             display: flex;
             justify-content: center;
         }
         @media screen and (min-width: 1280px){
             margin-bottom: 30px;
-        }
-        @media screen and (min-width: 1440px){
-            align-items: center;
         }
     }
 
@@ -132,54 +128,4 @@ export const EducationStyled = styled.div`
         }
     }
 
-    .education-picture-cont{
-        border-radius: 20px;
-        display: flex;
-        justify-content: center;
-        overflow: hidden;
-        max-height: 295px;
-        filter: saturate(0.5);
-        
-        
-        
-        @media screen and (min-width: 768px) {
-            width: 50%;
-            max-height: 488px;
-        }
-        @media screen and (min-width: 805px) {
-            max-height: 475px;
-        }
-        @media screen and (min-width: 1024px) {
-            align-items: center;
-            max-height: 360px;
-        }
-        @media screen and (min-width: 1185px) { 
-            max-height: 328px;
-        }
-        @media screen and (min-width: 1395px) { 
-            max-height: 310px;
-        }
-        @media screen and (min-width: 1482px) { 
-            max-height: 273px;
-        }
-        @media screen and (min-width: 2050px) { 
-            max-height: 255px;
-        }
-        @media screen and (min-width: 2582px) { 
-            max-height: 236px;
-        }
-    }
-
-    .education-picture{
-        height: auto;
-        max-width: 100%;
-        
-        @media screen and (min-width: 768px) {
-            max-width: fit-content;
-        }
-        @media screen and (min-width: 1482px) {
-            max-width: none;
-            width: 100%;
-        }
-    }
 `
