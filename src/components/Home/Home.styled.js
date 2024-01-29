@@ -54,6 +54,11 @@ export const HomeStyledContainer = styled.div`
         color: ${p => p.theme.color.main_color};
         text-shadow: 0px 0px 40px ${p => p.theme.main_color_rust_lighter};
         text-align: center;
+        height: 112px;
+
+        @media screen and (min-width: 525px){
+            height: auto;
+        }
 
         @media screen and (min-width: 768px){
             text-align: start;

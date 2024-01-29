@@ -55,7 +55,9 @@ export const FooterStyled = styled.footer`
        }
     } 
 
-    .footer-text,
+    /* .footer-text{
+
+    } */
     .footer-text-center,
     .footer-text-right{
         text-align: center;

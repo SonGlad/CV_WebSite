@@ -6,7 +6,7 @@ export const StyledContainer = styled.div`
     display: flex;
     flex-direction: column;
 
-    .main{
+    main{
         flex: 1 1 auto;
     }
 `
