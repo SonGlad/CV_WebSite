@@ -40,7 +40,7 @@ export const EducationComponent = () => {
                                     </NavLink>
                                 </div>
                             </div>
-                            <SwiperComponent img_url={img_url} index={index}/>
+                            <SwiperComponent id={id} img_url={img_url} index={index}/>
                         </div>
                     </li>
                 ))}

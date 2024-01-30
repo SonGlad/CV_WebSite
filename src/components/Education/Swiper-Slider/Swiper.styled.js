@@ -68,7 +68,7 @@ export const SwiperStyled = styled.div`
         width: 10px;
         height: 10px;
         opacity: 1;
-        background: ${p => p.theme.color.text_color};
+        background: rgba(0, 0, 0, 0.5);
     }
 
     .swiper-pagination-bullet-active {
@@ -96,18 +96,4 @@ export const SwiperStyled = styled.div`
             fill: ${p => p.theme.color.text_color};
         }
     }
-
-    /* .education-picture{
-        height: auto;
-        max-width: 100%;
-        
-        @media screen and (min-width: 768px) {
-            max-width: fit-content;
-        }
-        @media screen and (min-width: 1482px) {
-            max-width: none;
-            width: 100%;
-        }
-    } */
-
 `

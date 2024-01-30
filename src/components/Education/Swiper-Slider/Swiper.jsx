@@ -1,16 +1,26 @@
 import { SwiperStyled } from "./Swiper.styled";
-import { nanoid } from "nanoid";
-import { Swiper, SwiperSlide } from 'swiper/react';
-import {Pagination, EffectCube, Autoplay} from 'swiper/modules';
-import 'swiper/css';
-import 'swiper/css/pagination';
 import { useEffect, useState} from "react";
 import {ReactComponent as CameraIcon} from "../../../images/svg-icons/camera.svg";
+import { useDispatch } from "react-redux";
+import {openModalEducation} from "../../../redux/Modal/modal-slice";
+import {updateAboutPictureData} from "../../../redux/Modal/modal-slice";
+import { nanoid } from "nanoid";
+import { Swiper, SwiperSlide } from 'swiper/react';
+import {Pagination, Autoplay} from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/pagination';
 
 
 
-export const SwiperComponent = ({img_url, index}) => {
+export const SwiperComponent = ({id, img_url, index}) => {
+    const dispatch = useDispatch();
     const [delay, setDelay] = useState(0);
+
+
+    const openModal = (url) => {
+        dispatch(updateAboutPictureData({id, img_url, url}));
+        dispatch(openModalEducation());
+    };
 
 
     useEffect(() => {
@@ -42,13 +52,13 @@ export const SwiperComponent = ({img_url, index}) => {
                     disableOnInteraction: false,
                 }}
                 pagination={pagination}
-                modules={[Pagination, EffectCube, Autoplay]}
+                modules={[Pagination, Autoplay]}
                 className="mySwiper"
             >
                 {img_url.map(({url}) => (
                     <SwiperSlide  key={nanoid()}>
                         <img className="education-picture" src={url} alt='img'/>
-                        <button type='button' className="img-btn">
+                        <button type='button' className="img-btn" onClick={() => openModal(url)}>
                             <CameraIcon className="img-icon" width={30} height={30}/>
                         </button>
                     </SwiperSlide>
