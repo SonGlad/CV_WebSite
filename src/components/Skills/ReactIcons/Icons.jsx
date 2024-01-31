@@ -15,10 +15,10 @@ import IconHandlebars from "./IconsList/HandlebarsIcon";
 import IconMongoDB from "./IconsList/MongoDbIcon";
 import IconAxios from "./IconsList/AxiosIcon";
 import IconPostman from "./IconsList/PostmanIcon";
-import IconReactNative from "./IconsList/ReactNativeIcon";
-import IconTypeScript from "./IconsList/TypeScriptIcon";
-import IconVue from "./IconsList/VueIcon";
-import IconNext from "./IconsList/NextjsIcon";
+// import IconReactNative from "./IconsList/ReactNativeIcon";
+// import IconTypeScript from "./IconsList/TypeScriptIcon";
+// import IconVue from "./IconsList/VueIcon";
+// import IconNext from "./IconsList/NextjsIcon";
 import Profile from "../../../utils/profile.json";
 
 
@@ -37,30 +37,40 @@ const IconComponents = [
     IconNode,
     IconMongoDB,
     IconPostman,
-    IconReactNative,
-    IconTypeScript,
-    IconNext,
-    IconVue,
+    // IconReactNative,
+    // IconTypeScript,
+    // IconNext,
+    // IconVue,
 ];
 
 
 export const Icons = () => {
+    // const { skills } = profile;
+    // const { [id]: value, link } = skills.find(skill => skill.hasOwnProperty(id)) || {};
+    
+    
     const {skills} = Profile;
-    console.log(skills);
-
+    console.log('SKILLS:', skills);
     const newIconComponents = IconComponents.map((IconComponent) => {
-        // const id = IconComponent.name.replace("Icon", "");
-        // const { [id]: value, link } = skills.find(skill => skill.hasOwnProperty(id)) || {};
+        const id = IconComponent.name.replace("Icon", "");
+        const skill = skills.find(skill => skill.hasOwnProperty(id));
+        console.log('SKILL:', skill);
+
+        if (!skill) {
+            console.warn(`Skill with id ${id} not found in skills data`);
+            return {};
+        }
+    
+        const { [id]: value, link } = skill;
         
         return {
-            // id,
+            id,
             Component: IconComponent,
-            // value,
-            // link,
+            value,
+            link,
         };
     })
-    // .filter(({ value, link }) => value !== undefined && link !== undefined)
-    ;
+    .filter(({ value, link }) => value !== undefined && link !== undefined);
 
   
     
