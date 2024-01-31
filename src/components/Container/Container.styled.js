@@ -7,8 +7,8 @@ export const ContainersStyle = styled.div`
   /* max-width: 320px; */
   padding: 0 10px;
 
-  outline: 2px solid red;
-  outline-offset: -2px;
+  /* outline: 2px solid red;
+  outline-offset: -2px; */
 
   @media screen and (min-width: 768px) {
     /* max-width: 834px; */
@@ -19,4 +19,4 @@ export const ContainersStyle = styled.div`
     /* max-width: 1440px; */
     padding: 0 34px;
   }
-`;
+`

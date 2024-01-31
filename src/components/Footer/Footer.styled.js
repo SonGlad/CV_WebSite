@@ -56,9 +56,6 @@ export const FooterStyled = styled.footer`
        }
     } 
 
-    /* .footer-text{
-
-    } */
     .footer-text-center,
     .footer-text-right{
         text-align: center;
@@ -117,6 +114,7 @@ export const FooterStyled = styled.footer`
 
     .footer-img{
         position: absolute;
+        z-index: 10;
         width: 100px;
         height: auto;
         top: 50%;

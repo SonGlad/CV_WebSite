@@ -415,7 +415,7 @@ export const AboutStyled = styled.div`
     .github-data{
         margin: 0 auto;
         max-width: 1200px;
-        box-shadow: 0px 00px 10px 10px rgba(0,0,2,0.5);
+        box-shadow: 0px 0px 10px 10px rgba(0,0,2,0.5);
         border-radius: 30px;
         padding: 10px;
 

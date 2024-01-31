@@ -34,7 +34,7 @@ export const App= () => {
           <Route path='/portfolio' element={<PortfolioPage/>}/>
           <Route path ='/contact' element={<ContactPage/>}/>
         </Route>    
-      </Routes>, 
+      </Routes>
       {isEducationModalOpen && <Modal/>}
     </>
   );
