@@ -50,9 +50,12 @@ export const Icons = () => {
     
     
     const {skills} = Profile;
-    console.log('SKILLS:', skills);
+    // console.log('SKILLS:', skills);
     const newIconComponents = IconComponents.map((IconComponent) => {
-        const id = IconComponent.name.replace("Icon", "");
+        // const id = IconComponent.name.replace("Icon", "");
+        const id = IconComponent.name.slice(4, IconComponent.name.length);
+        // console.log( IconComponent.name);
+        console.log(IconComponent.name.slice(4, IconComponent.name.length));
         const skill = skills.find(skill => skill.hasOwnProperty(id));
         console.log('SKILL:', skill);
 
