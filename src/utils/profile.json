@@ -57,46 +57,60 @@
     }
   ],
   "skills":[
-    {"react": "React",
+    { "id": "IconReact",
+      "value": "React",
       "link": "https://react.dev"
     },
-    {"redux": "Redux",
+    { "id": "IconRedux",
+      "value": "Redux",
       "link": "https://redux.js.org"
     },
-    {"html": "HTML 5",
+    { "id": "IconHTML",
+      "value": "HTML 5",
       "link": "https://html.spec.whatwg.org"
     },
-    {"javascript": "JavaScript",
+    { "id": "IconJavaScript",
+      "value": "JavaScript",
       "link": "https://developer.mozilla.org/en-US/docs/Learn/JavaScript"
     },
-    {"css": "CSS 3",
+    { "id": "IconCSS",
+      "value": "CSS 3",
       "link": "https://developer.mozilla.org/en-US/docs/Web/CSS"
     },
-    {"git": "Git",
+    { "id": "IconGit",
+      "value": "Git",
       "link": "https://git-scm.com"
     },
-    {"github": "GitHub",
+    { "id": "IconGitHub",
+      "value": "GitHub",
       "link": "https://github.com"
     },
-    {"vs": "Visual Studio",
+    { "id": "IconVS",
+      "value": "Visual Studio",
       "link": "https://code.visualstudio.com"
     },
-    {"node": "Node.js",
+    { "id": "IconNode",
+      "value": "Node.js",
       "link": "https://nodejs.org/en"
     },
-    {"sass": "SASS",
+    { "id": "IconSASS",
+      "value": "SASS",
       "link": "https://sass-lang.com"
     },
-    {"handlebars": "Handlebars",
+    { "id": "IconHandlebars",
+      "value": "Handlebars",
       "link": "https://handlebarsjs.com"
     },
-    {"mongodb": "MongoDB",
+    { "id": "IconMongoDB",
+      "value": "MongoDB",
       "link": "https://www.mongodb.com/cloud/atlas/register?utm_source=google&utm_campaign=search_gs_pl_evergreen_atlas_core_prosp-brand_gic-null_emea-ua_ps-all_desktop_eng_lead&utm_term=mongodb&utm_medium=cpc_paid_search&utm_ad=e&utm_ad_campaign_id=12212624575&adgroup=115749710823&cq_cmp=12212624575&gad_source=1&gclid=CjwKCAiA_OetBhAtEiwAPTeQZy-VKImwt1qJHg8yNCl4a_hX5XmBxUh821Oa4HKoboH2OUpctL_ewhoCh7kQAvD_BwE"
     },
-    {"axios": "Axios",
+    { "id": "IconAxios",
+      "value": "Axios",
       "link": "https://axios-http.com/docs/api_intro"
     },
-    {"postman": "Postman",
+    { "id": "IconPostman",
+      "value": "Postman",
       "link": "https://www.postman.com"
     }
   ]
