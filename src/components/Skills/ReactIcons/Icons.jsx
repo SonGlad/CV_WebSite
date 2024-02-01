@@ -20,6 +20,8 @@ import IconTypeScript from "./IconsList/TypeScriptIcon";
 import IconVue from "./IconsList/VueIcon";
 import IconNext from "./IconsList/NextjsIcon";
 import Profile from "../../../utils/profile.json";
+import { useEffect, useState, useMemo } from "react";
+// import { useMemo } from "react";
 
 
 const IconComponents = [
@@ -46,37 +48,72 @@ const IconComponents = [
 
 export const Icons = () => {
     const {skills} = Profile;
-    // console.log('SKILLS:', skills);
+    const [components, setComponents] = useState([]);
+    console.log(components);
 
-
-    const newIconComponents = IconComponents.map((IconComponent) => {
-        // const id = IconComponent.name.slice(4, IconComponent.name.length);
-        const id = IconComponent.name.replace("Icon", "").toLowerCase();
-        console.log(id);
-        const skill = skills.find(skill => skill.hasOwnProperty(id));
-
-
-        if (!skill) {
-            // console.warn(`Skill with id ${id} not found in skills data`);
-            return {};
-        }
     
-        const { [id]: value, link } = skill;
-        
-        return {
-            id,
-            Component: IconComponent,
-            value,
-            link,
-        };
-    })
-    .filter(({ value, link }) => value !== undefined && link !== undefined);
 
-  
+    // const newIconComponents = IconComponents.map((IconComponent) => {
+    //     // const id = IconComponent.name.slice(4, IconComponent.name.length);
+    //     const name = IconComponent.name.replace("Icon", "").toLowerCase();
+    //     console.log(name);
+    //     const skill = skills.find(skill => skill.hasOwnProperty(name));
+
+
+    //     if (!skill) {
+    //         // console.warn(`Skill with id ${id} not found in skills data`);
+    //         return {};
+    //     }
+    
+    //     const { [name]: value, link } = skill;
+        
+    //     return {
+    //         name,
+    //         Component: IconComponent,
+    //         value,
+    //         link,
+    //     };
+    // })
+    // .filter(({ value, link }) => value !== undefined && link !== undefined);
+
+
+    // useEffect(() => {
+    //     if(!components){
+    //         setComponents(newIconComponents);
+    //     }
+    // }, [components, newIconComponents]);
+
+
+    const newIconComponents = useMemo(() => {
+        return IconComponents.map((IconComponent) => {
+            const id = IconComponent.name.replace("Icon", "").toLowerCase();
+            const skill = skills.find(skill => skill.hasOwnProperty(id));
+    
+            if (!skill) {
+                return {};
+            }
+    
+            const { [id]: value, link } = skill;
+    
+            return {
+                id,
+                Component: IconComponent,
+                value,
+                link,
+            };
+        }).filter(({ value, link }) => value !== undefined && link !== undefined);
+    }, [skills]);
+
+    
+    useEffect(() => {
+        setComponents(newIconComponents);
+    }, [newIconComponents]);
+
+
     
     return(
         <IconsStyledList>
-            {newIconComponents.map(({id, Component, value, link}) => (
+            {components.map(({id, Component, value, link}) => (
                 <li key={id} className="icons-list">
                     <Component className='icons'/>
                     <div className="value-cont">
