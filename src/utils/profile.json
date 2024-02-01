@@ -57,46 +57,46 @@
     }
   ],
   "skills":[
-    {"React": "React",
+    {"react": "React",
       "link": "https://react.dev"
     },
-    {"Redux": "Redux",
+    {"redux": "Redux",
       "link": "https://redux.js.org"
     },
-    {"HTML": "HTML 5",
+    {"html": "HTML 5",
       "link": "https://html.spec.whatwg.org"
     },
-    {"JavaScript": "JavaScript",
+    {"javascript": "JavaScript",
       "link": "https://developer.mozilla.org/en-US/docs/Learn/JavaScript"
     },
-    {"CSS": "CSS 3",
+    {"css": "CSS 3",
       "link": "https://developer.mozilla.org/en-US/docs/Web/CSS"
     },
-    {"Git": "Git",
+    {"git": "Git",
       "link": "https://git-scm.com"
     },
-    {"GitHub": "GitHub",
+    {"github": "GitHub",
       "link": "https://github.com"
     },
-    {"VS": "Visual Studio",
+    {"vs": "Visual Studio",
       "link": "https://code.visualstudio.com"
     },
-    {"Node": "Node.js",
+    {"node": "Node.js",
       "link": "https://nodejs.org/en"
     },
-    {"SASS": "SASS",
+    {"sass": "SASS",
       "link": "https://sass-lang.com"
     },
-    {"Handlebars": "Handlebars",
+    {"handlebars": "Handlebars",
       "link": "https://handlebarsjs.com"
     },
-    {"MongoDB": "MongoDB",
+    {"mongodb": "MongoDB",
       "link": "https://www.mongodb.com/cloud/atlas/register?utm_source=google&utm_campaign=search_gs_pl_evergreen_atlas_core_prosp-brand_gic-null_emea-ua_ps-all_desktop_eng_lead&utm_term=mongodb&utm_medium=cpc_paid_search&utm_ad=e&utm_ad_campaign_id=12212624575&adgroup=115749710823&cq_cmp=12212624575&gad_source=1&gclid=CjwKCAiA_OetBhAtEiwAPTeQZy-VKImwt1qJHg8yNCl4a_hX5XmBxUh821Oa4HKoboH2OUpctL_ewhoCh7kQAvD_BwE"
     },
-    {"Axios": "Axios",
+    {"axios": "Axios",
       "link": "https://axios-http.com/docs/api_intro"
     },
-    {"Postman": "Postman",
+    {"postman": "Postman",
       "link": "https://www.postman.com"
     }
   ]
