@@ -1,5 +1,5 @@
-import { NavLink } from "react-router-dom";
-import {ReactComponent as LinkIcon} from "../../../images/svg-icons/link.svg";
+// import { NavLink } from "react-router-dom";
+// import {ReactComponent as LinkIcon} from "../../../images/svg-icons/link.svg";
 import { IconsStyledList } from "./Icons.styled";
 import IconReact from "./IconsList/ReactIcon";
 import IconRedux from "./IconsList/ReduxIcon";
@@ -19,9 +19,9 @@ import IconReactNative from "./IconsList/ReactNativeIcon";
 import IconTypeScript from "./IconsList/TypeScriptIcon";
 import IconVue from "./IconsList/VueIcon";
 import IconNext from "./IconsList/NextjsIcon";
-import Profile from "../../../utils/profile.json";
+// import Profile from "../../../utils/profile.json";
 import { useEffect, useState, useCallback } from "react";
-// import { nanoid } from "nanoid";
+import { nanoid } from "nanoid";
 
 
 const IconComponents = [
@@ -47,43 +47,43 @@ const IconComponents = [
 
 
 export const Icons = () => {
-    const {skills} = Profile;
+    // const {skills} = Profile;
     const [newComponentsArray, setNewComponentArray] = useState([]);
     console.log('newComponentArray:', newComponentsArray);
-    const [components, setComponents] = useState([]);
-    console.log('Components:', components);
+    // const [components, setComponents] = useState([]);
+    // console.log('Components:', components);
 
 
  
     const generateNewArray = useCallback(() => {
         return IconComponents.map((IconComponent) => {
             return {
-                id: IconComponent.name,
+                id: nanoid(),
                 Component: IconComponent
             };
         });
     },[]);
 
 
-    const NewArray = useCallback(() => {
-        return newComponentsArray.map((newComponentArray) => {
-            const skill = skills.find((skill) => skill.id === newComponentArray.id);
+    // const NewArray = useCallback(() => {
+    //     return newComponentsArray.map((newComponentArray) => {
+    //         const skill = skills.find((skill) => skill.id === newComponentArray.id);
 
-            if (!skill) {
-                // Обработка случая, если не найдено совпадение по id
-                return {};
-            }
+    //         if (!skill) {
+    //             // Обработка случая, если не найдено совпадение по id
+    //             return {};
+    //         }
     
-            const { id, Component} = newComponentArray;
+    //         const { id, Component} = newComponentArray;
     
-            return {
-                id,
-                Component,
-                value: skill.value,
-                link: skill.link,
-            };
-        }).filter(({ value, link }) => value !== undefined && link !== undefined);
-    },[newComponentsArray, skills]);
+    //         return {
+    //             id,
+    //             Component,
+    //             value: skill.value,
+    //             link: skill.link,
+    //         };
+    //     }).filter(({ value, link }) => value !== undefined && link !== undefined);
+    // },[newComponentsArray, skills]);
 
 
 
@@ -93,9 +93,9 @@ export const Icons = () => {
     },[generateNewArray]);
 
     
-    useEffect(() => {
-        setComponents(NewArray());
-    }, [NewArray]);
+    // useEffect(() => {
+    //     setComponents(NewArray());
+    // }, [NewArray]);
 
 
     // const newIconComponents = useCallback(() => {
@@ -152,7 +152,7 @@ export const Icons = () => {
     
     return(
         <IconsStyledList>
-            {components.map(({id, Component, value, link}) => (
+            {/* {components.map(({id, Component, value, link}) => (
                 <li key={id} className="icons-list">
                     <Component className='icons'/>
                     <div className="value-cont">
@@ -165,7 +165,7 @@ export const Icons = () => {
                         </NavLink>
                     </div>
                 </li>
-            ))}
+            ))} */}
         </IconsStyledList>
     )
 };
