@@ -21,7 +21,7 @@ import IconVue from "./IconsList/VueIcon";
 import IconNext from "./IconsList/NextjsIcon";
 // import Profile from "../../../utils/profile.json";
 import { useEffect, useState, useCallback } from "react";
-import { nanoid } from "nanoid";
+// import { nanoid } from "nanoid";
 
 
 const IconComponents = [
@@ -58,7 +58,7 @@ export const Icons = () => {
     const generateNewArray = useCallback(() => {
         return IconComponents.map((IconComponent) => {
             return {
-                id: nanoid(),
+                id: IconComponent.name,
                 Component: IconComponent
             };
         });
