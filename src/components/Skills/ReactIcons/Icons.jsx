@@ -49,7 +49,7 @@ const IconComponents = [
 export const Icons = () => {
     const {skills} = Profile;
     const [components, setComponents] = useState([]);
-    console.log(components);
+    console.log("UseState:", components);
 
     
 
@@ -88,6 +88,8 @@ export const Icons = () => {
         return IconComponents.map((IconComponent) => {
             const id = IconComponent.name.replace("Icon", "").toLowerCase();
             const skill = skills.find(skill => skill.hasOwnProperty(id));
+            console.log("ID:", id);
+            console.log("SKILL:", skill);
     
             if (!skill) {
                 return {};
