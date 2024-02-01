@@ -20,7 +20,7 @@ import IconTypeScript from "./IconsList/TypeScriptIcon";
 import IconVue from "./IconsList/VueIcon";
 import IconNext from "./IconsList/NextjsIcon";
 import Profile from "../../../utils/profile.json";
-import { useEffect, useState, useMemo } from "react";
+import { useEffect, useState, useCallback } from "react";
 // import { nanoid } from "nanoid";
 
 
@@ -48,72 +48,105 @@ const IconComponents = [
 
 export const Icons = () => {
     const {skills} = Profile;
+    const [newComponentsArray, setNewComponentArray] = useState([]);
+    // console.log('newComponentArray:', newComponentsArray);
     const [components, setComponents] = useState([]);
-    console.log("UseState:", components);
-
-    
-
-    // const newIconComponents = IconComponents.map((IconComponent) => {
-    //     // const id = IconComponent.name.slice(4, IconComponent.name.length);
-    //     const name = IconComponent.name.replace("Icon", "").toLowerCase();
-    //     console.log(name);
-    //     const skill = skills.find(skill => skill.hasOwnProperty(name));
+    console.log('Components:', components);
 
 
-    //     if (!skill) {
-    //         // console.warn(`Skill with id ${id} not found in skills data`);
-    //         return {};
-    //     }
-    
-    //     const { [name]: value, link } = skill;
-        
-    //     return {
-    //         name,
-    //         Component: IconComponent,
-    //         value,
-    //         link,
-    //     };
-    // })
-    // .filter(({ value, link }) => value !== undefined && link !== undefined);
-
-
-    // useEffect(() => {
-    //     if(!components){
-    //         setComponents(newIconComponents);
-    //     }
-    // }, [components, newIconComponents]);
-
-
-    const newIconComponents = useMemo(() => {
+ 
+    const generateNewArray = useCallback(() => {
         return IconComponents.map((IconComponent) => {
-            // const id = IconComponent.name.replace("Icon", "").toLowerCase();
-            // const skill = skills.find(skill => skill.hasOwnProperty(id));
-            // const id = nanoid();
-            // const skill = skills.find((skill) => skill.id === id);
-            const id = IconComponent.name;
-            const skill = skills.find((skill) => skill.id === id);
-            console.log("ID:", id);
-            console.log("SKILL:", skill);
+            return {
+                id: IconComponent.name,
+                Component: IconComponent
+            };
+        });
+    },[]);
     
+
+    const NewArray = useCallback(() => {
+        return newComponentsArray.map((newComponentArray) => {
+            const skill = skills.find((skill) => skill.id === newComponentArray.id);
+
             if (!skill) {
+                // Обработка случая, если не найдено совпадение по id
                 return {};
             }
     
-            const { value, link } = skill;
+            const { id, Component} = newComponentArray;
     
             return {
                 id,
-                Component: IconComponent,
-                value,
-                link,
+                Component,
+                value: skill.value,
+                link: skill.link,
             };
         }).filter(({ value, link }) => value !== undefined && link !== undefined);
-    }, [skills]);
+    },[newComponentsArray, skills]);
+
+
+
+
+    useEffect(() => {
+        setNewComponentArray(generateNewArray());
+    },[generateNewArray]);
 
     
     useEffect(() => {
-        setComponents(newIconComponents);
-    }, [newIconComponents]);
+        setComponents(NewArray());
+    }, [NewArray]);
+
+
+    // const newIconComponents = useCallback(() => {
+    //     return IconComponents.map((IconComponent) => {
+    //         const skill = skills.find((skill) => skill.id );
+    //         const {value, link} = skill;
+    
+    //         return {
+    //             id,
+    //             Component: IconComponent,
+    //             value,
+    //             link,
+    //         };
+    //     })
+
+    // },[])
+
+    
+    // useEffect(() => {
+    //     setComponents(newIconComponents());
+    // }, [newIconComponents]);
+
+
+
+
+
+
+
+    // const newIconComponents = useMemo(() => {
+    //     return IconComponents.map((IconComponent) => {
+    //         const id = IconComponent.name;
+    //         const skill = skills.find((skill) => skill.id === id);
+    //         console.log("ID:", id);
+    //         console.log("SKILL:", skill);
+    
+    //         if (!skill) {
+    //             return {};
+    //         }
+    
+    //         const { value, link } = skill;
+    
+    //         return {
+    //             id,
+    //             Component: IconComponent,
+    //             value,
+    //             link,
+    //         };
+    //     }).filter(({ value, link }) => value !== undefined && link !== undefined);
+    // }, [skills]);
+
+    
 
 
     
