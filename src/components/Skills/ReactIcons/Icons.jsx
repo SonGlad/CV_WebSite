@@ -1,5 +1,5 @@
-// import { NavLink } from "react-router-dom";
-// import {ReactComponent as LinkIcon} from "../../../images/svg-icons/link.svg";
+import { NavLink } from "react-router-dom";
+import {ReactComponent as LinkIcon} from "../../../images/svg-icons/link.svg";
 import { IconsStyledList } from "./Icons.styled";
 import IconReact from "./IconsList/ReactIcon";
 import IconRedux from "./IconsList/ReduxIcon";
@@ -19,132 +19,69 @@ import IconReactNative from "./IconsList/ReactNativeIcon";
 import IconTypeScript from "./IconsList/TypeScriptIcon";
 import IconVue from "./IconsList/VueIcon";
 import IconNext from "./IconsList/NextjsIcon";
-// import Profile from "../../../utils/profile.json";
-import { useEffect, useState, useCallback } from "react";
+import Profile from "../../../utils/profile.json";
+import { useEffect, useState, useMemo } from "react";
 // import { nanoid } from "nanoid";
 
 
 const IconComponents = [
-    IconHTML, 
-    IconCSS,
-    IconJavaScript,
-    IconReact, 
-    IconRedux, 
-    IconVS,
-    IconGitHub,
-    IconGit,
-    IconSASS,
-    IconHandlebars,
-    IconAxios,
-    IconNode,
-    IconMongoDB,
-    IconPostman,
-    IconReactNative,
-    IconTypeScript,
-    IconNext,
-    IconVue,
+    {"id": "IconHTML", Element: IconHTML}, 
+    {"id": "IconReact", Element: IconReact}, 
+    {"id": "IconRedux", Element: IconRedux}, 
+    {"id": "IconJavaScript", Element: IconJavaScript}, 
+    {"id": "IconCSS", Element: IconCSS}, 
+    {"id": "IconGit", Element: IconGit}, 
+    {"id": "IconGitHub", Element: IconGitHub}, 
+    {"id": "IconVS", Element: IconVS}, 
+    {"id": "IconNode ", Element: IconNode }, 
+    {"id": "IconSASS", Element: IconSASS}, 
+    {"id": "IconHandlebars", Element: IconHandlebars}, 
+    {"id": "IconMongoDB", Element: IconMongoDB}, 
+    {"id": "IconAxios", Element: IconAxios}, 
+    {"id": "IconPostman", Element: IconPostman}, 
+    {"id": "IconReactNative", Element: IconReactNative}, 
+    {"id": "IconTypeScript", Element: IconTypeScript}, 
+    {"id": "IconVue", Element: IconVue}, 
+    {"id": "IconNext", Element: IconNext}, 
 ];
 
 
 export const Icons = () => {
-    // const {skills} = Profile;
-    const [newComponentsArray, setNewComponentArray] = useState([]);
-    console.log('newComponentArray:', newComponentsArray);
-    // const [components, setComponents] = useState([]);
-    // console.log('Components:', components);
-
+    const {skills} = Profile;
+    const [components, setComponents] = useState([]);
+    console.log('STATE-LOG:', components);
 
  
-    const generateNewArray = useCallback(() => {
+
+
+    const newIconComponents = useMemo(() => {
         return IconComponents.map((IconComponent) => {
+            const id = IconComponent.id; 
+            const skill = skills.find((skill) => skill.id === id);
+            console.log("ID:", id);
+            console.log("SKILL:", skill);
+    
+            if (!skill) {
+                return {};
+            }
+    
+            const {value, link } = skill;
+    
             return {
-                id: IconComponent.name,
-                Component: IconComponent
+                id,
+                Element: IconComponent.Element,
+                value,
+                link,
             };
-        });
-    },[]);
-
-
-    // const NewArray = useCallback(() => {
-    //     return newComponentsArray.map((newComponentArray) => {
-    //         const skill = skills.find((skill) => skill.id === newComponentArray.id);
-
-    //         if (!skill) {
-    //             // Обработка случая, если не найдено совпадение по id
-    //             return {};
-    //         }
-    
-    //         const { id, Component} = newComponentArray;
-    
-    //         return {
-    //             id,
-    //             Component,
-    //             value: skill.value,
-    //             link: skill.link,
-    //         };
-    //     }).filter(({ value, link }) => value !== undefined && link !== undefined);
-    // },[newComponentsArray, skills]);
-
+        }).filter(({ value, link }) => value !== undefined && link !== undefined);
+    }, [skills]);
 
 
 
     useEffect(() => {
-        setNewComponentArray(generateNewArray());
-    },[generateNewArray]);
+        setComponents(newIconComponents);
+    }, [newIconComponents]);
 
-    
-    // useEffect(() => {
-    //     setComponents(NewArray());
-    // }, [NewArray]);
-
-
-    // const newIconComponents = useCallback(() => {
-    //     return IconComponents.map((IconComponent) => {
-    //         const skill = skills.find((skill) => skill.id );
-    //         const {value, link} = skill;
-    
-    //         return {
-    //             id,
-    //             Component: IconComponent,
-    //             value,
-    //             link,
-    //         };
-    //     })
-
-    // },[])
-
-    
-    // useEffect(() => {
-    //     setComponents(newIconComponents());
-    // }, [newIconComponents]);
-
-
-
-
-
-
-
-    // const newIconComponents = useMemo(() => {
-    //     return IconComponents.map((IconComponent) => {
-    //         const id = IconComponent.name;
-    //         const skill = skills.find((skill) => skill.id === id);
-    //         console.log("ID:", id);
-    //         console.log("SKILL:", skill);
-    
-    //         if (!skill) {
-    //             return {};
-    //         }
-    
-    //         const { value, link } = skill;
-    
-    //         return {
-    //             id,
-    //             Component: IconComponent,
-    //             value,
-    //             link,
-    //         };
-    //     }).filter(({ value, link }) => value !== undefined && link !== undefined);
-    // }, [skills]);
 
     
 
@@ -152,9 +89,9 @@ export const Icons = () => {
     
     return(
         <IconsStyledList>
-            {/* {components.map(({id, Component, value, link}) => (
+            {components.map(({id, Element, value, link}) => (
                 <li key={id} className="icons-list">
-                    <Component className='icons'/>
+                    <Element className='icons'/>
                     <div className="value-cont">
                         <p className="value-text">{value}</p>
                         <NavLink className='redirect-link' to={link}
@@ -165,7 +102,7 @@ export const Icons = () => {
                         </NavLink>
                     </div>
                 </li>
-            ))} */}
+            ))}
         </IconsStyledList>
     )
 };
