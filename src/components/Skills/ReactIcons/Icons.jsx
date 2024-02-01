@@ -21,7 +21,6 @@ import IconVue from "./IconsList/VueIcon";
 import IconNext from "./IconsList/NextjsIcon";
 import Profile from "../../../utils/profile.json";
 import { useEffect, useState, useMemo } from "react";
-// import { nanoid } from "nanoid";
 
 
 const IconComponents = [
@@ -49,17 +48,12 @@ const IconComponents = [
 export const Icons = () => {
     const {skills} = Profile;
     const [components, setComponents] = useState([]);
-    console.log('STATE-LOG:', components);
-
- 
 
 
     const newIconComponents = useMemo(() => {
         return IconComponents.map((IconComponent) => {
             const id = IconComponent.id; 
             const skill = skills.find((skill) => skill.id === id);
-            console.log("ID:", id);
-            console.log("SKILL:", skill);
     
             if (!skill) {
                 return {};
@@ -77,16 +71,11 @@ export const Icons = () => {
     }, [skills]);
 
 
-
     useEffect(() => {
         setComponents(newIconComponents);
     }, [newIconComponents]);
 
 
-    
-
-
-    
     return(
         <IconsStyledList>
             {components.map(({id, Element, value, link}) => (
