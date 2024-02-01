@@ -49,7 +49,7 @@ const IconComponents = [
 export const Icons = () => {
     const {skills} = Profile;
     const [newComponentsArray, setNewComponentArray] = useState([]);
-    // console.log('newComponentArray:', newComponentsArray);
+    console.log('newComponentArray:', newComponentsArray);
     const [components, setComponents] = useState([]);
     console.log('Components:', components);
 
@@ -63,7 +63,7 @@ export const Icons = () => {
             };
         });
     },[]);
-    
+
 
     const NewArray = useCallback(() => {
         return newComponentsArray.map((newComponentArray) => {
