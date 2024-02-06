@@ -1,0 +1,5 @@
+<svg class="icon icon-folder-open"><use xlink:href="#icon-folder-open"></use>
+    <symbol id="icon-folder-open" viewBox="0 0 32 32">
+        <path d="M26 30l6-16h-26l-6 16zM4 12l-4 18v-26h9l4 4h13v4z"></path>
+    </symbol>
+</svg>

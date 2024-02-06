@@ -94,7 +94,7 @@
       "link": "https://nodejs.org/en"
     },
     { "id": "IconSASS",
-      "value": "SASS",
+      "value": "SASS / SCSS",
       "link": "https://sass-lang.com"
     },
     { "id": "IconHandlebars",
@@ -112,6 +112,10 @@
     { "id": "IconPostman",
       "value": "Postman",
       "link": "https://www.postman.com"
+    },
+    { "id": "IconStyled",
+      "value": "Styled Components",
+      "link": "https://styled-components.com"
     }
   ]
 }

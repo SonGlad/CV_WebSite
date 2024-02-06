@@ -1,0 +1,1224 @@
+{
+  "data": {
+    "repositoryOwner": {
+      "login": "SonGlad",
+      "name": "Oleg Koshevy",
+      "repositories": {
+        "totalCount": 37,
+        "nodes": [
+          {
+            "id": "R_kgDOIw7L2Q",
+            "name": "Tutorial",
+            "type": "other",
+            "stargazerCount": 0,
+            "collaborators": {
+              "totalCount": 1
+            },
+            "mentionableUsers": {
+              "totalCount": 1
+            },
+            "languages": {
+              "totalCount": 1,
+              "edges": [
+                {
+                  "size": 22,
+                  "node": {
+                    "name": "HTML"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "id": "R_kgDOIx89Mg",
+            "name": "goit-markup-hw-01",
+            "stargazerCount": 0,
+            "type": "educational",
+            "collaborators": {
+              "totalCount": 1
+            },
+            "mentionableUsers": {
+              "totalCount": 1
+            },
+            "languages": {
+              "totalCount": 1,
+              "edges": [
+                {
+                  "size": 3735,
+                  "node": {
+                    "name": "HTML"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "id": "R_kgDOIz74xg",
+            "name": "goit-markup-hw-02",
+            "type": "educational",
+            "stargazerCount": 0,
+            "collaborators": {
+              "totalCount": 1
+            },
+            "mentionableUsers": {
+              "totalCount": 1
+            },
+            "languages": {
+              "totalCount": 2,
+              "edges": [
+                {
+                  "size": 11654,
+                  "node": {
+                    "name": "HTML"
+                  }
+                },
+                {
+                  "size": 4172,
+                  "node": {
+                    "name": "CSS"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "id": "R_kgDOI2zhww",
+            "name": "goit-markup-hw-03",
+            "type": "educational",
+            "stargazerCount": 0,
+            "collaborators": {
+              "totalCount": 1
+            },
+            "mentionableUsers": {
+              "totalCount": 1
+            },
+            "languages": {
+              "totalCount": 2,
+              "edges": [
+                {
+                  "size": 6942,
+                  "node": {
+                    "name": "CSS"
+                  }
+                },
+                {
+                  "size": 14424,
+                  "node": {
+                    "name": "HTML"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "id": "R_kgDOI40TFQ",
+            "name": "goit-markup-hw-04",
+            "type": "educational",
+            "stargazerCount": 0,
+            "collaborators": {
+              "totalCount": 1
+            },
+            "mentionableUsers": {
+              "totalCount": 1
+            },
+            "languages": {
+              "totalCount": 3,
+              "edges": [
+                {
+                  "size": 12616,
+                  "node": {
+                    "name": "CSS"
+                  }
+                },
+                {
+                  "size": 88849,
+                  "node": {
+                    "name": "HTML"
+                  }
+                },
+                {
+                  "size": 10164,
+                  "node": {
+                    "name": "JavaScript"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "id": "R_kgDOI7qKcw",
+            "name": "goit-markup-hw-05",
+            "type": "educational",
+            "stargazerCount": 0,
+            "collaborators": {
+              "totalCount": 1
+            },
+            "mentionableUsers": {
+              "totalCount": 1
+            },
+            "languages": {
+              "totalCount": 3,
+              "edges": [
+                {
+                  "size": 15373,
+                  "node": {
+                    "name": "CSS"
+                  }
+                },
+                {
+                  "size": 93670,
+                  "node": {
+                    "name": "HTML"
+                  }
+                },
+                {
+                  "size": 10605,
+                  "node": {
+                    "name": "JavaScript"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "id": "R_kgDOI-Rb3Q",
+            "name": "goit-markup-hw-06",
+            "type": "educational",
+            "stargazerCount": 0,
+            "collaborators": {
+              "totalCount": 1
+            },
+            "mentionableUsers": {
+              "totalCount": 1
+            },
+            "languages": {
+              "totalCount": 3,
+              "edges": [
+                {
+                  "size": 21372,
+                  "node": {
+                    "name": "CSS"
+                  }
+                },
+                {
+                  "size": 98320,
+                  "node": {
+                    "name": "HTML"
+                  }
+                },
+                {
+                  "size": 10605,
+                  "node": {
+                    "name": "JavaScript"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "id": "R_kgDOJCT8iQ",
+            "name": "goit-markup-hw-07",
+            "type": "individual",
+            "stargazerCount": 1,
+            "collaborators": {
+              "totalCount": 1
+            },
+            "mentionableUsers": {
+              "totalCount": 1
+            },
+            "languages": {
+              "totalCount": 3,
+              "edges": [
+                {
+                  "size": 33831,
+                  "node": {
+                    "name": "CSS"
+                  }
+                },
+                {
+                  "size": 114187,
+                  "node": {
+                    "name": "HTML"
+                  }
+                },
+                {
+                  "size": 11697,
+                  "node": {
+                    "name": "JavaScript"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "id": "R_kgDOJHaXKg",
+            "name": "flower-team-proj",
+            "type": "team",
+            "stargazerCount": 1,
+            "collaborators": {
+              "totalCount": 8
+            },
+            "mentionableUsers": {
+              "totalCount": 8
+            },
+            "languages": {
+              "totalCount": 3,
+              "edges": [
+                {
+                  "size": 48523,
+                  "node": {
+                    "name": "CSS"
+                  }
+                },
+                {
+                  "size": 117459,
+                  "node": {
+                    "name": "HTML"
+                  }
+                },
+                {
+                  "size": 17954,
+                  "node": {
+                    "name": "JavaScript"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "id": "R_kgDOJMZlDg",
+            "name": "full-stack-modeller-team-proj-test",
+            "type": "other",
+            "stargazerCount": 1,
+            "collaborators": {
+              "totalCount": 8
+            },
+            "mentionableUsers": {
+              "totalCount": 8
+            },
+            "languages": {
+              "totalCount": 3,
+              "edges": [
+                {
+                  "size": 41378,
+                  "node": {
+                    "name": "CSS"
+                  }
+                },
+                {
+                  "size": 40464,
+                  "node": {
+                    "name": "HTML"
+                  }
+                },
+                {
+                  "size": 11597,
+                  "node": {
+                    "name": "JavaScript"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "id": "R_kgDOJgLPxA",
+            "name": "goit-js-hw-06",
+            "type": "educational",
+            "stargazerCount": 0,
+            "collaborators": {
+              "totalCount": 1
+            },
+            "mentionableUsers": {
+              "totalCount": 1
+            },
+            "languages": {
+              "totalCount": 3,
+              "edges": [
+                {
+                  "size": 442,
+                  "node": {
+                    "name": "CSS"
+                  }
+                },
+                {
+                  "size": 8096,
+                  "node": {
+                    "name": "HTML"
+                  }
+                },
+                {
+                  "size": 5662,
+                  "node": {
+                    "name": "JavaScript"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "id": "R_kgDOJiUPPw",
+            "name": "goit-js-hw-07",
+            "type": "educational",
+            "stargazerCount": 0,
+            "collaborators": {
+              "totalCount": 1
+            },
+            "mentionableUsers": {
+              "totalCount": 1
+            },
+            "languages": {
+              "totalCount": 3,
+              "edges": [
+                {
+                  "size": 2422,
+                  "node": {
+                    "name": "HTML"
+                  }
+                },
+                {
+                  "size": 1291,
+                  "node": {
+                    "name": "CSS"
+                  }
+                },
+                {
+                  "size": 4275,
+                  "node": {
+                    "name": "JavaScript"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "id": "R_kgDOJmf_zQ",
+            "name": "goit-js-hw-08",
+            "type": "educational",
+            "stargazerCount": 0,
+            "collaborators": {
+              "totalCount": 1
+            },
+            "mentionableUsers": {
+              "totalCount": 3
+            },
+            "languages": {
+              "totalCount": 4,
+              "edges": [
+                {
+                  "size": 3669,
+                  "node": {
+                    "name": "HTML"
+                  }
+                },
+                {
+                  "size": 787,
+                  "node": {
+                    "name": "SCSS"
+                  }
+                },
+                {
+                  "size": 1631,
+                  "node": {
+                    "name": "CSS"
+                  }
+                },
+                {
+                  "size": 6582,
+                  "node": {
+                    "name": "JavaScript"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "id": "R_kgDOJp0UVQ",
+            "name": "goit-js-hw-09",
+            "type": "educational",
+            "stargazerCount": 0,
+            "collaborators": {
+              "totalCount": 1
+            },
+            "mentionableUsers": {
+              "totalCount": 3
+            },
+            "languages": {
+              "totalCount": 3,
+              "edges": [
+                {
+                  "size": 2775,
+                  "node": {
+                    "name": "HTML"
+                  }
+                },
+                {
+                  "size": 368,
+                  "node": {
+                    "name": "CSS"
+                  }
+                },
+                {
+                  "size": 6339,
+                  "node": {
+                    "name": "JavaScript"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "id": "R_kgDOJrNvIg",
+            "name": "goit-js-hw-10",
+            "type": "educational",
+            "stargazerCount": 0,
+            "collaborators": {
+              "totalCount": 1
+            },
+            "mentionableUsers": {
+              "totalCount": 3
+            },
+            "languages": {
+              "totalCount": 3,
+              "edges": [
+                {
+                  "size": 1654,
+                  "node": {
+                    "name": "HTML"
+                  }
+                },
+                {
+                  "size": 2507,
+                  "node": {
+                    "name": "SCSS"
+                  }
+                },
+                {
+                  "size": 3960,
+                  "node": {
+                    "name": "JavaScript"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "id": "R_kgDOJtpbxg",
+            "name": "goit-js-hw-11",
+            "type": "individual",
+            "stargazerCount": 1,
+            "collaborators": {
+              "totalCount": 1
+            },
+            "mentionableUsers": {
+              "totalCount": 3
+            },
+            "languages": {
+              "totalCount": 4,
+              "edges": [
+                {
+                  "size": 2411,
+                  "node": {
+                    "name": "HTML"
+                  }
+                },
+                {
+                  "size": 5652,
+                  "node": {
+                    "name": "SCSS"
+                  }
+                },
+                {
+                  "size": 9871,
+                  "node": {
+                    "name": "JavaScript"
+                  }
+                },
+                {
+                  "size": 738,
+                  "node": {
+                    "name": "Handlebars"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "id": "R_kgDOJytD_w",
+            "name": "tasty-treats-team-project",
+            "type": "team",
+            "stargazerCount": 6,
+            "collaborators": {
+              "totalCount": 12
+            },
+            "mentionableUsers": {
+              "totalCount": 12
+            },
+            "languages": {
+              "totalCount": 4,
+              "edges": [
+                {
+                  "size": 27070,
+                  "node": {
+                    "name": "HTML"
+                  }
+                },
+                {
+                  "size": 70690,
+                  "node": {
+                    "name": "SCSS"
+                  }
+                },
+                {
+                  "size": 58423,
+                  "node": {
+                    "name": "JavaScript"
+                  }
+                },
+                {
+                  "size": 18677,
+                  "node": {
+                    "name": "Handlebars"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "id": "R_kgDOJ9w3pw",
+            "name": "goit-react-hw-01-components",
+            "type": "educational",
+            "stargazerCount": 0,
+            "collaborators": {
+              "totalCount": 1
+            },
+            "mentionableUsers": {
+              "totalCount": 1
+            },
+            "languages": {
+              "totalCount": 3,
+              "edges": [
+                {
+                  "size": 4814,
+                  "node": {
+                    "name": "HTML"
+                  }
+                },
+                {
+                  "size": 10013,
+                  "node": {
+                    "name": "JavaScript"
+                  }
+                },
+                {
+                  "size": 447,
+                  "node": {
+                    "name": "CSS"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "id": "R_kgDOKDdTfQ",
+            "name": "goit-react-hw-02-feedback",
+            "type": "educational",
+            "stargazerCount": 0,
+            "collaborators": {
+              "totalCount": 1
+            },
+            "mentionableUsers": {
+              "totalCount": 1
+            },
+            "languages": {
+              "totalCount": 3,
+              "edges": [
+                {
+                  "size": 4812,
+                  "node": {
+                    "name": "HTML"
+                  }
+                },
+                {
+                  "size": 5864,
+                  "node": {
+                    "name": "JavaScript"
+                  }
+                },
+                {
+                  "size": 422,
+                  "node": {
+                    "name": "CSS"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "id": "R_kgDOKDi5MQ",
+            "name": "goit-react-hw-02-phonebook",
+            "type": "educational",
+            "stargazerCount": 1,
+            "collaborators": {
+              "totalCount": 1
+            },
+            "mentionableUsers": {
+              "totalCount": 1
+            },
+            "languages": {
+              "totalCount": 3,
+              "edges": [
+                {
+                  "size": 4813,
+                  "node": {
+                    "name": "HTML"
+                  }
+                },
+                {
+                  "size": 21042,
+                  "node": {
+                    "name": "JavaScript"
+                  }
+                },
+                {
+                  "size": 422,
+                  "node": {
+                    "name": "CSS"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "id": "R_kgDOKGJh7w",
+            "name": "ruh",
+            "type": "individual",
+            "stargazerCount": 0,
+            "collaborators": {
+              "totalCount": 1
+            },
+            "mentionableUsers": {
+              "totalCount": 1
+            },
+            "languages": {
+              "totalCount": 4,
+              "edges": [
+                {
+                  "size": 442270,
+                  "node": {
+                    "name": "HTML"
+                  }
+                },
+                {
+                  "size": 13566,
+                  "node": {
+                    "name": "JavaScript"
+                  }
+                },
+                {
+                  "size": 787,
+                  "node": {
+                    "name": "SCSS"
+                  }
+                },
+                {
+                  "size": 94868,
+                  "node": {
+                    "name": "CSS"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "id": "R_kgDOKIS_qA",
+            "name": "goit-react-hw-03-phonebook",
+            "type": "educational",
+            "stargazerCount": 0,
+            "collaborators": {
+              "totalCount": 1
+            },
+            "mentionableUsers": {
+              "totalCount": 1
+            },
+            "languages": {
+              "totalCount": 3,
+              "edges": [
+                {
+                  "size": 4813,
+                  "node": {
+                    "name": "HTML"
+                  }
+                },
+                {
+                  "size": 21457,
+                  "node": {
+                    "name": "JavaScript"
+                  }
+                },
+                {
+                  "size": 422,
+                  "node": {
+                    "name": "CSS"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "id": "R_kgDOKJTCVA",
+            "name": "goit-react-hw-03-image-finder",
+            "type": "educational",
+            "stargazerCount": 0,
+            "collaborators": {
+              "totalCount": 1
+            },
+            "mentionableUsers": {
+              "totalCount": 1
+            },
+            "languages": {
+              "totalCount": 3,
+              "edges": [
+                {
+                  "size": 4831,
+                  "node": {
+                    "name": "HTML"
+                  }
+                },
+                {
+                  "size": 22609,
+                  "node": {
+                    "name": "JavaScript"
+                  }
+                },
+                {
+                  "size": 422,
+                  "node": {
+                    "name": "CSS"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "id": "R_kgDOKKf1QQ",
+            "name": "goit-react-hw-04-feedback",
+            "type": "educational",
+            "stargazerCount": 0,
+            "collaborators": {
+              "totalCount": 1
+            },
+            "mentionableUsers": {
+              "totalCount": 1
+            },
+            "languages": {
+              "totalCount": 3,
+              "edges": [
+                {
+                  "size": 4878,
+                  "node": {
+                    "name": "HTML"
+                  }
+                },
+                {
+                  "size": 8960,
+                  "node": {
+                    "name": "JavaScript"
+                  }
+                },
+                {
+                  "size": 422,
+                  "node": {
+                    "name": "CSS"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "id": "R_kgDOKKf96g",
+            "name": "goit-react-hw-04-phonebook",
+            "type": "educational",
+            "stargazerCount": 0,
+            "collaborators": {
+              "totalCount": 1
+            },
+            "mentionableUsers": {
+              "totalCount": 1
+            },
+            "languages": {
+              "totalCount": 3,
+              "edges": [
+                {
+                  "size": 4872,
+                  "node": {
+                    "name": "HTML"
+                  }
+                },
+                {
+                  "size": 21431,
+                  "node": {
+                    "name": "JavaScript"
+                  }
+                },
+                {
+                  "size": 422,
+                  "node": {
+                    "name": "CSS"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "id": "R_kgDOKKmljg",
+            "name": "goit-react-hw-04-image-finder",
+            "type": "individual",
+            "stargazerCount": 0,
+            "collaborators": {
+              "totalCount": 1
+            },
+            "mentionableUsers": {
+              "totalCount": 1
+            },
+            "languages": {
+              "totalCount": 3,
+              "edges": [
+                {
+                  "size": 4831,
+                  "node": {
+                    "name": "HTML"
+                  }
+                },
+                {
+                  "size": 22154,
+                  "node": {
+                    "name": "JavaScript"
+                  }
+                },
+                {
+                  "size": 422,
+                  "node": {
+                    "name": "CSS"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "id": "R_kgDOKMUOtA",
+            "name": "goit-react-hw-05-movies",
+            "type": "individual",
+            "stargazerCount": 1,
+            "collaborators": {
+              "totalCount": 1
+            },
+            "mentionableUsers": {
+              "totalCount": 1
+            },
+            "languages": {
+              "totalCount": 2,
+              "edges": [
+                {
+                  "size": 4792,
+                  "node": {
+                    "name": "HTML"
+                  }
+                },
+                {
+                  "size": 25677,
+                  "node": {
+                    "name": "JavaScript"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "id": "R_kgDOKPHT9g",
+            "name": "goit-react-hw-06-phonebook",
+            "type": "educational",
+            "stargazerCount": 0,
+            "collaborators": {
+              "totalCount": 1
+            },
+            "mentionableUsers": {
+              "totalCount": 1
+            },
+            "languages": {
+              "totalCount": 3,
+              "edges": [
+                {
+                  "size": 4872,
+                  "node": {
+                    "name": "HTML"
+                  }
+                },
+                {
+                  "size": 22201,
+                  "node": {
+                    "name": "JavaScript"
+                  }
+                },
+                {
+                  "size": 422,
+                  "node": {
+                    "name": "CSS"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "id": "R_kgDOKPYrKw",
+            "name": "goit-react-hw-07-phonebook",
+            "type": "educational",
+            "stargazerCount": 0,
+            "collaborators": {
+              "totalCount": 1
+            },
+            "mentionableUsers": {
+              "totalCount": 1
+            },
+            "languages": {
+              "totalCount": 3,
+              "edges": [
+                {
+                  "size": 4872,
+                  "node": {
+                    "name": "HTML"
+                  }
+                },
+                {
+                  "size": 24994,
+                  "node": {
+                    "name": "JavaScript"
+                  }
+                },
+                {
+                  "size": 422,
+                  "node": {
+                    "name": "CSS"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "id": "R_kgDOKQ8EIQ",
+            "name": "goit-react-hw-08-phonebook",
+            "type": "individual",
+            "stargazerCount": 2,
+            "collaborators": {
+              "totalCount": 1
+            },
+            "mentionableUsers": {
+              "totalCount": 1
+            },
+            "languages": {
+              "totalCount": 2,
+              "edges": [
+                {
+                  "size": 4905,
+                  "node": {
+                    "name": "HTML"
+                  }
+                },
+                {
+                  "size": 142645,
+                  "node": {
+                    "name": "JavaScript"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "id": "R_kgDOKzNcqA",
+            "name": "node-hw-01",
+            "type": "educational",
+            "stargazerCount": 1,
+            "collaborators": {
+              "totalCount": 1
+            },
+            "mentionableUsers": {
+              "totalCount": 1
+            },
+            "languages": {
+              "totalCount": 1,
+              "edges": [
+                {
+                  "size": 3263,
+                  "node": {
+                    "name": "JavaScript"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "id": "R_kgDOK0JwQw",
+            "name": "nodejs-homework-02-06",
+            "type": "educational",
+            "stargazerCount": 1,
+            "collaborators": {
+              "totalCount": 1
+            },
+            "mentionableUsers": {
+              "totalCount": 1
+            },
+            "languages": {
+              "totalCount": 1,
+              "edges": [
+                {
+                  "size": 22505,
+                  "node": {
+                    "name": "JavaScript"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "id": "R_kgDOK45HWQ",
+            "name": "HEALTH_EN",
+            "type": "team",
+            "stargazerCount": 4,
+            "collaborators": {
+              "totalCount": 10
+            },
+            "mentionableUsers": {
+              "totalCount": 10
+            },
+            "languages": {
+              "totalCount": 2,
+              "edges": [
+                {
+                  "size": 5087,
+                  "node": {
+                    "name": "HTML"
+                  }
+                },
+                {
+                  "size": 335245,
+                  "node": {
+                    "name": "JavaScript"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "id": "R_kgDOK_6p1w",
+            "name": "HealthyHub",
+            "type": "individual",
+            "stargazerCount": 2,
+            "collaborators": {
+              "totalCount": 2
+            },
+            "mentionableUsers": {
+              "totalCount": 2
+            },
+            "languages": {
+              "totalCount": 2,
+              "edges": [
+                {
+                  "size": 5087,
+                  "node": {
+                    "name": "HTML"
+                  }
+                },
+                {
+                  "size": 350577,
+                  "node": {
+                    "name": "JavaScript"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "id": "R_kgDOLDLsAQ",
+            "name": "HEALTH_EN_BACKEND",
+            "type": "other",
+            "stargazerCount": 1,
+            "collaborators": {
+              "totalCount": 1
+            },
+            "mentionableUsers": {
+              "totalCount": 1
+            },
+            "languages": {
+              "totalCount": 1,
+              "edges": [
+                {
+                  "size": 52012,
+                  "node": {
+                    "name": "JavaScript"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "id": "R_kgDOLGffHw",
+            "name": "react_template",
+            "type": "other",
+            "stargazerCount": 1,
+            "collaborators": {
+              "totalCount": 1
+            },
+            "mentionableUsers": {
+              "totalCount": 1
+            },
+            "languages": {
+              "totalCount": 2,
+              "edges": [
+                {
+                  "size": 4829,
+                  "node": {
+                    "name": "HTML"
+                  }
+                },
+                {
+                  "size": 4418,
+                  "node": {
+                    "name": "JavaScript"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "id": "R_kgDOLG9kRA",
+            "name": "CV_WebSite",
+            "type": "individual",
+            "stargazerCount": 3,
+            "collaborators": {
+              "totalCount": 1
+            },
+            "mentionableUsers": {
+              "totalCount": 1
+            },
+            "languages": {
+              "totalCount": 2,
+              "edges": [
+                {
+                  "size": 5095,
+                  "node": {
+                    "name": "HTML"
+                  }
+                },
+                {
+                  "size": 195057,
+                  "node": {
+                    "name": "JavaScript"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  }
+}

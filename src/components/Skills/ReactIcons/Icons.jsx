@@ -19,21 +19,24 @@ import IconReactNative from "./IconsList/ReactNativeIcon";
 import IconTypeScript from "./IconsList/TypeScriptIcon";
 import IconVue from "./IconsList/VueIcon";
 import IconNext from "./IconsList/NextjsIcon";
+import IconStyled from "./IconsList/StyledIcon";
+import IconGraphql from "./IconsList/GraphQlIcon";
 import Profile from "../../../utils/profile.json";
 import { useEffect, useState, useMemo } from "react";
 
 
 const IconComponents = [
     {"id": "IconHTML", Element: IconHTML}, 
+    {"id": "IconCSS", Element: IconCSS}, 
+    {"id": "IconJavaScript", Element: IconJavaScript}, 
     {"id": "IconReact", Element: IconReact}, 
     {"id": "IconRedux", Element: IconRedux}, 
-    {"id": "IconJavaScript", Element: IconJavaScript}, 
-    {"id": "IconCSS", Element: IconCSS}, 
     {"id": "IconGit", Element: IconGit}, 
     {"id": "IconGitHub", Element: IconGitHub}, 
+    {"id": "IconNode", Element: IconNode }, 
     {"id": "IconVS", Element: IconVS}, 
-    {"id": "IconNode ", Element: IconNode }, 
     {"id": "IconSASS", Element: IconSASS}, 
+    {"id": "IconStyled", Element: IconStyled}, 
     {"id": "IconHandlebars", Element: IconHandlebars}, 
     {"id": "IconMongoDB", Element: IconMongoDB}, 
     {"id": "IconAxios", Element: IconAxios}, 
@@ -41,7 +44,8 @@ const IconComponents = [
     {"id": "IconReactNative", Element: IconReactNative}, 
     {"id": "IconTypeScript", Element: IconTypeScript}, 
     {"id": "IconVue", Element: IconVue}, 
-    {"id": "IconNext", Element: IconNext}, 
+    {"id": "IconNext", Element: IconNext},
+    {"id": "IconGraphql", Element: IconGraphql}
 ];
 
 
