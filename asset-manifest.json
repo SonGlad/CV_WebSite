@@ -1,15 +1,16 @@
 {
   "files": {
     "main.css": "/CV_WebSite/static/css/main.57c72555.css",
-    "main.js": "/CV_WebSite/static/js/main.260df12b.js",
+    "main.js": "/CV_WebSite/static/js/main.a97cc615.js",
     "static/js/906.2f6749e3.chunk.js": "/CV_WebSite/static/js/906.2f6749e3.chunk.js",
     "static/js/687.42bad21f.chunk.js": "/CV_WebSite/static/js/687.42bad21f.chunk.js",
     "static/css/192.7ce2a1b1.chunk.css": "/CV_WebSite/static/css/192.7ce2a1b1.chunk.css",
     "static/js/192.560534a9.chunk.js": "/CV_WebSite/static/js/192.560534a9.chunk.js",
-    "static/js/116.04a2f833.chunk.js": "/CV_WebSite/static/js/116.04a2f833.chunk.js",
+    "static/js/649.4162c6f1.chunk.js": "/CV_WebSite/static/js/649.4162c6f1.chunk.js",
     "static/js/793.8936d37c.chunk.js": "/CV_WebSite/static/js/793.8936d37c.chunk.js",
     "static/js/617.760e3c1b.chunk.js": "/CV_WebSite/static/js/617.760e3c1b.chunk.js",
     "static/js/594.bc2d3782.chunk.js": "/CV_WebSite/static/js/594.bc2d3782.chunk.js",
+    "static/js/623.40d1a560.chunk.js": "/CV_WebSite/static/js/623.40d1a560.chunk.js",
     "static/js/165.fc39fa8d.chunk.js": "/CV_WebSite/static/js/165.fc39fa8d.chunk.js",
     "static/media/my_photo_2.jpg": "/CV_WebSite/static/media/my_photo_2.980671f23713cdb61e8b.jpg",
     "static/media/my_photo_1.jpg": "/CV_WebSite/static/media/my_photo_1.bead1d4cd45f6e8be19d.jpg",
@@ -18,8 +19,11 @@
     "static/media/camera.svg": "/CV_WebSite/static/media/camera.c2c872a8e49e77636f1d3483f8a5b17d.svg",
     "index.html": "/CV_WebSite/index.html",
     "static/media/github.svg": "/CV_WebSite/static/media/github.0bf91b9aef33e192fc3bdc185198844d.svg",
+    "static/media/other.svg": "/CV_WebSite/static/media/other.38de6e76a808af6842118e98d4e6bfe0.svg",
+    "static/media/users.svg": "/CV_WebSite/static/media/users.5c3f622d016a424e25d12c9708951a90.svg",
     "static/media/linkedin.svg": "/CV_WebSite/static/media/linkedin.606282e12ab767864dbb0743c356aff5.svg",
     "static/media/skills.svg": "/CV_WebSite/static/media/skills.fab18eaf1d94bfa8aaf62c07a063fda6.svg",
+    "static/media/total.svg": "/CV_WebSite/static/media/total.6d5fce178218b06ba58d7ed579bc23c2.svg",
     "static/media/portfolio.svg": "/CV_WebSite/static/media/portfolio.d12071f52d5fe00b1ee0a77aa9da08eb.svg",
     "static/media/facebook.svg": "/CV_WebSite/static/media/facebook.ad8b1fc37beefba45afd2835dc2b658c.svg",
     "static/media/close.svg": "/CV_WebSite/static/media/close.9cb1a87627ef012af4a24f1b68fb9e45.svg",
@@ -31,20 +35,22 @@
     "static/media/user.svg": "/CV_WebSite/static/media/user.2f2b242c78701b86c1561356c6e12eb6.svg",
     "static/media/education.svg": "/CV_WebSite/static/media/education.65d53af3a888630e5c67f559448d13e0.svg",
     "static/media/home.svg": "/CV_WebSite/static/media/home.7e18aa95d1d0ea4432c7353133299e7a.svg",
+    "static/media/openfolder.svg": "/CV_WebSite/static/media/openfolder.4a2ba2c20ad688fc32994c961e565d36.svg",
     "main.57c72555.css.map": "/CV_WebSite/static/css/main.57c72555.css.map",
-    "main.260df12b.js.map": "/CV_WebSite/static/js/main.260df12b.js.map",
+    "main.a97cc615.js.map": "/CV_WebSite/static/js/main.a97cc615.js.map",
     "906.2f6749e3.chunk.js.map": "/CV_WebSite/static/js/906.2f6749e3.chunk.js.map",
     "687.42bad21f.chunk.js.map": "/CV_WebSite/static/js/687.42bad21f.chunk.js.map",
     "192.7ce2a1b1.chunk.css.map": "/CV_WebSite/static/css/192.7ce2a1b1.chunk.css.map",
     "192.560534a9.chunk.js.map": "/CV_WebSite/static/js/192.560534a9.chunk.js.map",
-    "116.04a2f833.chunk.js.map": "/CV_WebSite/static/js/116.04a2f833.chunk.js.map",
+    "649.4162c6f1.chunk.js.map": "/CV_WebSite/static/js/649.4162c6f1.chunk.js.map",
     "793.8936d37c.chunk.js.map": "/CV_WebSite/static/js/793.8936d37c.chunk.js.map",
     "617.760e3c1b.chunk.js.map": "/CV_WebSite/static/js/617.760e3c1b.chunk.js.map",
     "594.bc2d3782.chunk.js.map": "/CV_WebSite/static/js/594.bc2d3782.chunk.js.map",
+    "623.40d1a560.chunk.js.map": "/CV_WebSite/static/js/623.40d1a560.chunk.js.map",
     "165.fc39fa8d.chunk.js.map": "/CV_WebSite/static/js/165.fc39fa8d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.57c72555.css",
-    "static/js/main.260df12b.js"
+    "static/js/main.a97cc615.js"
   ]
 }
