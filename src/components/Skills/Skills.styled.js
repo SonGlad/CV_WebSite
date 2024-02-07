@@ -2,7 +2,7 @@ import { styled } from "styled-components";
 
 
 export const SkillsStyled = styled.div`
-    padding: 20px 0 0 0;
+    padding: 20px 10px 0 10px;
 
     @media screen and (min-width: 768px){
         padding: 30px 0 0 0;
@@ -30,7 +30,7 @@ export const SkillsStyled = styled.div`
         line-height: 120%;
         font-weight: 500;
         text-align: center;
-        margin: 40px 0 20px 0;
+        margin: 50px 0 20px 0;
 
         & span{
             color: ${p => p.theme.color.main_color};
@@ -70,7 +70,7 @@ export const SkillsStyled = styled.div`
         }
 
         @media screen and (min-width: 780px) {
-            margin: 15px 0 25px 0;
+            margin: 15px 0 40px 0;
             font-size: 26px;
             font-weight: 500;
         }

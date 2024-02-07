@@ -1,50 +1,48 @@
 import { Chart as ChartJS, ArcElement, Tooltip, Legend } from 'chart.js';
 import { Doughnut } from 'react-chartjs-2';
 import { StyledChart } from './Charts.styled';
-import { useData } from '../../../../../hooks/useData';
+import { useData } from '../../../../hooks/useData';
 
 
 ChartJS.register(ArcElement, Tooltip, Legend);
 
 
-export const HTMLChart = () => {
+export const CSSChart = () => {
   const {individualAndTeamData} = useData();
-  const componentLanguage = "HTML";
+  const componentLanguage = "CSS";
 
 
-  const projectsWithHTML = individualAndTeamData.filter(project => {
+  const projectsWithCSS = individualAndTeamData.filter(project => {
     return project.languages.some(language => language.name === componentLanguage);
   });
-  const projectsCountWithHTML = projectsWithHTML.length;
+  const projectsCountWithCSS = projectsWithCSS.length;
 
+  
 
-
-  const totalSizeAllLanguages = projectsWithHTML.reduce((total, project) => {
+  const totalSizeAllLanguages = projectsWithCSS.reduce((total, project) => {
     return total + project.languages.reduce((sum, language) => sum + language.size, 0);
   }, 0);
 
   
 
-  const totalSizeHTML = projectsWithHTML.reduce((total, project) => {
-    const htmlLanguage = project.languages.find(language => language.name === componentLanguage);
-    return total + (htmlLanguage ? htmlLanguage.size : 0);
+  const totalSizeCSS = projectsWithCSS.reduce((total, project) => {
+    const cssLanguage = project.languages.find(language => language.name === componentLanguage);
+    return total + (cssLanguage ? cssLanguage.size : 0);
   }, 0);
 
 
 
-  const otherSize = totalSizeAllLanguages  - totalSizeHTML;
-  const htmlPercent = Math.round((totalSizeHTML / totalSizeAllLanguages ) * 100);
-  const validPercent = isNaN(htmlPercent) ? 0 : htmlPercent;
-
-
+  const otherSize = totalSizeAllLanguages  - totalSizeCSS;
+  const cssPercent = Math.round((totalSizeCSS / totalSizeAllLanguages ) * 100);
+  const validPercent = isNaN(cssPercent) ? 0 : cssPercent;
 
   const data = {
     datasets: [
       {
-        data: [totalSizeHTML, otherSize],
-        backgroundColor: ['rgba(204, 57, 0, 1)', 'transparent'],
+        data: [totalSizeCSS, otherSize],
+        backgroundColor: ['#cc3900', 'transparent'],
         borderWidth: 0,
-        borderRadius: totalSizeHTML === 0 ? 0 : 6,
+        borderRadius: totalSizeCSS === 0 ? 0 : 6,
       },
     ],
   };
@@ -65,7 +63,7 @@ export const HTMLChart = () => {
   return (
     <StyledChart>
       <div className='chart-wrapper'>
-        <Doughnut data={data} options={options} />
+        <Doughnut data={data} options={options}/>
           <div>
             <p>{validPercent}</p>
             <span>%</span>
@@ -73,7 +71,7 @@ export const HTMLChart = () => {
       </div>
       <div className='description'>
         <p>Language: <span>{componentLanguage}</span></p>
-        <p>Projects: <span>{projectsCountWithHTML}</span></p>
+        <p>Projects: <span>{projectsCountWithCSS}</span></p>
       </div>
     </StyledChart>
   );

@@ -1,50 +1,50 @@
 import { Chart as ChartJS, ArcElement, Tooltip, Legend } from 'chart.js';
 import { Doughnut } from 'react-chartjs-2';
 import { StyledChart } from './Charts.styled';
-import { useData } from '../../../../../hooks/useData';
+import { useData } from '../../../../hooks/useData';
 
 
 ChartJS.register(ArcElement, Tooltip, Legend);
 
 
-export const HandlebarsChart = () => {
+export const SCSSChart = () => {
   const {individualAndTeamData} = useData();
-  const componentLanguage = "Handlebars";
+  const componentLanguage = "SCSS";
 
 
-  const projectsWithHandlebars = individualAndTeamData.filter(project => {
+  const projectsWithSCSS = individualAndTeamData.filter(project => {
     return project.languages.some(language => language.name === componentLanguage);
   });
-  const projectsCountWithHandlebars = projectsWithHandlebars.length;
+  const projectsCountWithSCSS = projectsWithSCSS.length;
 
 
 
-  const totalSizeAllLanguages = projectsWithHandlebars.reduce((total, project) => {
+  const totalSizeAllLanguages = projectsWithSCSS.reduce((total, project) => {
     return total + project.languages.reduce((sum, language) => sum + language.size, 0);
   }, 0);
 
   
 
-  const totalSizeHandlebars = projectsWithHandlebars.reduce((total, project) => {
-    const handlebarsLanguage = project.languages.find(language => language.name === componentLanguage);
-    return total + (handlebarsLanguage ? handlebarsLanguage.size : 0);
+  const totalSizeSCSS = projectsWithSCSS.reduce((total, project) => {
+    const scssLanguage = project.languages.find(language => language.name === componentLanguage);
+    return total + (scssLanguage ? scssLanguage.size : 0);
   }, 0);
 
 
 
-  const otherSize = totalSizeAllLanguages  - totalSizeHandlebars;
-  const handlebarsPercent = Math.round((totalSizeHandlebars / totalSizeAllLanguages ) * 100);
-  const validPercent = isNaN(handlebarsPercent) ? 0 : handlebarsPercent;
+  const otherSize = totalSizeAllLanguages  - totalSizeSCSS;
+  const scssPercent = Math.round((totalSizeSCSS / totalSizeAllLanguages ) * 100);
+  const validPercent = isNaN(scssPercent) ? 0 : scssPercent;
 
 
 
   const data = {
     datasets: [
       {
-        data: [totalSizeHandlebars , otherSize],
+        data: [totalSizeSCSS, otherSize],
         backgroundColor: ['rgba(204, 57, 0, 1)', 'transparent'],
         borderWidth: 0,
-        borderRadius: totalSizeHandlebars === 0 ? 0 : 6,
+        borderRadius: totalSizeSCSS === 0 ? 0 : 6,
       },
     ],
   };
@@ -73,7 +73,7 @@ export const HandlebarsChart = () => {
       </div>
       <div className='description'>
         <p>Language: <span>{componentLanguage}</span></p>
-        <p>Projects: <span>{projectsCountWithHandlebars}</span></p>
+        <p>Projects: <span>{projectsCountWithSCSS}</span></p>
       </div>
     </StyledChart>
   );

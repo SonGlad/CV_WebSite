@@ -1,7 +1,7 @@
 import { SkillsStyled } from "./Skills.styled";
 import { Icons } from "./ReactIcons/Icons";
-import { Projects } from "./ReactIcons/ProjectList/Project";
-import { CodingCharts } from "./ReactIcons/CodingCharts/CodingCharts";
+import { Projects } from "./ProjectList/Project";
+import { CodingCharts } from "./CodingCharts/CodingCharts";
 import githubData  from "../../utils/github.json";
 import { 
     stateRefactoredData, 

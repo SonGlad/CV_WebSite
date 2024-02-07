@@ -26,9 +26,9 @@ const dataSlice = createSlice({
     },
 
 
-    extraReducers: builder => {
+    // extraReducers: builder => {
 
-    }
+    // }
 });
 
 

@@ -13,6 +13,7 @@ export const ProjectStyled = styled.div`
 
         @media screen and (min-width: 768px){
             justify-content: space-between;
+            margin: 40px 0 40px 0;
         }
     }
 
@@ -34,7 +35,13 @@ export const ProjectStyled = styled.div`
         fill: ${p => p.theme.color.light_theme2};
     }
 
-    .colored-area{
+    .hidden .item > .colored-area,
+    .hidden .item > .colored-area div {
+        animation: none;
+    }
+    
+
+    .visible .item > .colored-area {
         border-radius: 20px;
         width: 100%;
         height: 5px;
@@ -42,13 +49,13 @@ export const ProjectStyled = styled.div`
         animation: showBar 0.5s linear forwards;
     }
 
-    .colored-area div{
+    .visible .item > .colored-area div {
         border-radius: 20px;
         position: relative;
         background-color: ${p => p.theme.color.main_color};
         height: 100%;
-        animation: showProgress 1s linear forwards;
         opacity: 0;
+        animation: showProgress 1s linear forwards;
     }
 
     
@@ -115,5 +122,4 @@ export const ProjectStyled = styled.div`
             opacity: 1;
         }
     }
-
 `

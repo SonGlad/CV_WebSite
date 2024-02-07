@@ -6,4 +6,5 @@ export const CodingChartsStyled = styled.div`
     align-items: center;
     justify-content: space-around;
     flex-wrap: wrap;
+    min-height: 335px;
 `

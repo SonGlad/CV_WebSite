@@ -29,7 +29,6 @@ export const StyledChart = styled.div`
       height: 200px;
     }
 
-    
     & div {
       position: absolute;
       display: flex;
@@ -58,6 +57,7 @@ export const StyledChart = styled.div`
     }
   }
 
+
   .description{
     padding: 10px 0;
 
@@ -83,10 +83,14 @@ export const StyledChart = styled.div`
         font-size: 16px;
       }
     }
+
+    & p:last-child {
+      cursor: pointer;
+    }
+
     & span{
       color: ${props => props.theme.color.main_color};
     }
   }
-
 `
 

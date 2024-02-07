@@ -1,17 +1,22 @@
 import { ProjectStyled } from "./Project.styled";
-import {ReactComponent as IndividualIcon} from "../../../../images/svg-icons/user.svg";
-import {ReactComponent as TeamIcon} from "../../../../images/svg-icons/users.svg";
-import {ReactComponent as TotalIcon} from "../../../../images/svg-icons/total.svg";
-import {ReactComponent as OtherIcon} from "../../../../images/svg-icons/other.svg";
-import {ReactComponent as OpenIcon} from "../../../../images/svg-icons/openfolder.svg";
-import {ReactComponent as EducationalIcon} from "../../../../images/svg-icons/education.svg";
-import githubData  from "../../../../utils/github.json";
+import {ReactComponent as IndividualIcon} from "../../../images/svg-icons/user.svg";
+import {ReactComponent as TeamIcon} from "../../../images/svg-icons/users.svg";
+import {ReactComponent as TotalIcon} from "../../../images/svg-icons/total.svg";
+import {ReactComponent as OtherIcon} from "../../../images/svg-icons/other.svg";
+import {ReactComponent as OpenIcon} from "../../../images/svg-icons/openfolder.svg";
+import {ReactComponent as EducationalIcon} from "../../../images/svg-icons/education.svg";
+import githubData  from "../../../utils/github.json";
 import { useCallback, useEffect, useState } from "react";
-import { useData } from "../../../../hooks/useData";
+import { useData } from "../../../hooks/useData";
+import { useInView } from 'react-intersection-observer';
 
 
 
 export const Projects = () => {
+    const { ref, inView } = useInView({
+        triggerOnce: false,
+        threshold: 0.5,
+    });
     const { data: {repositoryOwner: {repositories: { totalCount } }}} = githubData;
     const { refactoredData } = useData();
     const [totalPercent, setTotalPercent] = useState();
@@ -96,7 +101,7 @@ export const Projects = () => {
 
     return(
         <ProjectStyled>
-            <ul className="list">
+            <ul ref={ref} className={`list ${inView ? 'visible' : 'hidden'}`}>
                 <li className="item">
                     <div className="descr-cont">
                         <TotalIcon className="item-svg" width={20} height={20}/>
