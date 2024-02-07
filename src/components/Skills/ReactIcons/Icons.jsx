@@ -55,7 +55,7 @@ export const Icons = () => {
 
 
     const newIconComponents = useMemo(() => {
-        return IconComponents.map((IconComponent) => {
+        return IconComponents.map((IconComponent, index) => {
             const id = IconComponent.id; 
             const skill = skills.find((skill) => skill.id === id);
     
@@ -70,6 +70,7 @@ export const Icons = () => {
                 Element: IconComponent.Element,
                 value,
                 link,
+                index,
             };
         }).filter(({ value, link }) => value !== undefined && link !== undefined);
     }, [skills]);
@@ -82,20 +83,22 @@ export const Icons = () => {
 
     return(
         <IconsStyledList>
-            {components.map(({id, Element, value, link}) => (
-                <li key={id} className="icons-list">
-                    <Element className='icons'/>
-                    <div className="value-cont">
-                        <p className="value-text">{value}</p>
-                        <NavLink className='redirect-link' to={link}
-                            aria-label="redirect link"
-                            target="_blank"
-                            rel="noreferrer noopener">
-                            <LinkIcon className="redirect-icon" width={24} height={24}/>
-                        </NavLink>
-                    </div>
-                </li>
-            ))}
+            <ul className="icon-list">
+                {components.map(({id, Element, value, link, index}) => (
+                    <li key={id} className="icons-item" style={{ '--i': index + 1}}>
+                        <Element className='icons'/>
+                        <div className="value-cont">
+                            <p className="value-text">{value}</p>
+                            <NavLink className='redirect-link' to={link}
+                                aria-label="redirect link"
+                                target="_blank"
+                                rel="noreferrer noopener">
+                                <LinkIcon className="redirect-icon" width={24} height={24}/>
+                            </NavLink>
+                        </div>
+                    </li>
+                ))}
+            </ul>
         </IconsStyledList>
     )
 };

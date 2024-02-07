@@ -1,24 +1,56 @@
 import { styled } from "styled-components";
 
 
-export const LinkListStyled = styled.ul`
-    font-size: 18px;
-    font-weight: 600;
+export const LinkListStyled = styled.div`
 
-    @media screen and (min-width: 768px) {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 20px;
+    .link-list{
+        font-size: 18px;
+        font-weight: 600;
+
+        @media screen and (min-width: 768px) {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+        }
     }
 
+    .hidden .link-list-item{
+        animation: none;
+        visibility: hidden;
+        opacity: 0;
+    }
 
-    .link-list-item{
+    .visible .link-list-item{
         margin-top: 20px;
 
         @media screen and (min-width: 768px){
             margin-top: 0;
             position: relative;
+            opacity: 0;
+            visibility: visible;
+            animation: slideTop 0.4s ease forwards;
+            animation-delay: calc(0.1s * var(--i));
+        }
+
+        & .nav-link {
+            &:after{
+                position: absolute;
+            }
+        }
+    }
+
+ 
+    @keyframes slideTop {
+        0%{
+            visibility: hidden;
+            opacity: 0;
+            transform: translateY(75px);
+        }
+        100%{
+            visibility: visible;
+            opacity: 1;
+            transform: translateY(0px);
         }
     }
 
@@ -33,7 +65,6 @@ export const LinkListStyled = styled.ul`
 
         @media screen and (min-width: 768px){
             &:after{
-                position: absolute;
                 content: '';
                 width: 100%;
                 height: 3px;

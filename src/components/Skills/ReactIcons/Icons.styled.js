@@ -1,14 +1,17 @@
 import { styled } from "styled-components";
 
 
-export const IconsStyledList = styled.ul`
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 30px;
-    flex-wrap: wrap;
+export const IconsStyledList = styled.div`
 
-    .icons-list{
+    .icon-list{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+        flex-wrap: wrap;
+    }
+
+    .icons-item{
         border-radius: 15px;
         padding: 10px;
         display: flex;
@@ -19,6 +22,9 @@ export const IconsStyledList = styled.ul`
         box-shadow: 0px 0px 10px 10px rgba(0,0,2,0.5);
         position: relative;
         overflow: hidden;
+        opacity: 0;
+        animation: zoomIn .5s ease forwards;
+        animation-delay: calc(0.1s * var(--i));
 
         @media screen and (min-width: 768px){
             width: 150px;
@@ -31,6 +37,17 @@ export const IconsStyledList = styled.ul`
         }
     }
 
+    @keyframes zoomIn {
+        0%{
+            scale: 0.3;
+            opacity: 0;
+        }
+        100%{
+            scale: 1;
+            opacity: 1;
+        }
+    }
+
     .icons{
         fill: ${p => p.theme.color.text_color};
         width: 50px;
@@ -39,7 +56,7 @@ export const IconsStyledList = styled.ul`
         transition: transform ${p => p.theme.transition.main_transition};
     }
 
-    .icons-list:hover .icons{
+    .icons-item:hover .icons{
         transform: scale(1.3);
     }
 
@@ -66,7 +83,7 @@ export const IconsStyledList = styled.ul`
         }
     }
 
-    .icons-list:hover .value-cont{
+    .icons-item:hover .value-cont{
         transform: translateY(0px);
     }
     

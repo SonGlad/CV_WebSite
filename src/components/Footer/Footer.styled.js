@@ -126,8 +126,17 @@ export const FooterStyled = styled.footer`
     .img-active{
         top: 0%;
         left: 0%;
-        transform: translate(30px, -500%) scale(10);
-        
+        transform: translate(-50%, -350%) scale(5);
+
+        @media screen and (min-width: 400px){
+            transform: translate(30%, -400%) scale(6);
+        }
+        @media screen and (min-width: 500px){
+            transform: translate(140%, -400%) scale(7);
+        }
+        @media screen and (min-width: 634px){
+            transform: translate(250%, -400%) scale(8);
+        }
         @media screen and (min-width: 768px){
             transform: translate(-150%, -450%) scale(10);
         }

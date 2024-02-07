@@ -17,20 +17,41 @@ export const StyledHeader = styled.header`
         justify-content: space-between;
     }
 
-    .header-logo{
+    .hidden .header-container{
+        animation: none;
+    }
+
+    .visible .header-logo{
         fill: ${p => p.theme.color.text_color};
         transition: fill ${p => p.theme.transition.main_transition};
+        animation: slideLeft 1s ease forwards;
 
         &:hover, &:focus{
             fill: ${p => p.theme.color.main_color};
         } 
     }
 
-    .mob-menu-btn{
+    @keyframes slideLeft {
+        0%{
+            opacity: 0;
+            transform: translateX(-100px);
+        }
+        100%{
+            opacity: 1;
+            transform: translateX(0px);
+        }
+    }
+
+    .hidden .mob-menu-btn{
+        animation: none;
+    }
+
+    .visible .mob-menu-btn{
         display: flex;
         align-items: center;
         justify-content: center;
         background-color: transparent;
+        animation: slideRight 1s ease forwards;
        
         .burger-icon{
             stroke: ${p => p.theme.color.text_color};
@@ -43,6 +64,17 @@ export const StyledHeader = styled.header`
 
         @media screen and (min-width: 768px){
             display: none;
+        }
+    }
+
+    @keyframes slideRight {
+        0%{
+            opacity: 0;
+            transform: translateX(100px);
+        }
+        100%{
+            opacity: 1;
+            transform: translateX(0px);
         }
     }
 

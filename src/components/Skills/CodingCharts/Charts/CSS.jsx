@@ -2,6 +2,7 @@ import { Chart as ChartJS, ArcElement, Tooltip, Legend } from 'chart.js';
 import { Doughnut } from 'react-chartjs-2';
 import { StyledChart } from './Charts.styled';
 import { useData } from '../../../../hooks/useData';
+import { NavLink } from 'react-router-dom';
 
 
 ChartJS.register(ArcElement, Tooltip, Legend);
@@ -71,7 +72,28 @@ export const CSSChart = () => {
       </div>
       <div className='description'>
         <p>Language: <span>{componentLanguage}</span></p>
-        <p>Projects: <span>{projectsCountWithCSS}</span></p>
+        <div className='parrent-for-popup'>
+          <p>Projects: <span>{projectsCountWithCSS}</span></p>
+          <div className='pop-up-cont css-up-cont'>
+            {projectsWithCSS.length === 0 ? (
+                <p>no projects yet</p>
+              ) : (
+              <ul>
+                {projectsWithCSS.map(({id, name, url}) => (
+                  <li key={id}>
+                    <NavLink className='nav-link' to={url}
+                      aria-label="link"
+                      target="_blank"
+                      rel="noreferrer noopener"
+                    >
+                      {name}
+                    </NavLink>
+                  </li>
+                ))}
+              </ul>
+            )}
+          </div>
+        </div>
       </div>
     </StyledChart>
   );

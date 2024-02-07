@@ -22,7 +22,8 @@ export const SkillsComponent = () => {
     const repositoriesData = nodes.map(({ 
         id, 
         name,
-        type, 
+        type,
+        url, 
         stargazerCount, 
         collaborators:{ totalCount: collaborators},
         mentionableUsers:{totalCount: mentionableUsers},
@@ -31,6 +32,7 @@ export const SkillsComponent = () => {
         id, 
         name,
         type,
+        url,
         stargazerCount,
         collaborators,
         mentionableUsers,
