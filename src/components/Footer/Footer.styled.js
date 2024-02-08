@@ -8,29 +8,65 @@ export const FooterStyled = styled.footer`
         padding: 40px 0;
 
         @media screen and (min-width: 768px){
-            padding: 40px 0 20px 0;
+            padding: 40px 0 40px 0;
             display: flex;
             align-items: center;
             justify-content: space-between;
             flex-wrap: wrap;
             gap: 30px;
         }
+        @media screen and (min-width: 981px) {
+            padding: 40px 0 20px 0;
+        }
     }
 
-    .footer-left-cont{
+    .hidden .footer-left-cont,
+    .hidden .footer-center-cont,
+    .hidden .footer-right-cont{
+        animation: none;
+    }
+    
+
+    .visible .footer-left-cont{
         display: flex;
         align-items: center;
         gap: 10px;
         margin-bottom: 20px;
         margin-right: 30px;
+        opacity: 0;
+        animation: slideLeft 1s ease forwards;
 
+        
         @media screen and (min-width: 768px){
             margin-bottom: 0;
+            animation: slideTopRight 1s ease forwards;
         }
         @media screen and (min-width: 981px){
             margin-right: 0;
         }         
     }
+
+    @keyframes slideLeft {
+       0%{
+        opacity: 0;
+        transform: translateX(100px);
+       }
+       100%{
+        opacity: 1;
+        transform: translateX(0px);
+       } 
+    }
+    @keyframes slideTopRight {
+       0%{
+        opacity: 0;
+        transform: translate(-50px, 20px);
+       }
+       100%{
+        opacity: 1;
+        transform: translate(0, 0);
+       } 
+    }
+
 
     @media screen and (min-width: 768px){
        .order-one{
@@ -85,22 +121,50 @@ export const FooterStyled = styled.footer`
         }
     }
 
-    .footer-center-cont{
+    .visible .footer-center-cont{
         display: flex;
         align-items: center;
         margin-bottom: 20px;
-
+        opacity: 0;
+        animation: slideRight 1s ease forwards;
+        
         & span{
             color: ${p => p.theme.color.main_color};
             font-weight: 600;
         }
-
+        
         @media screen and (min-width: 768px){
             margin-bottom: 0;
             margin-left: auto;
             margin-right: auto;
+            animation: slideTop 1s ease forwards;
         }
     }
+
+
+    @keyframes slideRight {
+       0%{
+        opacity: 0;
+        transform: translateX(-100px);
+       }
+       100%{
+        opacity: 1;
+        transform: translateX(0px);
+       } 
+    }
+    @keyframes slideTop {
+       0%{
+        opacity: 0;
+        transform: translate(0px, 30px);
+        scale: 0.7;
+       }
+       100%{
+        opacity: 1;
+        transform: translate(0, 0);
+        scale: 1;
+       } 
+    }
+    
 
     .cont-for-foo-pic{
         position: relative;
@@ -142,11 +206,40 @@ export const FooterStyled = styled.footer`
         }
     }
 
-    .footer-right-cont{
+    .visible .footer-right-cont{
         display: flex;
         align-items: center;
         gap: 20px;
+        opacity: 0;
+        animation: slideContLeft 1s ease forwards;
+
+        @media screen and (min-width: 768px){
+            animation: slideTopLeft 1s ease forwards;
+        }
     }
+
+
+    @keyframes slideContLeft {
+       0%{
+        opacity: 0;
+        transform: translateX(100px);
+       }
+       100%{
+        opacity: 1;
+        transform: translateX(0px);
+       } 
+    }
+    @keyframes slideTopLeft {
+       0%{
+        opacity: 0;
+        transform: translate(50px, 20px);
+       }
+       100%{
+        opacity: 1;
+        transform: translate(0, 0);
+       } 
+    }
+
 
     .footer-social-list{
         display: flex;

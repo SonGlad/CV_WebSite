@@ -31,6 +31,8 @@ export const AboutStyled = styled.div`
     .about-cont,
     .coding-container-right{
         margin-bottom: 30px;
+        animation: aboutZoomIn 1s ease forwards;
+        opacity: 0;
 
         @media screen and (min-width: 768px){
             display: flex;
@@ -39,8 +41,21 @@ export const AboutStyled = styled.div`
         }
     }
 
+    @keyframes aboutZoomIn {
+        0%{
+            opacity: 0;
+            scale: 0.4;
+        }
+        100%{
+            opacity: 1;
+            scale: 1;
+        }
+    }
+
     .coding-container-left{
         margin-bottom: 30px;
+        animation: aboutZoomOut 1s ease forwards;
+        opacity: 0;
 
         @media screen and (min-width: 768px){
             display: flex;
@@ -56,12 +71,22 @@ export const AboutStyled = styled.div`
         }
     }
 
-    .shadow0{
+    @keyframes aboutZoomOut {
+        0%{
+            opacity: 0;
+            scale: 1.6;
+        }
+        100%{
+            opacity: 1;
+            scale: 1;
+        }
+    }
+
+    .shadow0 {
         margin: 0 auto;
         width: 300px;
         height: 300px;
         margin-bottom: 20px;
-
         
         @media screen and (min-width: 768px) {
             margin-bottom: 0;

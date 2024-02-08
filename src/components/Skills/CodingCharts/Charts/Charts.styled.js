@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import backgroundtextImage from '../../../../images/images/animated-text-fill.png';
 
 
 export const StyledChart = styled.div`
@@ -99,6 +100,32 @@ export const StyledChart = styled.div`
     cursor: pointer;
     width: 90px;
   }
+
+
+  .parrent-for-popup p{
+    background: url(${backgroundtextImage}) repeat-y;
+	  -webkit-background-clip: text;
+	  background-clip: text;
+
+    -webkit-text-fill-color: transparent;
+    animation: rolling 80s linear infinite;
+    transform: translate3d(0,0,0);
+    backface-visibility: hidden;
+
+	  -webkit-animation: rolling 80s linear infinite;
+    -webkit-transform: translate3d(0,0,0);
+	  -webkit-backface-visibility: hidden;
+  }
+
+  @keyframes rolling {
+    0% { background-position: 0% 50%; }
+    100% { background-position: 100% 50%; }
+  }
+  @-webkit-keyframes rolling {
+    0% { background-position: 0% 50%; }
+    100% { background-position: 100% 50%; }
+  }
+
 
   .pop-up-cont{
     position: absolute;

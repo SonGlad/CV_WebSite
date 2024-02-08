@@ -29,7 +29,7 @@ export const LinkListStyled = styled.div`
             position: relative;
             opacity: 0;
             visibility: visible;
-            animation: slideTop 0.4s ease forwards;
+            animation: slideLinkTop 0.4s ease forwards;
             animation-delay: calc(0.1s * var(--i));
         }
 
@@ -41,7 +41,7 @@ export const LinkListStyled = styled.div`
     }
 
  
-    @keyframes slideTop {
+    @keyframes slideLinkTop {
         0%{
             visibility: hidden;
             opacity: 0;

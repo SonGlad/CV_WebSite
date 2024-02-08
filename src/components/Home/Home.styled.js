@@ -29,6 +29,7 @@ export const HomeStyledContainer = styled.div`
     .left-container{
         width: 100%;
         padding: 50px 0;
+        overflow: hidden;
 
         @media screen and (min-width: 768px){
             padding: 100px 0 50px 0;
@@ -41,11 +42,24 @@ export const HomeStyledContainer = styled.div`
         line-height: 120%;
         font-weight: 700;
         text-align: center;
+        animation: titleSlideDown 1s ease forwards;
+        opacity: 0;
 
         @media screen and (min-width: 768px){
             text-align: start;
         }
     }
+
+    @keyframes titleSlideDown {
+        0%{
+            opacity: 0;
+            transform: translateY(-100%);
+        }
+        100%{
+            opacity: 1;
+            transform: translateY(0px);
+        }
+    }   
 
 
     .title-animated{
@@ -56,6 +70,8 @@ export const HomeStyledContainer = styled.div`
         text-shadow: 0px 0px 40px ${p => p.theme.main_color_rust_lighter};
         text-align: center;
         height: 112px;
+        animation: titleSlideRight 1s ease forwards;
+        opacity: 0;
 
         @media screen and (min-width: 525px){
             height: auto;
@@ -75,6 +91,18 @@ export const HomeStyledContainer = styled.div`
             font-weight: 700;
         }
     }
+
+    @keyframes titleSlideRight {
+        0%{
+            opacity: 0;
+            transform: translateX(-100%);
+        }
+        100%{
+            opacity: 1;
+            transform: translateX(0px);
+        }
+    }  
+
 
     .Typewriter__cursor{
         font-size: 44px;
@@ -96,10 +124,36 @@ export const HomeStyledContainer = styled.div`
 
     .upper-text{
         margin-bottom: 15px;
+        animation: upperTextSlideTop 1s ease forwards;
+        opacity: 0;
+    }
+
+    @keyframes upperTextSlideTop {
+        0%{
+            opacity: 0;
+            transform: translateY(100%);
+        }
+        100%{
+            opacity: 1;
+            transform: translateY(0);
+        }
     }
 
     .lower-text{
         margin-bottom: 60px;
+        animation: lowerTextSlideLeft 1s 0.2s ease forwards;
+        opacity: 0;
+    }
+
+    @keyframes lowerTextSlideLeft {
+        0%{
+            opacity: 0;
+            transform: translateX(50%);
+        }
+        100%{
+            opacity: 1;
+            transform: translateX(0);
+        }
     }
 
     .btn-cont{
@@ -139,6 +193,8 @@ export const HomeStyledContainer = styled.div`
     }
 
     .right-container{
+        animation: homePhotoAppear 2s ease forwards;
+        opacity: 0;
 
         @media screen and (max-width: 767px){
             width: 100%;
@@ -159,6 +215,15 @@ export const HomeStyledContainer = styled.div`
        -webkit-box-shadow: 20px 0px 25px 40px rgba(8, 27, 41, 1) inset;
         -moz-box-shadow: 20px 0px 25px 40px rgba(8, 27, 41, 1) inset;
         box-shadow: 20px 0px 25px 40px rgba(8, 27, 41, 1) inset;
+    }
+
+    @keyframes homePhotoAppear {
+        0%{
+            opacity: 0;
+        }
+        100%{
+            opacity: 1;
+        }
     }
 
 `

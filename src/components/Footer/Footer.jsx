@@ -9,11 +9,17 @@ import { ReactComponent as LinkedinIcon } from "../../images/svg-icons/linkedin.
 import Logo from "../../images/images/iReX_logo.png";
 import Profile from "../../utils/profile.json";
 import { useCallback, useEffect, useRef, useState } from "react";
-
+import { useInView } from 'react-intersection-observer';
 
 
 
 export const Footer = () => {
+    const { ref, inView } = useInView({
+        triggerOnce: false,
+        threshold: 0.1,
+    });
+
+
     const {github_link, facebook_link, linkedin_link, telegram_link} = Profile;
     const [footerPicture, setFooterPicture] = useState(false);
     const contRef = useRef();
@@ -62,7 +68,7 @@ export const Footer = () => {
     return (
         <FooterStyled>
             <Container>
-                <div className="footer-container">
+                <div ref={ref} className={`footer-container ${inView ? 'visible' : 'hidden'}`}>
                     <div className="footer-left-cont order-one">
                         <p className="footer-text">Designed & Developed by</p>
                         <NavLink className="footer-link" to="/">

@@ -9,10 +9,60 @@ export const EducationStyled = styled.div`
     }
 
     .education-list{
-        border-left: 2px solid ${p => p.theme.color.main_color};
         margin-left: 10px;
         padding-left: 15px;
+        position: relative;
+
+        &:before{
+            position: absolute;
+            content: '';
+            top: 0;
+            left: 0;
+            background-color: ${p => p.theme.color.main_color};
+            width: 2px;
+            animation: slideDown 2s 2.2s ease forwards;
+        }
     }
+
+    @keyframes slideDown {
+        0%{
+            height: 0%;
+        }
+        100%{
+            height: 100%;
+        }
+        
+    }
+
+
+    .education-item{
+        position: relative;
+   
+        &:after{
+            position: absolute;
+            top: 0;
+            left: 0;
+            content: '';
+            width: 15px;
+            height: 15px;
+            background-color: ${p => p.theme.color.main_color};
+            border-radius: 50%;
+            transform: translate(-22px, 0px);
+            animation: afterAppear .1s ease forwards;
+            animation-delay: calc((0.4s * var(--i) + 2.2s));
+            opacity: 0;
+        }
+    }
+
+    @keyframes afterAppear  {
+        0%{
+            opacity: 1;
+        }
+        100%{
+            opacity: 1;
+        }
+    }
+
 
     .education-cont{
         margin-bottom: 60px;
@@ -29,22 +79,12 @@ export const EducationStyled = styled.div`
     .education-text-cont{
         text-align: justify;
         margin-bottom: 20px;
-        position: relative;
         border: 2px solid ${p => p.theme.color.main_color};
         border-radius: 10px;
         padding: 10px;
-
-        &:after{
-            position: absolute;
-            top: 0;
-            left: 0;
-            content: '';
-            width: 15px;
-            height: 15px;
-            background-color: ${p => p.theme.color.main_color};
-            border-radius: 50%;
-            transform: translate(-25px, -2px);
-        }
+        animation: slideContent 0.9s ease forwards;
+        animation-delay: calc(0.3s * var(--i));
+        opacity: 0;
 
         @media screen and (min-width: 768px){
             max-width: 50%;
@@ -52,6 +92,22 @@ export const EducationStyled = styled.div`
             margin-bottom: 0;
         }
     }
+
+
+    @keyframes slideContent  {
+        0%{
+            opacity: 0;
+            transform: translateX(-500px);
+        }
+        100%{
+            opacity: 1;
+            transform: translateX(0px);
+        }
+    }
+
+
+
+
 
     .education-title{
         font-size: 56px;

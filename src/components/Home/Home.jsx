@@ -26,7 +26,7 @@ export const HomeSection = () => {
     return (
         <HomeStyledContainer>
             <div className="left-container order-one">
-                <h1 className="title">Hi, I'm <span className="title-span">{name}</span></h1>
+                <h1 className="title">Hi, I'm <span>{name}</span></h1>
                 <div className="text-animated-cont">
                     <h2 className="title-animated">{TypeWriterFunction()}</h2>
                 </div>

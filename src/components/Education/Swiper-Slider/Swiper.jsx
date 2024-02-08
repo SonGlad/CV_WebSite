@@ -43,7 +43,7 @@ export const SwiperComponent = ({id, img_url, index}) => {
 
 
     return (
-        <SwiperStyled>
+        <SwiperStyled style={{'--i': 2 * index + 2}}>
             <Swiper
                 direction={'vertical'}
                 loop={true}

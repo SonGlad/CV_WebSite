@@ -10,6 +10,20 @@ export const SwiperStyled = styled.div`
     max-height: 295px;
     cursor: grab;
     position: relative;
+    animation: slideSwiper 0.9s ease forwards;
+    animation-delay: calc(0.3s * var(--i));
+    opacity: 0;
+
+    @keyframes slideSwiper  {
+        0%{
+            opacity: 0;
+            transform: translateX(500px);
+        }
+        100%{
+            opacity: 1;
+            transform: translateX(0px);
+        }
+    }
     
 
     @media screen and (min-width: 768px) {

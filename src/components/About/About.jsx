@@ -39,7 +39,7 @@ export const AboutSection = () => {
                     <div className='shadow1 order-one'>
                         <LeftAnimation />
                     </div>
-                    <div className='shadow-div  order-two'>
+                    <div className='shadow-div order-two'>
                         <p className="about-content-text">{about2}</p>
                     </div>
                 </div>

@@ -24,14 +24,14 @@ export const StyledHeader = styled.header`
     .visible .header-logo{
         fill: ${p => p.theme.color.text_color};
         transition: fill ${p => p.theme.transition.main_transition};
-        animation: slideLeft 1s ease forwards;
+        animation: slideLogoRight 1s ease forwards;
 
         &:hover, &:focus{
             fill: ${p => p.theme.color.main_color};
         } 
     }
 
-    @keyframes slideLeft {
+    @keyframes slideLogoRight {
         0%{
             opacity: 0;
             transform: translateX(-100px);
@@ -51,7 +51,7 @@ export const StyledHeader = styled.header`
         align-items: center;
         justify-content: center;
         background-color: transparent;
-        animation: slideRight 1s ease forwards;
+        animation: slideButtonLeft 1s ease forwards;
        
         .burger-icon{
             stroke: ${p => p.theme.color.text_color};
@@ -67,7 +67,7 @@ export const StyledHeader = styled.header`
         }
     }
 
-    @keyframes slideRight {
+    @keyframes slideButtonLeft {
         0%{
             opacity: 0;
             transform: translateX(100px);

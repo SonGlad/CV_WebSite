@@ -16,9 +16,9 @@ export const EducationComponent = () => {
             <h1 className="education-title"><span>My </span>Journey</h1>
             <ul className="education-list">
                 {education.map(({ id, year, degree, university, description, img_url, web_link, social_link}, index) => (
-                    <li className="education-item" key={id}>
+                    <li className="education-item" key={id} style={{'--i': index}}>
                         <div className="education-cont">
-                            <div className="education-text-cont">
+                            <div className="education-text-cont" style={{'--i': 2 * index + 1}}>
                                 <div className="education">
                                     <CalendarIcon className="calendar-icon" width={16} height={16}/>
                                     <p className="year">{year}</p>
