@@ -2,10 +2,10 @@ import styled from "styled-components";
 
 
 export const PortfolioStyled = styled.div`
-    padding: 20px 10px 0 10px;
+    padding: 20px 10px 10px 10px;
 
     @media screen and (min-width: 768px){
-        padding: 30px 0 0 0;
+        padding: 30px 0 10px 0;
     }
 
     .potfolio-title{
@@ -13,7 +13,7 @@ export const PortfolioStyled = styled.div`
         line-height: 120%;
         font-weight: 600;
         text-align: center;
-        margin-bottom: 40px;
+        margin-bottom: 20px;
 
         & span{
             color: ${p => p.theme.color.main_color};
@@ -31,7 +31,7 @@ export const PortfolioStyled = styled.div`
         align-items: center;
         justify-content: center;
         gap: 40px;
-        margin-bottom: 40px;
+        margin-bottom: 20px;
         flex-wrap: wrap;
     }
 
@@ -41,8 +41,9 @@ export const PortfolioStyled = styled.div`
         padding: 10px 20px;
         border-radius: 15px;
         background-color: ${p => p.theme.color.text_color};
-        color: ${p => p.theme.color.main_color};
-        box-shadow: 0px 0px 10px 10px rgba(0,0,0,0.3) inset;
+        color: ${p => p.theme.color.black};
+        box-shadow: 0px 0px 10px 10px rgba(0,0,0,0.3) inset,
+                    0px 0px 0px 0px rgba(0,0,0,0.3);
         transition: color ${p => p.theme.transition.main_transition}, 
                     background-color ${p => p.theme.transition.main_transition},
                     box-shadow ${p => p.theme.transition.main_transition};
@@ -51,7 +52,8 @@ export const PortfolioStyled = styled.div`
         &:focus{
             background-color: ${p => p.theme.color.main_color};
             color: ${p => p.theme.color.text_color};
-            box-shadow: 0px 0px 10px 10px rgba(0,0,0,0.3);
+            box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.3) inset,
+                        0px 0px 10px 10px rgba(0,0,0,0.3);
         }
 
         @media screen and (min-width: 768px){
@@ -61,91 +63,81 @@ export const PortfolioStyled = styled.div`
         }
     }
 
-
-
-
-
-
-
-
-
-
-
-    .cols{
-        display: -webkit-box;
-        display: -ms-flexbox;
+    .cols {
         display: flex;
-        -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
         justify-content: center;
+        gap: 32px;
+
+        @media screen and (min-width: 480px){
+            gap: 17px;
+        }
+        @media screen and (min-width: 900px){
+            gap: 29px;
+        }
+        @media screen and (min-width: 1440px){
+            gap: 36px;
+        }
     }
 
-    .col{
-    width: calc(25% - 2rem);
-    margin: 1rem;
-    cursor: pointer;
+    .col {
+        width: 100%;
+        
+        @media screen and (min-width: 480px){
+            max-width: 48%;
+        }
+        @media screen and (min-width: 900px){
+            max-width: 31%;
+        }
+        @media screen and (min-width: 1440px){
+            max-width: 25%;
+            max-height: 280px;
+        }
     }
 
-    .container{
-    -webkit-transform-style: preserve-3d;
-            transform-style: preserve-3d;
-        -webkit-perspective: 1000px;
-                perspective: 1000px;
+    .container {
+        transform-style: preserve-3d;
+        perspective: 1000px;
     }
 
     .front,
-    .back{
-    background-size: cover;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.25);
-    border-radius: 10px;
+    .back {
+        background-size: cover;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.25);
         background-position: center;
-        -webkit-transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
-        transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
-        -o-transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
-        transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
-        transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1), -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
-        -webkit-backface-visibility: hidden;
-                backface-visibility: hidden;
         text-align: center;
-        min-height: 280px;
+        min-height: 260px;
         height: auto;
         border-radius: 10px;
-        color: #fff;
-        font-size: 1.5rem;
+        color: ${p => p.theme.color.text_color};
+        font-size: 24px;
+        backface-visibility: hidden;
+        transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
     }
 
     .back{
         background: #cedce7;
-        background: -webkit-linear-gradient(45deg,  #cedce7 0%,#596a72 100%);
-        background: -o-linear-gradient(45deg,  #cedce7 0%,#596a72 100%);
-        background: linear-gradient(45deg,  #cedce7 0%,#596a72 100%);
+        background: linear-gradient(45deg,  #cedce7 0%, #596a72 100%);
     }
 
     .front:after{
+        display: block;
         position: absolute;
+        content: '';
         top: 0;
         left: 0;
         z-index: 1;
         width: 100%;
         height: 100%;
-        content: '';
-        display: block;
-        opacity: .6;
-        background-color: #000;
-        -webkit-backface-visibility: hidden;
-                backface-visibility: hidden;
+        opacity: 0.6;
+        background-color: ${p => p.theme.color.black};
+        backface-visibility: hidden;
         border-radius: 10px;
     }
 
     .container:hover .front,
     .container:hover .back{
-        -webkit-transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
-        transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
-        -o-transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
         transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
-        transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1), -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
     }
 
     .back{
@@ -156,90 +148,115 @@ export const PortfolioStyled = styled.div`
     }
 
     .inner{
-        -webkit-transform: translateY(-50%) translateZ(60px) scale(0.94);
-                transform: translateY(-50%) translateZ(60px) scale(0.94);
+        transform: translateY(-50%) translateZ(60px) scale(0.94);
         top: 50%;
         position: absolute;
         left: 0;
         width: 100%;
-        padding: 2rem;
-        -webkit-box-sizing: border-box;
-                box-sizing: border-box;
+        padding: 32px;
+        box-sizing: border-box;
         outline: 1px solid transparent;
-        -webkit-perspective: inherit;
-                perspective: inherit;
+        perspective: inherit;
         z-index: 2;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
     }
 
     .container .back{
-        -webkit-transform: rotateY(180deg);
-                transform: rotateY(180deg);
-        -webkit-transform-style: preserve-3d;
-                transform-style: preserve-3d;
+        transform: rotateY(180deg);
+        transform-style: preserve-3d;
     }
 
     .container .front{
-        -webkit-transform: rotateY(0deg);
-                transform: rotateY(0deg);
-        -webkit-transform-style: preserve-3d;
-                transform-style: preserve-3d;
+        transform: rotateY(0deg);
+        transform-style: preserve-3d;
     }
 
     .container:hover .back{
-        -webkit-transform: rotateY(0deg);
-                transform: rotateY(0deg);
-        -webkit-transform-style: preserve-3d;
-                transform-style: preserve-3d;
+        transform: rotateY(0deg);
+        transform-style: preserve-3d;
     }
 
     .container:hover .front{
-        -webkit-transform: rotateY(-180deg);
-                transform: rotateY(-180deg);
-        -webkit-transform-style: preserve-3d;
-                transform-style: preserve-3d;
+        transform: rotateY(-180deg);
+        transform-style: preserve-3d;
     }
 
     .front .inner p{
-        font-size: 2rem;
-        margin-bottom: 2rem;
         position: relative;
+        font-size: 32px;
+        margin-bottom: 32px;
     }
 
     .front .inner p:after{
-    content: '';
-        width: 4rem;
-        height: 2px;
-        position: absolute;
-        background: #C6D4DF;
         display: block;
+        position: absolute;
+        content: '';
+        width: 64px;
+        height: 2px;
+        background: #C6D4DF;
         left: 0;
         right: 0;
         margin: 0 auto;
-        bottom: -.75rem;
+        bottom: -12px;
     }
 
     .front .inner span{
-        color: rgba(255,255,255,0.7);
+        color: rgba(204,57,0,0.8);
         font-family: 'Montserrat';
         font-weight: 300;
     }
 
-    @media screen and (max-width: 64rem){
-        .col{
-            width: calc(33.333333% - 2rem);
+    .back .inner p{
+        display: -webkit-box;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        -webkit-line-clamp: 4;
+        -webkit-box-orient: vertical;
+        margin-bottom: 20px;
+        font-size: 20px;
+        font-weight: 400;
+
+        @media screen and (min-width: 768){
+            font-size: 24px;
+            font-weight: 500;
         }
     }
 
-    @media screen and (max-width: 48rem){
-        .col{
-            width: calc(50% - 2rem);
+    .open-button{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        font-size: 14px;
+        font-weight: 500;
+        padding: 10px 20px;
+        background-color: transparent;
+        color: ${p => p.theme.color.black};
+        box-shadow: 0px 0px 10px 10px rgba(0,0,0,0.3) inset,
+                    0px 0px 0px 0px rgba(0,0,0,0.3);
+        border-radius: 15px;
+        stroke: ${p => p.theme.color.main_color};
+        transition: color ${p => p.theme.transition.main_transition}, 
+                    background-color ${p => p.theme.transition.main_transition},
+                    box-shadow ${p => p.theme.transition.main_transition},
+                    stroke ${p => p.theme.transition.main_transition};
+        @media screen  and (min-width: 768px){
+            font-weight: 700;
+            font-size: 16px;
+            padding: 14px 28px;
+        }
+
+        &:hover, 
+        &:focus{
+            background-color: ${p => p.theme.color.main_color};
+            color: ${p => p.theme.color.text_color};
+            box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.3) inset,
+                        0px 0px 10px 10px rgba(0,0,0,0.3);
+                        
+            stroke: ${p => p.theme.color.text_color};
         }
     }
 
-    @media screen and (max-width: 32rem){
-        .col{
-            width: 100%;
-            margin: 0 0 2rem 0;
-        }
-    }
 `

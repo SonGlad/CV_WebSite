@@ -14,8 +14,13 @@ export const CodingCharts = () => {
     const [containerInView, setContainerInView] = useState(false);
  
 
-    const [refContainer, containerRefInView] = useInView({ triggerOnce: false, threshold: 0.1 });
-  
+    const [refContainer, containerRefInView] = useInView({ 
+        triggerOnce: false, 
+        // threshold: 0.1,
+    });
+    console.log(containerInView);
+
+ 
 
     useEffect(() => {
         if (containerRefInView){

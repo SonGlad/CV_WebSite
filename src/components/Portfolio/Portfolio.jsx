@@ -1,5 +1,6 @@
 import { PortfolioStyled } from "./Portfolio.styled";
-// import BakgroundImg from "../../images/images/bg_image.jpg";
+import BackgroundImg from "../../images/images/bg_image.jpg";
+import {ReactComponent as BookIcon} from "../../images/svg-icons/open-book.svg"
 
 
 
@@ -23,10 +24,10 @@ export const PortfolioSection = () => {
                     <button className="filter-button" type="button">Early</button>
                 </li>
             </ul>
-            {/* <ul className="cols">
-                <li className="col" ontouchstart="this.classList.toggle('hover');">
+            <ul className="cols">
+                <li className="col" >
                     <div className="container">
-                        <div className="front" style={{backgroundImage: `url(${BakgroundImg})`}}>
+                        <div className="front" style={{backgroundImage: `url(${BackgroundImg})`}}>
                             <div className="inner">
                                 <p>Diligord</p>
                                 <span>Lorem ipsum</span>
@@ -35,14 +36,17 @@ export const PortfolioSection = () => {
                         <div className="back">
                             <div className="inner">
                                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit quae suscipit c</p>
-                                <button type="button" className="open-button"></button>
+                                <button type="button" className="open-button">
+                                    <BookIcon className="icon" width={24} height={24}/>
+                                    See More
+                                </button>
                             </div>
                         </div>
                     </div>
                 </li>
-                <li className="col" ontouchstart="this.classList.toggle('hover');">
+                <li className="col">
                     <div className="container">
-                        <div className="front" style={{backgroundImage: `url(${BakgroundImg})`}}>
+                        <div className="front" style={{backgroundImage: `url(${BackgroundImg})`}}>
                             <div className="inner">
                                 <p>Diligord</p>
                                 <span>Lorem ipsum</span>
@@ -51,14 +55,17 @@ export const PortfolioSection = () => {
                         <div className="back">
                             <div className="inner">
                                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit quae suscipit c</p>
-                                <button type="button" className="open-button"></button>
+                                <button type="button" className="open-button">
+                                    <BookIcon className="icon" width={24} height={24}/>
+                                    See More
+                                </button>
                             </div>
                         </div>
                     </div>
                 </li>
-                <li className="col" ontouchstart="this.classList.toggle('hover');">
+                <li className="col">
                     <div className="container">
-                        <div className="front" style={{backgroundImage: `url(${BakgroundImg})`}}>
+                        <div className="front" style={{backgroundImage: `url(${BackgroundImg})`}}>
                             <div className="inner">
                                 <p>Diligord</p>
                                 <span>Lorem ipsum</span>
@@ -67,12 +74,72 @@ export const PortfolioSection = () => {
                         <div className="back">
                             <div className="inner">
                                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit quae suscipit c</p>
-                                <button type="button" className="open-button"></button>
+                                <button type="button" className="open-button">
+                                    <BookIcon className="icon" width={24} height={24}/>
+                                    See More
+                                </button>
                             </div>
                         </div>
                     </div>
                 </li>
-			</ul> */}
+                <li className="col">
+                    <div className="container">
+                        <div className="front" style={{backgroundImage: `url(${BackgroundImg})`}}>
+                            <div className="inner">
+                                <p>Diligord</p>
+                                <span>Lorem ipsum</span>
+                            </div>
+                        </div>
+                        <div className="back">
+                            <div className="inner">
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit quae suscipit c</p>
+                                <button type="button" className="open-button">
+                                    <BookIcon className="icon" width={24} height={24}/>
+                                    See More
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li className="col">
+                    <div className="container">
+                        <div className="front" style={{backgroundImage: `url(${BackgroundImg})`}}>
+                            <div className="inner">
+                                <p>Diligord</p>
+                                <span>Lorem ipsum</span>
+                            </div>
+                        </div>
+                        <div className="back">
+                            <div className="inner">
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit quae suscipit c</p>
+                                <button type="button" className="open-button">
+                                    <BookIcon className="icon" width={24} height={24}/>
+                                    See More
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li className="col">
+                    <div className="container">
+                        <div className="front" style={{backgroundImage: `url(${BackgroundImg})`}}>
+                            <div className="inner">
+                                <p>Diligord</p>
+                                <span>Lorem ipsum</span>
+                            </div>
+                        </div>
+                        <div className="back">
+                            <div className="inner">
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit quae suscipit c</p>
+                                <button type="button" className="open-button">
+                                    <BookIcon className="icon" width={24} height={24}/>
+                                    See More
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+			</ul>
         </PortfolioStyled>
     )
 };

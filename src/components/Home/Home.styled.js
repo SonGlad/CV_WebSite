@@ -172,11 +172,10 @@ export const HomeStyledContainer = styled.div`
         border-radius: 15px;
         font-size: 16px;
         font-weight: 700;
-        background-color: transparent;
-        border: 2px solid ${p => p.theme.color.main_color};
+        background-color: ${p => p.theme.color.text_color};
         color: ${p => p.theme.color.main_color};
-        box-shadow: 0px 0px 20px 20px rgba(204, 57, 0, 0.12),
-        0px 0px 20px 20px rgba(0, 0, 0, 0.12) inset;
+        box-shadow: 0px 0px 10px 10px rgba(0,0,0,0.3) inset,
+                    0px 0px 0px 0px rgba(0,0,0,0.3);
         transition: color ${p => p.theme.transition.main_transition}, 
                     background-color ${p => p.theme.transition.main_transition},
                     box-shadow ${p => p.theme.transition.main_transition};
@@ -184,7 +183,8 @@ export const HomeStyledContainer = styled.div`
         &:hover, &:focus{
             background-color: ${p => p.theme.color.main_color};
             color: ${p => p.theme.color.text_color};
-            box-shadow: none
+            box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.3) inset,
+                        0px 0px 10px 10px rgba(0,0,0,0.3);
         }
 
         @media screen and (max-width: 767px){
