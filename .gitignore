@@ -27,4 +27,4 @@ yarn-debug.log*
 yarn-error.log*
 
 #utils json data files
-utils/*.json
+/src/utils/*.json
