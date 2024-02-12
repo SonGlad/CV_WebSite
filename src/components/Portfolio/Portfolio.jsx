@@ -1,10 +1,39 @@
 import { PortfolioStyled } from "./Portfolio.styled";
 import BackgroundImg from "../../images/images/bg_image.jpg";
-import {ReactComponent as BookIcon} from "../../images/svg-icons/open-book.svg"
-
+import {ReactComponent as BookIcon} from "../../images/svg-icons/open-book.svg";
+import { useData } from "../../hooks/useData";
+import { useState } from "react";
 
 
 export const PortfolioSection = () => {
+    const {portfolioData} = useData();
+    const [filterType, setFilterType] = useState('');
+   
+
+    const handleFilter = (type) => {
+        setFilterType(type);
+    };
+
+
+    const filteredData = portfolioData.filter((item) => {
+        switch (filterType) {
+            case 'Individual':
+                return item.type === 'individual';
+            case 'Team':
+                return item.type === 'team';
+            case 'Early':
+                return true;
+            default:
+                return true;
+        }
+    }).sort((a, b) => {
+        switch (filterType) {
+            case '':
+                return new Date(b.createdAt) - new Date(a.createdAt);
+            default:
+                return true;
+        }
+    });
 
 
     return(
@@ -12,133 +41,55 @@ export const PortfolioSection = () => {
             <h1 className="potfolio-title"><span>My </span>Projects</h1>
             <ul className="filter-list">
                 <li className="filter-item">
-                    <button className="filter-button" type="button">All</button>
+                    <button className="filter-button all-animation" type="button"
+                        onClick={() => handleFilter('')}
+                    >All
+                    </button>
                 </li>
                 <li className="filter-item">
-                    <button className="filter-button" type="button">Individual</button>
+                    <button className="filter-button indi-animation" type="button" 
+                        onClick={() => handleFilter('Individual')}
+                    >Individual
+                    </button>
                 </li>
                 <li className="filter-item">
-                    <button className="filter-button" type="button">Team</button>
+                    <button className="filter-button team-animation" type="button" 
+                    onClick={() => handleFilter('Team')}
+                    >Team
+                    </button>
                 </li>
                 <li className="filter-item">
-                    <button className="filter-button" type="button">Early</button>
+                    <button className="filter-button early-animation" type="button" 
+                        onClick={() => handleFilter('Early')}
+                    >Early
+                    </button>
                 </li>
             </ul>
             <ul className="cols">
-                <li className="col" >
-                    <div className="container">
-                        <div className="front" style={{backgroundImage: `url(${BackgroundImg})`}}>
-                            <div className="inner">
-                                <p>Diligord</p>
-                                <span>Lorem ipsum</span>
+                {filteredData.map(({id, name, coverImage, type, description}, index) => (
+                    <li key={`${id}-${index}`} className="col" style={{'--i': index + 1}}>
+                        <div className="container">
+                            <div className="front" style={{backgroundImage: 
+                                `linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+                                url(${coverImage || BackgroundImg})`}}
+                                >
+                                <div className="inner">
+                                    <p>{name}</p>
+                                    <span>{type}</span>
+                                </div>
+                            </div>
+                            <div className="back">
+                                <div className="inner">
+                                    <p>{description}</p>
+                                    <button type="button" className="open-button">
+                                        <BookIcon className="icon" width={24} height={24}/>
+                                        See More
+                                    </button>
+                                </div>
                             </div>
                         </div>
-                        <div className="back">
-                            <div className="inner">
-                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit quae suscipit c</p>
-                                <button type="button" className="open-button">
-                                    <BookIcon className="icon" width={24} height={24}/>
-                                    See More
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-                <li className="col">
-                    <div className="container">
-                        <div className="front" style={{backgroundImage: `url(${BackgroundImg})`}}>
-                            <div className="inner">
-                                <p>Diligord</p>
-                                <span>Lorem ipsum</span>
-                            </div>
-                        </div>
-                        <div className="back">
-                            <div className="inner">
-                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit quae suscipit c</p>
-                                <button type="button" className="open-button">
-                                    <BookIcon className="icon" width={24} height={24}/>
-                                    See More
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-                <li className="col">
-                    <div className="container">
-                        <div className="front" style={{backgroundImage: `url(${BackgroundImg})`}}>
-                            <div className="inner">
-                                <p>Diligord</p>
-                                <span>Lorem ipsum</span>
-                            </div>
-                        </div>
-                        <div className="back">
-                            <div className="inner">
-                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit quae suscipit c</p>
-                                <button type="button" className="open-button">
-                                    <BookIcon className="icon" width={24} height={24}/>
-                                    See More
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-                <li className="col">
-                    <div className="container">
-                        <div className="front" style={{backgroundImage: `url(${BackgroundImg})`}}>
-                            <div className="inner">
-                                <p>Diligord</p>
-                                <span>Lorem ipsum</span>
-                            </div>
-                        </div>
-                        <div className="back">
-                            <div className="inner">
-                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit quae suscipit c</p>
-                                <button type="button" className="open-button">
-                                    <BookIcon className="icon" width={24} height={24}/>
-                                    See More
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-                <li className="col">
-                    <div className="container">
-                        <div className="front" style={{backgroundImage: `url(${BackgroundImg})`}}>
-                            <div className="inner">
-                                <p>Diligord</p>
-                                <span>Lorem ipsum</span>
-                            </div>
-                        </div>
-                        <div className="back">
-                            <div className="inner">
-                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit quae suscipit c</p>
-                                <button type="button" className="open-button">
-                                    <BookIcon className="icon" width={24} height={24}/>
-                                    See More
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-                <li className="col">
-                    <div className="container">
-                        <div className="front" style={{backgroundImage: `url(${BackgroundImg})`}}>
-                            <div className="inner">
-                                <p>Diligord</p>
-                                <span>Lorem ipsum</span>
-                            </div>
-                        </div>
-                        <div className="back">
-                            <div className="inner">
-                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit quae suscipit c</p>
-                                <button type="button" className="open-button">
-                                    <BookIcon className="icon" width={24} height={24}/>
-                                    See More
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </li>
+                    </li>
+                ))}
 			</ul>
         </PortfolioStyled>
     )

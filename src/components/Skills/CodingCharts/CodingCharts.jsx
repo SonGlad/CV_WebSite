@@ -18,8 +18,6 @@ export const CodingCharts = () => {
         triggerOnce: false, 
         // threshold: 0.1,
     });
-    console.log(containerInView);
-
  
 
     useEffect(() => {

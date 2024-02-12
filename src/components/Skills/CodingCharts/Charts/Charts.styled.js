@@ -98,7 +98,7 @@ export const StyledChart = styled.div`
   .parrent-for-popup{
     position: relative;
     cursor: pointer;
-    width: 90px;
+    width: 95px;
   }
 
 

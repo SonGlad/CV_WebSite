@@ -63,11 +63,170 @@ export const PortfolioStyled = styled.div`
         }
     }
 
+    .all-animation{
+        opacity: 0;
+        animation: slideAllRight 1s ease forwards;
+
+
+        @media screen and (min-width: 488px){
+            animation: slideAllDownRight 1s ease forwards;
+        }
+    }
+    @keyframes slideAllRight {
+        0%{
+            opacity: 0;
+            transform: translateX(-100%);
+        }
+        100%{
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+    @keyframes slideAllDownRight {
+        0%{
+            opacity: 0;
+            transform: translate(-50%, -150%);
+        }
+        100%{
+            opacity: 1;
+            transform: translate(0, 0);
+        }
+    }
+
+    
+    .early-animation{
+        opacity: 0;
+        animation: slideEarlyLeft 1s ease forwards;
+
+        @media screen and (min-width: 374px){
+            animation: slideEarlyDown 1s ease forwards;
+        }
+        @media screen and (min-width: 488px){
+            animation: slideEarlyDownLeft 1s ease forwards;
+        }
+    }
+    @keyframes slideEarlyLeft {
+        0%{
+            opacity: 0;
+            transform: translateX(100%);
+        }
+        100%{
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+    @keyframes slideEarlyDown {
+        0%{
+            opacity: 0;
+            transform: translateY(-100%);
+        }
+        100%{
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+    @keyframes slideEarlyDownLeft {
+        0%{
+            opacity: 0;
+            transform: translate(50%, -150%);
+        }
+        100%{
+            opacity: 1;
+            transform: translate(0, 0);
+        }
+    }
+    
+    .indi-animation{
+        opacity: 1;
+        animation: slideIndiLeft 1s ease forwards;
+
+        @media screen and (min-width: 374px){
+            animation: slideIndiTop 1s ease forwards;
+        }
+        @media screen and (min-width: 488px){
+            animation: slideIndiTopRight 1s ease forwards;
+        }
+    }
+    @keyframes slideIndiLeft {
+        0%{
+            opacity: 0;
+            transform: translateX(100%);
+        }
+        100%{
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+    @keyframes slideIndiTop {
+        0%{
+            opacity: 0;
+            transform: translateY(100%);
+        }
+        100%{
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+    @keyframes slideIndiTopRight {
+        0%{
+            opacity: 0;
+            transform: translate(-50%, 150%);
+        }
+        100%{
+            opacity: 1;
+            transform: translate(0, 0);
+        }
+    }
+
+    .team-animation{
+        opacity: 1;
+        animation: slideTeamRight 1s ease forwards;
+
+        @media screen and (min-width: 374px){
+            animation: slideTeamLeft 1s ease forwards;
+        }
+        @media screen and (min-width: 488px){
+            animation: slideTeamTopLeft 1s ease forwards;
+        }
+    }
+    @keyframes slideTeamRight {
+        0%{
+            opacity: 0;
+            transform: translateX(-100%);
+        }
+        100%{
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+    @keyframes slideTeamLeft {
+        0%{
+            opacity: 0;
+            transform: translateX(100%);
+        }
+        100%{
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+    @keyframes slideTeamTopLeft {
+        0%{
+            opacity: 0;
+            transform: translate(50%, 150%);
+        }
+        100%{
+            opacity: 1;
+            transform: translate(0, 0);
+        }
+    }
+
+
     .cols {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         gap: 32px;
+        padding: 20px 0;
 
         @media screen and (min-width: 480px){
             gap: 17px;
@@ -82,6 +241,10 @@ export const PortfolioStyled = styled.div`
 
     .col {
         width: 100%;
+        opacity: 0;
+        visibility: visible;
+        animation: slideColTop 1s ease forwards;
+        animation-delay: calc((0.2s * var(--i) + 0.2s));
         
         @media screen and (min-width: 480px){
             max-width: 48%;
@@ -95,6 +258,20 @@ export const PortfolioStyled = styled.div`
         }
     }
 
+
+    @keyframes slideColTop {
+        0%{
+            visibility: hidden;
+            opacity: 0;
+            transform: translateY(100%);
+        }
+        100%{
+            visibility: visible;
+            opacity: 1;
+            transform: translateY(0px);
+        }
+    }
+
     .container {
         transform-style: preserve-3d;
         perspective: 1000px;
@@ -102,9 +279,10 @@ export const PortfolioStyled = styled.div`
 
     .front,
     .back {
+        background-repeat: no-repeat;
+        background-position: center;
         background-size: cover;
         box-shadow: 0 4px 8px 0 rgba(0,0,0,0.25);
-        background-position: center;
         text-align: center;
         min-height: 260px;
         height: auto;
@@ -120,7 +298,7 @@ export const PortfolioStyled = styled.div`
         background: linear-gradient(45deg,  #cedce7 0%, #596a72 100%);
     }
 
-    .front:after{
+    /* .front:after{
         display: block;
         position: absolute;
         content: '';
@@ -129,11 +307,11 @@ export const PortfolioStyled = styled.div`
         z-index: 1;
         width: 100%;
         height: 100%;
-        opacity: 0.6;
+        opacity: 0.7;
         background-color: ${p => p.theme.color.black};
         backface-visibility: hidden;
         border-radius: 10px;
-    }
+    } */
 
     .container:hover .front,
     .container:hover .back{
@@ -153,7 +331,7 @@ export const PortfolioStyled = styled.div`
         position: absolute;
         left: 0;
         width: 100%;
-        padding: 32px;
+        padding: 30px;
         box-sizing: border-box;
         outline: 1px solid transparent;
         perspective: inherit;
@@ -161,6 +339,10 @@ export const PortfolioStyled = styled.div`
         display: flex;
         align-items: center;
         flex-direction: column;
+
+        @media screen and (min-width: 900px){
+            padding: 26px;
+        }
     }
 
     .container .back{
@@ -186,7 +368,11 @@ export const PortfolioStyled = styled.div`
     .front .inner p{
         position: relative;
         font-size: 32px;
-        margin-bottom: 32px;
+        margin-bottom: 64px;
+
+        &::first-letter {
+            text-transform: uppercase;
+        }
     }
 
     .front .inner p:after{
@@ -194,25 +380,31 @@ export const PortfolioStyled = styled.div`
         position: absolute;
         content: '';
         width: 64px;
-        height: 2px;
+        height: 4px;
         background: #C6D4DF;
+        border-radius: 10px;
         left: 0;
         right: 0;
         margin: 0 auto;
-        bottom: -12px;
+        bottom: -35px;
     }
 
     .front .inner span{
         color: rgba(204,57,0,0.8);
         font-family: 'Montserrat';
-        font-weight: 300;
+        font-weight: 600;
+        font-size: 26px;
+
+        &::first-letter {
+            text-transform: uppercase;
+        }
     }
 
     .back .inner p{
         display: -webkit-box;
         overflow: hidden;
         text-overflow: ellipsis;
-        -webkit-line-clamp: 4;
+        -webkit-line-clamp: 6;
         -webkit-box-orient: vertical;
         margin-bottom: 20px;
         font-size: 20px;

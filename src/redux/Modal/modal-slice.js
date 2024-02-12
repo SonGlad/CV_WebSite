@@ -7,7 +7,6 @@ const modalSlice = createSlice({
         isEducationModal: false,
         isPortfolioModal: false,
         aboutPictureData: {},
-        portfolioData: [],
     },
 
     reducers: {

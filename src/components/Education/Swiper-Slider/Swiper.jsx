@@ -7,6 +7,7 @@ import {updateAboutPictureData} from "../../../redux/Modal/modal-slice";
 import { nanoid } from "nanoid";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import {Pagination, Autoplay} from 'swiper/modules';
+import DefaultPicture from '../../../images/images/bg_image.jpg'
 import 'swiper/css';
 import 'swiper/css/pagination';
 
@@ -57,7 +58,7 @@ export const SwiperComponent = ({id, img_url, index}) => {
             >
                 {img_url.map(({url}) => (
                     <SwiperSlide  key={nanoid()}>
-                        <img className="education-picture" src={url} alt='img'/>
+                        <img className="education-picture" src={url || DefaultPicture} alt='img'/>
                         <button type='button' className="img-btn" onClick={() => openModal(url)}>
                             <CameraIcon className="img-icon" width={30} height={30}/>
                         </button>

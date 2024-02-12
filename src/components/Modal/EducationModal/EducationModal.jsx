@@ -4,6 +4,7 @@ import { useModal } from "../../../hooks/useModal";
 import { nanoid } from "nanoid";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import {Navigation, Autoplay} from 'swiper/modules';
+import DefaultPicture from '../../../images/images/bg_image.jpg'
 import 'swiper/css';
 import 'swiper/css/navigation';
 
@@ -32,7 +33,7 @@ export const EducationModal = ({handleClickClose}) => {
                         <button type="button" className="close-btn" onClick={handleClickClose}>
                             <CloseIcon className="close-icon" width={16} height={16}/>
                         </button>
-                        <img className="education-picture" src={url} alt='img'/>
+                        <img className="education-picture" src={url || DefaultPicture} alt='img'/>
                     </div>
                 </SwiperSlide>
             ))}
