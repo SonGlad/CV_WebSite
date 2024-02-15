@@ -1,0 +1,5 @@
+<svg class="icon icon-vue-dot-js"><use xlink:href="#icon-vue-dot-js"></use>
+    <symbol id="icon-vue-dot-js" viewBox="0 0 32 32">
+        <path fill="#4fc08d" style="fill: var(--color1, #4fc08d)" d="M32 2.147h-13.253l-2.747 4.733-2.747-4.733h-13.253l16 27.707zM16 18.773l-9.12-15.8h5.907l3.213 5.573 3.213-5.573h5.907z"></path>
+    </symbol>
+</svg>
