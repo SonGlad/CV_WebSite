@@ -3,9 +3,12 @@ import BackgroundImg from "../../images/images/bg_image.jpg";
 import {ReactComponent as BookIcon} from "../../images/svg-icons/open-book.svg";
 import { useData } from "../../hooks/useData";
 import { useState } from "react";
+import { openModalPortfolio, updatePortfolioModalData } from "../../redux/Modal/modal-slice";
+import { useDispatch } from "react-redux";
 
 
 export const PortfolioSection = () => {
+    const dispatch = useDispatch();
     const {portfolioData} = useData();
     const [filterType, setFilterType] = useState('');
    
@@ -34,6 +37,12 @@ export const PortfolioSection = () => {
                 return true;
         }
     });
+
+
+    const openModal = (id) => {
+        dispatch(updatePortfolioModalData(id));
+        dispatch(openModalPortfolio())
+    };
 
 
     return(
@@ -81,7 +90,7 @@ export const PortfolioSection = () => {
                             <div className="back">
                                 <div className="inner">
                                     <p>{description}</p>
-                                    <button type="button" className="open-button">
+                                    <button type="button" className="open-button" onClick={() => openModal(id)}>
                                         <BookIcon className="icon" width={24} height={24}/>
                                         See More
                                     </button>

@@ -2,6 +2,7 @@
     {
         "id": "R_kgDOJCT8iQ",
         "name": "Web Studio",
+        "role": "Developer",
         "coverImage": "https://i.imgur.com/46xW74Z.jpg",
         "img_url": [
             {"url": "https://i.imgur.com/mxCRX6X.jpg"},
@@ -35,7 +36,7 @@
             }
         ],
         "libraries":[
-            {   "name": "jSDelivr(body-scroll-lock)",
+            {   "name": "jSDelivr (body-scroll-lock)",
                 "link": "https://www.jsdelivr.com/package/npm/body-scroll-lock"
             }
         ]
@@ -43,6 +44,7 @@
     {
         "id": "R_kgDOJHaXKg",
         "name": "ANEMONE",
+        "role": "Team Leader, Developer",
         "coverImage": "https://i.imgur.com/w73bLw4.jpg",
         "img_url": [
             {"url": "https://i.imgur.com/k1bktEh.jpg"},
@@ -82,29 +84,30 @@
             {   "name": "jQuery",
                 "link": "https://jquery.com/download/"
             },
-            {   "name": "jSDelivr(slick-carousel)",
-                "link": "https://www.jsdelivr.com/package/npm/slick-carousel"
-            },
-            {   "name": "jSDelivr(body-scroll-lock)",
-                "link": "https://www.jsdelivr.com/package/npm/body-scroll-lock"
-            },
-            {   "name": "jSDelivr(smooth-scroll)",
-                "link": "https://www.jsdelivr.com/package/npm/smooth-scroll"
-            },
-            {   "name": "cdnjs(simplelightbox)",
-                "link": "https://cdnjs.com/libraries/simplelightbox"
-            },
             {   "name": "Animate.css",
                 "link": "https://animate.style"
             },
             {   "name": "Animista",
                 "link": "https://animista.net"
+            },
+            {   "name": "cdnjs (simplelightbox)",
+                "link": "https://cdnjs.com/libraries/simplelightbox"
+            },
+            {   "name": "jSDelivr (slick-carousel)",
+                "link": "https://www.jsdelivr.com/package/npm/slick-carousel"
+            },
+            {   "name": "jSDelivr (body-scroll-lock)",
+                "link": "https://www.jsdelivr.com/package/npm/body-scroll-lock"
+            },
+            {   "name": "jSDelivr (smooth-scroll)",
+                "link": "https://www.jsdelivr.com/package/npm/smooth-scroll"
             }
         ]
     },
     {
         "id": "R_kgDOJtpbxg",
         "name": "Image Search",
+        "role": "Developer",
         "coverImage": "https://i.imgur.com/97NRxqo.jpg",
         "img_url": [
             {"url": "https://i.imgur.com/bd3nujv.jpg"},
@@ -150,7 +153,7 @@
             {   "name": "Parcel",
                 "link": "https://parceljs.org"
             },
-            {   "name": "cdnjs(TweenMax.min.js)",
+            {   "name": "cdnjs (TweenMax.min.js)",
                 "link": "https://www.cdnpkg.com/gsap/file/TweenMax.min.js/"
             },
             {   "name": "GSAP",
@@ -173,6 +176,7 @@
     {
         "id": "R_kgDOJytD_w",
         "name": "TastyTreats",
+        "role": "Team Leader, Developer",
         "coverImage": "https://i.imgur.com/MYiU8Xk.jpg",
         "img_url": [
             {"url": "https://i.imgur.com/g4f15ZL.jpg"},
@@ -223,15 +227,6 @@
             {   "name": "Parcel",
                 "link": "https://parceljs.org"
             },
-            {   "name": "jSDelivr(body-scroll-lock)",
-                "link": "https://www.jsdelivr.com/package/npm/body-scroll-lock"
-            },
-            {   "name": "cdnjs(animate.min.css)",
-                "link": "https://cdnjs.com/libraries/animate.css"
-            },
-            {   "name": "lodash.debounce",
-                "link": "https://www.npmjs.com/package/lodash.debounce"
-            },
             {   "name": "Modern Normalizer",
                 "link": "https://www.npmjs.com/package/modern-normalize"
             },
@@ -244,6 +239,15 @@
             {   "name": "Tui Pagination",
                 "link": "https://www.npmjs.com/package/tui-pagination"
             },
+            {   "name": "jSDelivr (body-scroll-lock)",
+                "link": "https://www.jsdelivr.com/package/npm/body-scroll-lock"
+            },
+            {   "name": "cdnjs (animate.min.css)",
+                "link": "https://cdnjs.com/libraries/animate.css"
+            },
+            {   "name": "lodash.debounce",
+                "link": "https://www.npmjs.com/package/lodash.debounce"
+            },
             {   "name": "Tasty Treats API(as backend)",
                 "link": "https://tasty-treats-backend.p.goit.global/api-docs/"
             }
@@ -252,6 +256,7 @@
     {
         "id": "R_kgDOKGJh7w",
         "name": "Ruh",
+        "role": "Developer",
         "coverImage": "https://i.imgur.com/PbqGDpH.jpg",
         "img_url": [
             {"url": "https://i.imgur.com/kn5pSta.jpg"},
@@ -305,6 +310,7 @@
     {
         "id": "R_kgDOKKmljg",
         "name": "Image Finder",
+        "role": "Developer",
         "coverImage": "https://i.imgur.com/E8416Nl.jpg",
         "img_url": [
             {"url": "https://i.imgur.com/PvGadS9.jpg"},
@@ -364,6 +370,7 @@
         {
         "id": "R_kgDOKQ8EIQ",
         "name": "Phonebook",
+        "role": "Developer",
         "coverImage": "https://i.imgur.com/LP44Lh4.jpg",
         "img_url": [
             {"url": "https://i.imgur.com/YqiSwi1.jpg"},
@@ -442,6 +449,7 @@
     {
         "id": "R_kgDOK45HWQ",
         "name": "HEALTH_EN",
+        "role": "Team Leader, Developer",
         "coverImage": "https://i.imgur.com/HwKGlqr.jpg",
         "img_url": [
             {"url": "https://i.imgur.com/ACSsviu.jpg"},
@@ -545,6 +553,7 @@
     {
         "id": "R_kgDOK_6p1w",
         "name": "HealthyHub",
+        "role": "Developer",
         "coverImage": "https://i.imgur.com/HwKGlqr.jpg",
         "img_url": [
             {"url": "https://i.imgur.com/ACSsviu.jpg"},
@@ -648,6 +657,7 @@
     {
         "id": "R_kgDOLG9kRA",
         "name": "CV_WebSite",
+        "role": "Developer",
         "coverImage": "https://i.imgur.com/SoJcWMQ.jpg",
         "img_url": [
             {"url": "https://i.imgur.com/YPv9yKZ.jpg"},

@@ -19,7 +19,7 @@ const ContactPage = lazy(() => import('../pages/Contact/Contact'));
 
 
 export const App= () => {
-  const {isEducationModalOpen} = useModal();
+  const {isEducationModalOpen, isPortfolioModalOpen} = useModal();
 
 
   return (
@@ -35,7 +35,7 @@ export const App= () => {
           <Route path ='/contact' element={<ContactPage/>}/>
         </Route>    
       </Routes>
-      {isEducationModalOpen && <Modal/>}
+      {(isEducationModalOpen || isPortfolioModalOpen) && <Modal/>}
     </>
   );
 };

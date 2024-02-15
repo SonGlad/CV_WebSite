@@ -11,6 +11,7 @@
             "name": "Tutorial",
             "type": "other",
             "url": "https://github.com/SonGlad/Tutorial",
+            "homepageUrl": null,
             "createdAt": "2023-01-12T13:54:15Z",
             "stargazerCount": 0,
             "collaborators": {
@@ -52,6 +53,7 @@
             "name": "goit-markup-hw-01",
             "type": "educational",
             "url": "https://github.com/SonGlad/goit-markup-hw-01",
+            "homepageUrl": "https://songlad.github.io/goit-markup-hw-01/",
             "createdAt": "2023-01-15T15:18:04Z",
             "stargazerCount": 0,
             "collaborators": {
@@ -93,6 +95,7 @@
             "name": "goit-markup-hw-02",
             "type": "educational",
             "url": "https://github.com/SonGlad/goit-markup-hw-02",
+            "homepageUrl": "https://songlad.github.io/goit-markup-hw-02/",
             "createdAt": "2023-01-20T13:49:42Z",
             "stargazerCount": 0,
             "collaborators": {
@@ -140,6 +143,7 @@
             "name": "goit-markup-hw-03",
             "type": "educational",
             "url": "https://github.com/SonGlad/goit-markup-hw-03",
+            "homepageUrl": "https://songlad.github.io/goit-markup-hw-03/",
             "createdAt": "2023-01-28T08:21:10Z",
             "stargazerCount": 0,
             "collaborators": {
@@ -187,6 +191,7 @@
             "name": "goit-markup-hw-04",
             "type": "educational",
             "url": "https://github.com/SonGlad/goit-markup-hw-04",
+            "homepageUrl": "https://songlad.github.io/goit-markup-hw-04/",
             "createdAt": "2023-02-02T07:50:44Z",
             "stargazerCount": 0,
             "collaborators": {
@@ -240,6 +245,7 @@
             "name": "goit-markup-hw-05",
             "type": "educational",
             "url": "https://github.com/SonGlad/goit-markup-hw-05",
+            "homepageUrl": "https://songlad.github.io/goit-markup-hw-05/",
             "createdAt": "2023-02-09T05:31:33Z",
             "stargazerCount": 0,
             "collaborators": {
@@ -293,6 +299,7 @@
             "name": "goit-markup-hw-06",
             "type": "educational",
             "url": "https://github.com/SonGlad/goit-markup-hw-06",
+            "homepageUrl": "https://songlad.github.io/goit-markup-hw-06/",
             "createdAt": "2023-02-15T16:33:05Z",
             "stargazerCount": 0,
             "collaborators": {
@@ -346,6 +353,7 @@
             "name": "goit-markup-hw-07",
             "type": "individual",
             "url": "https://github.com/SonGlad/goit-markup-hw-07",
+            "homepageUrl": "https://songlad.github.io/goit-markup-hw-07/",
             "createdAt": "2023-02-25T11:43:34Z",
             "stargazerCount": 1,
             "collaborators": {
@@ -399,6 +407,7 @@
             "name": "flower-team-proj",
             "type": "team",
             "url": "https://github.com/SonGlad/flower-team-proj",
+            "homepageUrl": "https://songlad.github.io/flower-team-proj/",
             "createdAt": "2023-03-09T13:24:51Z",
             "stargazerCount": 1,
             "collaborators": {
@@ -536,6 +545,7 @@
             "name": "full-stack-modeller-team-proj-test",
             "type": "other",
             "url": "https://github.com/SonGlad/full-stack-modeller-team-proj-test",
+            "homepageUrl": "https://songlad.github.io/full-stack-modeller-team-proj-test/",
             "createdAt": "2023-03-21T13:22:50Z",
             "stargazerCount": 1,
             "collaborators": {
@@ -685,6 +695,7 @@
             "name": "goit-js-hw-06",
             "type": "educational",
             "url": "https://github.com/SonGlad/goit-js-hw-06",
+            "homepageUrl": "https://songlad.github.io/goit-js-hw-06/",
             "createdAt": "2023-05-08T09:08:52Z",
             "stargazerCount": 0,
             "collaborators": {
@@ -738,6 +749,7 @@
             "name": "goit-js-hw-07",
             "type": "educational",
             "url": "https://github.com/SonGlad/goit-js-hw-07",
+            "homepageUrl": "https://songlad.github.io/goit-js-hw-07/",
             "createdAt": "2023-05-12T16:23:41Z",
             "stargazerCount": 0,
             "collaborators": {
@@ -791,6 +803,7 @@
             "name": "goit-js-hw-08",
             "type": "educational",
             "url": "https://github.com/SonGlad/goit-js-hw-08",
+            "homepageUrl": "https://songlad.github.io/goit-js-hw-08/",
             "createdAt": "2023-05-23T10:35:57Z",
             "stargazerCount": 0,
             "collaborators": {
@@ -862,6 +875,7 @@
             "name": "goit-js-hw-09",
             "type": "educational",
             "url": "https://github.com/SonGlad/goit-js-hw-09",
+            "homepageUrl": "https://songlad.github.io/goit-js-hw-09/",
             "createdAt": "2023-05-31T15:50:44Z",
             "stargazerCount": 0,
             "collaborators": {
@@ -927,6 +941,7 @@
             "name": "goit-js-hw-10",
             "type": "educational",
             "url": "https://github.com/SonGlad/goit-js-hw-10",
+            "homepageUrl": "https://songlad.github.io/goit-js-hw-10/",
             "createdAt": "2023-06-04T12:05:37Z",
             "stargazerCount": 0,
             "collaborators": {
@@ -992,6 +1007,7 @@
             "name": "goit-js-hw-11",
             "type": "individual",
             "url": "https://github.com/SonGlad/goit-js-hw-11",
+            "homepageUrl": "https://songlad.github.io/goit-js-hw-11/",
             "createdAt": "2023-06-10T09:14:04Z",
             "stargazerCount": 1,
             "collaborators": {
@@ -1063,6 +1079,7 @@
             "name": "tasty-treats-team-project",
             "type": "team",
             "url": "https://github.com/SonGlad/tasty-treats-team-project",
+            "homepageUrl": "https://songlad.github.io/tasty-treats-team-project/",
             "createdAt": "2023-06-22T12:21:48Z",
             "stargazerCount": 6,
             "collaborators": {
@@ -1254,6 +1271,7 @@
             "name": "goit-react-hw-01-components",
             "type": "educational",
             "url": "https://github.com/SonGlad/goit-react-hw-01-components",
+            "homepageUrl": "https://songlad.github.io/goit-react-hw-01-components/",
             "createdAt": "2023-07-20T13:48:42Z",
             "stargazerCount": 0,
             "collaborators": {
@@ -1307,6 +1325,7 @@
             "name": "goit-react-hw-02-feedback",
             "type": "educational",
             "url": "https://github.com/SonGlad/goit-react-hw-02-feedback",
+            "homepageUrl": "https://songlad.github.io/goit-react-hw-02-feedback/",
             "createdAt": "2023-08-04T15:31:13Z",
             "stargazerCount": 0,
             "collaborators": {
@@ -1360,6 +1379,7 @@
             "name": "goit-react-hw-02-phonebook",
             "type": "educational",
             "url": "https://github.com/SonGlad/goit-react-hw-02-phonebook",
+            "homepageUrl": "https://songlad.github.io/goit-react-hw-02-phonebook/",
             "createdAt": "2023-08-04T20:39:03Z",
             "stargazerCount": 1,
             "collaborators": {
@@ -1413,6 +1433,7 @@
             "name": "ruh",
             "type": "individual",
             "url": "https://github.com/SonGlad/ruh",
+            "homepageUrl": "https://songlad.github.io/ruh/",
             "createdAt": "2023-08-11T20:45:13Z",
             "stargazerCount": 0,
             "collaborators": {
@@ -1472,6 +1493,7 @@
             "name": "goit-react-hw-03-phonebook",
             "type": "educational",
             "url": "https://github.com/SonGlad/goit-react-hw-03-phonebook",
+            "homepageUrl": "https://songlad.github.io/goit-react-hw-03-phonebook/",
             "createdAt": "2023-08-17T16:08:53Z",
             "stargazerCount": 0,
             "collaborators": {
@@ -1525,6 +1547,7 @@
             "name": "goit-react-hw-03-image-finder",
             "type": "educational",
             "url": "https://github.com/SonGlad/goit-react-hw-03-image-finder",
+            "homepageUrl": "https://songlad.github.io/goit-react-hw-03-image-finder/",
             "createdAt": "2023-08-20T15:11:39Z",
             "stargazerCount": 0,
             "collaborators": {
@@ -1578,6 +1601,7 @@
             "name": "goit-react-hw-04-feedback",
             "type": "educational",
             "url": "https://github.com/SonGlad/goit-react-hw-04-feedback",
+            "homepageUrl": "https://songlad.github.io/goit-react-hw-04-feedback/",
             "createdAt": "2023-08-23T12:35:55Z",
             "stargazerCount": 0,
             "collaborators": {
@@ -1631,6 +1655,7 @@
             "name": "goit-react-hw-04-phonebook",
             "type": "educational",
             "url": "https://github.com/SonGlad/goit-react-hw-04-phonebook",
+            "homepageUrl": "https://songlad.github.io/goit-react-hw-04-phonebook/",
             "createdAt": "2023-08-23T12:42:15Z",
             "stargazerCount": 0,
             "collaborators": {
@@ -1684,6 +1709,7 @@
             "name": "goit-react-hw-04-image-finder",
             "type": "individual",
             "url": "https://github.com/SonGlad/goit-react-hw-04-image-finder",
+            "homepageUrl": "https://songlad.github.io/goit-react-hw-04-image-finder/",
             "createdAt": "2023-08-23T17:11:33Z",
             "stargazerCount": 0,
             "collaborators": {
@@ -1737,6 +1763,7 @@
             "name": "goit-react-hw-05-movies",
             "type": "educational",
             "url": "https://github.com/SonGlad/goit-react-hw-05-movies",
+            "homepageUrl": "https://songlad.github.io/goit-react-hw-05-movies/",
             "createdAt": "2023-08-28T08:42:45Z",
             "stargazerCount": 1,
             "collaborators": {
@@ -1784,6 +1811,7 @@
             "name": "goit-react-hw-06-phonebook",
             "type": "educational",
             "url": "https://github.com/SonGlad/goit-react-hw-06-phonebook",
+            "homepageUrl": "https://songlad.github.io/goit-react-hw-06-phonebook/",
             "createdAt": "2023-09-04T09:05:50Z",
             "stargazerCount": 0,
             "collaborators": {
@@ -1837,6 +1865,7 @@
             "name": "goit-react-hw-07-phonebook",
             "type": "educational",
             "url": "https://github.com/SonGlad/goit-react-hw-07-phonebook",
+            "homepageUrl": "https://songlad.github.io/goit-react-hw-07-phonebook/",
             "createdAt": "2023-09-04T23:02:50Z",
             "stargazerCount": 0,
             "collaborators": {
@@ -1890,6 +1919,7 @@
             "name": "goit-react-hw-08-phonebook",
             "type": "individual",
             "url": "https://github.com/SonGlad/goit-react-hw-08-phonebook",
+            "homepageUrl": "https://songlad.github.io/goit-react-hw-08-phonebook/",
             "createdAt": "2023-09-08T08:30:47Z",
             "stargazerCount": 2,
             "collaborators": {
@@ -1937,6 +1967,7 @@
             "name": "node-hw-01",
             "type": "educational",
             "url": "https://github.com/SonGlad/node-hw-01",
+            "homepageUrl": null,
             "createdAt": "2023-11-28T19:43:33Z",
             "stargazerCount": 1,
             "collaborators": {
@@ -1978,6 +2009,7 @@
             "name": "nodejs-homework-02-06",
             "type": "educational",
             "url": "https://github.com/SonGlad/nodejs-homework-02-06",
+            "homepageUrl": null,
             "createdAt": "2023-11-30T21:06:26Z",
             "stargazerCount": 1,
             "collaborators": {
@@ -2019,6 +2051,7 @@
             "name": "HEALTH_EN",
             "type": "team",
             "url": "https://github.com/SonGlad/HEALTH_EN",
+            "homepageUrl": "https://songlad.github.io/HEALTH_EN/",
             "createdAt": "2023-12-12T15:24:04Z",
             "stargazerCount": 4,
             "collaborators": {
@@ -2174,6 +2207,7 @@
             "name": "HealthyHub",
             "type": "individual",
             "url": "https://github.com/SonGlad/HealthyHub",
+            "homepageUrl": "https://songlad.github.io/HealthyHub/",
             "createdAt": "2024-01-02T12:53:42Z",
             "stargazerCount": 2,
             "collaborators": {
@@ -2221,6 +2255,7 @@
             "name": "HEALTH_EN_BACKEND",
             "type": "other",
             "url": "https://github.com/SonGlad/HEALTH_EN_BACKEND",
+            "homepageUrl": "https://healthy-hub-backend-fs5j.onrender.com",
             "createdAt": "2024-01-10T15:43:34Z",
             "stargazerCount": 1,
             "collaborators": {
@@ -2262,6 +2297,7 @@
             "name": "react_template",
             "type": "other",
             "url": "https://github.com/SonGlad/react_template",
+            "homepageUrl": null,
             "createdAt": "2024-01-18T12:59:45Z",
             "stargazerCount": 1,
             "collaborators": {
@@ -2309,6 +2345,7 @@
             "name": "CV_WebSite",
             "type": "individual",
             "url": "https://github.com/SonGlad/CV_WebSite",
+            "homepageUrl": "https://songlad.github.io/CV_WebSite/",
             "createdAt": "2024-01-19T13:17:33Z",
             "stargazerCount": 3,
             "collaborators": {

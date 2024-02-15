@@ -14,31 +14,30 @@ export const EducationStyled = styled.div`
         position: absolute;
         top: 10px;
         right: 10px;
-        border-radius: 50%;
         display: flex;
         align-items: center;
         justify-content: center;
-        padding: 0;
-        border: none;
-        cursor: pointer;
-        background-color: transparent;
-        transition: ${p => p.theme.transition.main_transition};
+        padding: 5px;
+        background-color: ${p => p.theme.color.text_color};
+        border-radius: 50%;
+        box-shadow: 0px 0px 10px 10px rgba(0,0,0,0.3) inset,
+                    0px 0px 0px 0px rgba(0,0,0,0.3);
+        transition: transform ${p => p.theme.transition.main_transition},
+        background-color ${p => p.theme.transition.main_transition},
+        box-shadow ${p => p.theme.transition.main_transition};
 
-        &:hover,
+        &:hover, 
         &:focus{
-            transition: ${p => p.theme.transition.main_transition};
-            transform: scale(1.2) rotate(90deg);
-            transform-origin: center;
-        }
-
-        @media screen and (min-width: 768px){
-            top: 20px;
-            right: 20px;
+            transform: rotate(90deg);
+            background-color: ${p => p.theme.color.main_color};
+            box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.3) inset,
+                        0px 0px 10px 10px rgba(0,0,0,0.3);
         }
     }
 
     .close-icon{
-        fill: ${p => p.theme.color.main_color};
+        fill: ${p => p.theme.color.black};
+        transition: all ${p => p.theme.transition.main_transition};
         width: 16px;
         height: 16px;
 
@@ -51,6 +50,13 @@ export const EducationStyled = styled.div`
             height: 36px;
         }
     }
+
+    .close-btn .close-icon:hover,
+    .close-btn .close-icon:focus{
+        fill: ${p => p.theme.color.text_color};
+    }
+
+
 
     .swiper {
         width: 95%;

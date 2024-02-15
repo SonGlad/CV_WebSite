@@ -22,6 +22,7 @@ const Portfolio = () => {
         id,
         type,
         url,
+        homepageUrl,
         createdAt,
         collaborators:{ nodes },
         languages:{ edges }
@@ -29,6 +30,7 @@ const Portfolio = () => {
         id,
         type,
         url,
+        homepageUrl,
         createdAt,
         collaborators: nodes.map(({ name, url }) => ({ name, url })),
         languages: edges.map(({ size, node: { name} }) => ({ name, size }))
@@ -46,10 +48,12 @@ const Portfolio = () => {
                     id: gitHubItem.id,
                     type: gitHubItem.type,
                     url: gitHubItem.url,
+                    homepageUrl: gitHubItem.homepageUrl,
                     createdAt: gitHubItem.createdAt,
                     collaborators: gitHubItem.collaborators,
                     languages: gitHubItem.languages,
                     name: correspondingItem.name,
+                    role: correspondingItem.role,
                     coverImage: correspondingItem.coverImage,
                     figma_url: correspondingItem.figma_url,
                     img_url: correspondingItem.img_url,

@@ -1,6 +1,7 @@
 import { createPortal } from "react-dom";
 import { ModalStyled } from "./Modal.styled";
 import { EducationModal } from "./EducationModal/EducationModal";
+import { PortfolioModal } from "./PortfolioModal/PortfolioModal";
 import { useDispatch } from "react-redux";
 import { useEffect, useCallback } from "react";
 import {closeModalEducation, closeModalPortfolio} from "../../redux/Modal/modal-slice";
@@ -57,6 +58,9 @@ export const Modal = () => {
             <ModalStyled onClick={handleBackdropClick}>
                 {isEducationModalOpen && (
                     <EducationModal handleClickClose={handleClickClose}/>
+                )}
+                {isPortfolioModalOpen && (
+                    <PortfolioModal handleClickClose={handleClickClose}/>
                 )}
             </ModalStyled>
         ),

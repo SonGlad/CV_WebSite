@@ -7,6 +7,7 @@ const modalSlice = createSlice({
         isEducationModal: false,
         isPortfolioModal: false,
         aboutPictureData: {},
+        portfolioModalData: null, 
     },
 
     reducers: {
@@ -26,6 +27,9 @@ const modalSlice = createSlice({
             const { id, img_url, url } = action.payload;
             state.aboutPictureData = {id, img_url, url};
         },
+        updatePortfolioModalData: (state, action) => {
+            state.portfolioModalData = action.payload;
+        },
     }
 });
 
@@ -37,5 +41,6 @@ export const {
     closeModalEducation,
     openModalPortfolio,
     closeModalPortfolio,
-    updateAboutPictureData
+    updateAboutPictureData,
+    updatePortfolioModalData,
 } = modalSlice.actions;
