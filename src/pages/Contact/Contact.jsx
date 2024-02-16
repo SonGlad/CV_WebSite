@@ -1,5 +1,6 @@
 import { Section } from "../../components/Section/Section";
 import { Container } from "../../components/Container/Container";
+import { Contacts } from "../../components/Contatcs/Contacts";
 
 
 
@@ -7,7 +8,7 @@ const Contact = () => {
     return (
         <Section>
             <Container>
-              <h1>Contact Page</h1>
+                <Contacts/>
             </Container>
         </Section>
     )

@@ -1,6 +1,6 @@
-import { SharedLayout } from "./SharedLayout";
 import { Navigate, Route, Routes} from "react-router-dom";
 import { lazy } from "react";
+import { SharedLayout } from "./SharedLayout";
 import { Modal } from "./Modal/Modal";
 import { useModal } from "../hooks/useModal";
 // import { useEffect } from "react";

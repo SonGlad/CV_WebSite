@@ -13,6 +13,9 @@ export const Collaborators = ({updatedCollaborators}) => {
     const handleButtonClick = () => {
         setExpanded(!expanded);
     };
+    const handleButtonClose = () => {
+        setExpanded(false);
+    };
 
 
     useEffect(() => {
@@ -42,12 +45,11 @@ export const Collaborators = ({updatedCollaborators}) => {
                             type="button" onClick={handleButtonClick}>See All
                         </button>
                         {updatedCollaborators.map(({name, url}) => (
-                            <li key={nanoid()} className="collaborators-item">
+                            <li key={nanoid()} className="collaborators-item" onClick={handleButtonClose}>
                                 <NavLink className="repository-link" to={url}
                                     aria-label="technical task link"
                                     target="_blank"
-                                    rel="noreferrer noopener"
-                                    onClick={handleButtonClick}
+                                    rel="noreferrer noopener" 
                                 >
                                     <LinkSvg className="svg-link" width={16} height={16}/>
                                     {name}

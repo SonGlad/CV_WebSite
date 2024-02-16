@@ -33,11 +33,15 @@ export const HomeSection = () => {
                 <p className="text-description upper-text">{about1}</p>
                 <p className="text-description lower-text">{about2}</p>
                 <div className="btn-cont">
-                    <NavLink className="download-btn" to={download_link}
+                    <NavLink className="redirect-link" to={download_link}
                         aria-label="CV Douwnload link"
                         target="_blank"
                         rel="noreferrer noopener"
-                    >Download CV</NavLink>
+                    >Download CV
+                    </NavLink>
+                    <NavLink className="redirect-link" to='/contact'>
+                        Contact Me
+                    </NavLink>
                 </div>
             </div>
             <div className="right-container order-two"/>

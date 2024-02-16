@@ -13,6 +13,9 @@ export const Libraries = ({libraries}) => {
     const handleButtonClick = () => {
         setExpanded(!expanded);
     };
+    const handleButtonClose = () => {
+        setExpanded(false);
+    };
 
 
     useEffect(() => {
@@ -41,12 +44,12 @@ export const Libraries = ({libraries}) => {
                         type="button" onClick={handleButtonClick}>See All
                     </button>
                     {libraries.map(({name, link}) => (
-                        <li key={nanoid()} className="collaborators-item">
+                        <li key={nanoid()} className="collaborators-item" onClick={handleButtonClose}>
                             <NavLink className="repository-link" to={link}
                                 aria-label="technical task link"
                                 target="_blank"
                                 rel="noreferrer noopener"
-                                onClick={handleButtonClick}
+                                
                             >
                                 <LinkSvg className="svg-link" width={16} height={16}/>
                                 {name}

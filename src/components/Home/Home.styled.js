@@ -157,17 +157,20 @@ export const HomeStyledContainer = styled.div`
     }
 
     .btn-cont{
-        height: 54px;
+        min-height: 54px;
         display: flex;
         align-items: center;
+        flex-wrap: wrap;
+        gap: 40px;
+        justify-content: space-around;
 
         @media screen and (max-width: 767px){
             width: 100%;
-            display: flex;
+            display: flex; 
         }
     }
 
-    .download-btn{ 
+    .redirect-link{ 
         padding: 14px 28px;
         border-radius: 15px;
         font-size: 16px;
@@ -180,7 +183,7 @@ export const HomeStyledContainer = styled.div`
                     background-color ${p => p.theme.transition.main_transition},
                     box-shadow ${p => p.theme.transition.main_transition};
 
-        &:hover, &:focus{
+        &:hover{
             background-color: ${p => p.theme.color.main_color};
             color: ${p => p.theme.color.text_color};
             box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.3) inset,
