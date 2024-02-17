@@ -18,22 +18,23 @@ export const ContactInfo = () => {
         download_link,
         phone,
         email,
+        about4,
     } = Profile;
 
 
     return(
         <ContactInfoStyled>
             <h2 className="container-title">Let's Work Together</h2>
-            <p className="contact-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia soluta iure veniam? Ipsa temporibus iure, hic tempora officiis architecto ea voluptates eaque non sed laboriosam amet soluta perferendis vel suscipit!</p>
-            <address class="page-contact">
-                <ul class="contact-links">
-                    <li class="contact-link-mail">
+            <p className="contact-description">{about4}</p>
+            <address className="page-contact">
+                <ul className="contact-links">
+                    <li className="contact-link-mail">
                         <NavLink className="contact-link" to="mailto:okoshevy@gmail.com">
                             <EmailIcon className="contact-icon" width={18} height={18}/>
                             <span>{email}</span>
                         </NavLink>
                     </li>
-                    <li class="contact-link-tel">
+                    <li className="contact-link-tel">
                         <NavLink className="contact-link" to="tel:+30674838965">
                             <PhoneIcon className="contact-icon" width={18} height={18}/>
                             <span>{phone}</span>

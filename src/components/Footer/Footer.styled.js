@@ -3,9 +3,11 @@ import { styled } from "styled-components";
 
 export const FooterStyled = styled.footer`
     padding-bottom: 3px;
-
+    overflow: hidden;
+    
     .footer-container{
         padding: 40px 0;
+        
 
         @media screen and (min-width: 768px){
             padding: 40px 0 40px 0;

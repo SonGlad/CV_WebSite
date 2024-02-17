@@ -228,9 +228,6 @@ export const AboutStyled = styled.div`
         height: 0;
         border-top: 150px solid ${p => p.theme.color.main_color};
         border-right: 150px solid transparent;
-        /* -webkit-box-shadow: -2px -2px 10px 2px rgba(204, 57, 0, 0.6);
-        -moz-box-shadow: -2px -2px 10px 2px rgba(204, 57, 0, 0.6);
-        box-shadow: -2px -2px 10px 2px rgba(204, 57, 0, 0.6); */
         animation: circleSpinner1 8s linear infinite;
     }
 
@@ -244,9 +241,6 @@ export const AboutStyled = styled.div`
         height: 0;
         border-bottom: 150px solid ${p => p.theme.color.main_color};
         border-left: 150px solid transparent;
-        /* -webkit-box-shadow: 2px 2px 10px 2px rgba(204, 57, 0, 0.6);
-        -moz-box-shadow: 2px 2px 10px 2px rgba(204, 57, 0, 0.6);
-        box-shadow: 2px 2px 10px 2px rgba(204, 57, 0, 0.6); */
         animation: circleSpinner2 8s linear infinite;
     }
 

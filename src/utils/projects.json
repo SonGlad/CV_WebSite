@@ -740,6 +740,12 @@
             },
             {   "name": "Swiper",
                 "link": "https://swiperjs.com"
+            },
+            {   "name": "Formik",
+                "link": "https://www.npmjs.com/package/formik"
+            },
+            {   "name": "Yup",
+                "link": "https://www.npmjs.com/package/yup"
             }
         ]
     }

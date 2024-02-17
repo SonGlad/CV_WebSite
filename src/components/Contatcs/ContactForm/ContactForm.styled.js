@@ -1,18 +1,37 @@
 import styled from "styled-components";
+import error from '../../../images/svg-icons/error.svg';
+import correct from '../../../images/svg-icons/correct.svg';
 
 
 export const ContactFormStyled = styled.form`
     width: 100%;
     max-width: 400px;
-
+    
+    @media screen and (min-width: 468px){
+        max-width: 440px;
+        padding: 20px;
+        outline-offset: -1px;
+        animation: BoxshadowAppear 1s 2s ease forwards;
+    }
 
     @media screen and (min-width: 768px){
         max-width: 800px;
-        border-radius: 20px;
-        padding: 20px;
-        /* box-shadow: 0px 0px 10px 10px rgba(0,0,2,0.5); */
-        /* outline: 2px solid white; */
     }
+
+    @keyframes BoxshadowAppear {
+        0%{
+            border-radius: 0px;
+            box-shadow: 0px 0px 0px 0px rgba(0,0,2,0.5);
+            outline: 2px solid rgba(237,237,237, 1);
+        }
+        100%{
+            border-radius: 20px;
+            box-shadow: 0px 0px 10px 10px rgba(0,0,2,0.5);
+            outline: 2px solid rgba(237,237,237, 0);
+        }
+    }
+
+
 
     .form-label{
         display: block;
@@ -21,6 +40,10 @@ export const ContactFormStyled = styled.form`
         font-size: 12px;
         line-height: calc(14 / 12);
         letter-spacing: 0.01em;
+        transform: scale(0.5);
+        opacity: 0;
+        animation: OpacityAppear 1s ease forwards;
+        animation-delay: calc((0.3s * var(--i) + 3s));
 
         @media screen and (min-width: 768px){
             font-weight: 500;
@@ -121,6 +144,8 @@ export const ContactFormStyled = styled.form`
         margin-bottom: 25px;
         gap: 10px;
         position: relative;
+        animation: CheckboxSlideLeft 1s ease forwards 4.2s;
+        opacity: 0;
     }
 
     .form-checkbox {
@@ -185,6 +210,8 @@ export const ContactFormStyled = styled.form`
         transition: color ${p => p.theme.transition.main_transition}, 
                     background-color ${p => p.theme.transition.main_transition},
                     box-shadow ${p => p.theme.transition.main_transition};
+        animation: ScaleAppear 1s ease forwards 4.2s;
+        transform: scale(0);
 
         &:hover{
             background-color: ${p => p.theme.color.main_color};
@@ -193,11 +220,103 @@ export const ContactFormStyled = styled.form`
                         0px 0px 10px 10px rgba(0,0,0,0.3);
         }
 
-        
         @media screen and (min-width: 1200px){
             min-width: unset;
             width: 235px;
         }
+
+        &:disabled {
+            opacity: 0.5;
+            pointer-events: none;
+        }
     }
 
+    @keyframes ScaleAppear {
+        0%{
+            transform: scale(0);
+        }
+        100% {
+            transform: scale(1);
+        }
+    }
+
+    @keyframes OpacityAppear {
+        0%{
+            transform: scale(0.5);
+            opacity: 0;
+        }
+        100% {
+            transform: scale(1);
+            opacity: 1;
+        }
+    }
+
+    @keyframes CheckboxSlideLeft {
+        0%{
+            transform: translateX(50%);
+            opacity: 0;
+        }
+        100% {
+            transform: translateX(0%);
+            opacity: 1;
+        }
+    }
+
+
+
+
+
+    /*//////////////  */
+    /* VALIDATION */
+    /* /////////// */
+    
+    .ErrorInput {
+        border: 2px solid #e74a3b;
+    }
+
+    .SuccessInput {
+        border: 2px solid #3cbc81;
+    }
+
+    .ImgError {
+        position: absolute;
+        right: 2%;
+        top: 50%;
+        transform: translateY(-55%);
+        width: 16px;
+        height: 16px;
+        background-image: url(${error});
+    }
+
+    .ImgCorrect {
+        position: absolute;
+        right: 2%;
+        top: 50%;
+        transform: translateY(-55%);
+        width: 16px;
+        height: 16px;
+        background-image: url(${correct});
+    }
+
+    .ErrorText {
+        position: absolute;
+        right: 1%;
+        bottom: 0;
+        transform: translateY(100%);
+        color: #e74a3b;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 14px;
+    }
+
+    .SuccessText {
+        position: absolute;
+        right: 1%;
+        bottom: 0;
+        transform: translateY(100%);
+        color: #3cbc81;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 14px;
+    }
 `

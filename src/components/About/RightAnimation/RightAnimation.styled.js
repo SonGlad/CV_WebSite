@@ -8,12 +8,10 @@ export const RightAnimationStyled = styled.div`
         width: 300px;
         height: 300px;
         margin: 0 auto;
-        /* padding: 0 20px; */
     }
 
     .animated-svg {
         width: 300px;
-        /* height: auto; */
     }
 
 

@@ -12,7 +12,11 @@ export const Contacts = () => {
             <div className="content-container">
                 <ContactInfo/>
                 <div className="form-container">
-                    <ContactForm/>
+                    <span className="animated-span-upper">
+                        <span className="animated-span-lower">
+                            <ContactForm/>
+                        </span>
+                    </span>
                 </div>
             </div>
         </ContactsStyled>
