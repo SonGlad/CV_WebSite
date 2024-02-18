@@ -5,6 +5,7 @@
   "homepage": "https://SonGlad.github.io/CV_WebSite/",
   "dependencies": {
     "@babel/plugin-transform-private-property-in-object": "^7.23.4",
+    "@emailjs/browser": "^4.1.0",
     "@reduxjs/toolkit": "^2.0.1",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",

@@ -8,6 +8,7 @@ import { useFormik } from "formik";
 import { ContactFormSchema } from "../../../utils/ValidationSchema";
 import { ShowRules } from "../../../utils/ShowRules";
 import { useState, useEffect } from "react";
+// import emailjs from '@emailjs/browser';
 
 
 export const ContactForm = () => {
@@ -72,7 +73,7 @@ export const ContactForm = () => {
 
 
     return(
-        <ContactFormStyled onSubmit={handleSubmit}>
+        <ContactFormStyled onSubmit={handleSubmit} data-netlify="true">
             <label className="form-label" htmlFor="name" style={{'--i': 0}}>Name
                 <div className="form-group">
                     <input 

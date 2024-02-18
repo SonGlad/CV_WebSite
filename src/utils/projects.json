@@ -658,15 +658,17 @@
         "id": "R_kgDOLG9kRA",
         "name": "CV_WebSite",
         "role": "Developer",
-        "coverImage": "https://i.imgur.com/SoJcWMQ.jpg",
+        "coverImage": "https://i.imgur.com/YsbOt42.jpg",
         "img_url": [
+            {"url": "https://i.imgur.com/m5Rkpk2.png"},
+            {"url": "https://i.imgur.com/YsbOt42.jpg"},
+            {"url": "https://i.imgur.com/dBu2OU2.jpg"},
+            {"url": "https://i.imgur.com/CTGCKYu.jpg"},
             {"url": "https://i.imgur.com/YPv9yKZ.jpg"},
-            {"url": "https://i.imgur.com/SoJcWMQ.jpg"},
             {"url": "https://i.imgur.com/HOE7VaU.jpg"},
             {"url": "https://i.imgur.com/nRPvSFS.jpg"},
             {"url": "https://i.imgur.com/KG2Ygne.jpg"},
-            {"url": "https://i.imgur.com/qWlTjD5.jpg"},
-            {"url": "https://i.imgur.com/Eby76s0.jpg"}
+            {"url": "https://i.imgur.com/qWlTjD5.jpg"}
         ],
         "figma_url": null,
         "description": "CV_WebSite is a 6-page web application created as a developer portfolio website. It can serve as both a primary and supplementary tool for your resume. The site is fully responsive and meets all modern requirements for such development, looking equally good on all types of devices. The application was built using the REACT/REDUX library with full imitation of server-side functionality. All data displayed in the application is stored in three JSON files (simulating data retrieval from a backend) and can be easily modified or tailored to another user. In case of a deployed backend or if needed, this application can be easily connected to it, thanks to the pre-configured REDUX state management library. Each page of this site is self-contained and contains all the necessary information about the developer. Upon entering the site, you are greeted with the 'Home' page, featuring the developer's name, a brief description, and the ability to view their resume. The 'About' page contains more detailed information about the developer, including GitHub statistics. This page also features subtle, non-intrusive animation, giving it a livelier appearance. On the 'Education' page, you can find information about the developer's education and the institutions they attended. Animated sliders are present on this page, giving it a more atmospheric look. All photos can be viewed in a separate window by simply clicking on the button on the photo itself. The 'Skills' page contains information about the developer's professional skills, as well as official GitHub statistics for all repositories and programming languages. The 'Portfolio' page is a collection of all the developer's projects. To get information about a particular project, simply hover over the project of interest and open it. This will open a separate window where you can find all the detailed information about the project. The 'Contact' page allows you to contact the developer directly.",
