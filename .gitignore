@@ -27,9 +27,6 @@ yarn-debug.log*
 yarn-error.log*
 
 #utils json data files
-/src/utils/github.json
-/src/utils/profile.json
-/src/utils/projects.json
 /src/utils/keys.json
 
 

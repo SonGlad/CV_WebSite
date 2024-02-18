@@ -1,0 +1,754 @@
+[
+    {
+        "id": "R_kgDOJCT8iQ",
+        "name": "Web Studio",
+        "role": "Developer",
+        "coverImage": "https://i.imgur.com/46xW74Z.jpg",
+        "img_url": [
+            {"url": "https://i.imgur.com/mxCRX6X.jpg"},
+            {"url": "https://i.imgur.com/5KvAPSY.jpg"},
+            {"url": "https://i.imgur.com/BkYvBDd.jpg"},
+            {"url": "https://i.imgur.com/XMYTpHN.jpg"},
+            {"url": "https://i.imgur.com/7hZNWVZ.jpg"},
+            {"url": "https://i.imgur.com/9HrluRm.jpg"}
+        ],
+        "figma_url": "https://www.figma.com/file/B1m2uk25m1eAgroESAuM2g/Web-Studio-(Version-3.0)?type=design&node-id=297046-1554&mode=design&t=1cppg2r9x6S14FlE-0",
+        "description": "Web Studio is the first individual project that is the result of my study of the basics of Front-End development, as well as my initial steps in this field. Web Studio is a website layout consisting of 2 pages. Each page includes a Header, Main, and Footer. The main page (Studio) consists of 5 sections: Hero, Strategy, What we are doing, Our Team, Customers. The Portfolio page consists of only one section and represents a list of works with the future possibility of sorting projects. The project layout is responsive and fully compliant with all modern adaptive requirements: mobile, tablet, and desktop devices. All images are retina-ready. Additionally, the project includes a mobile menu / burger and a modal window.",
+        "technical_task": null,
+        "technologies": [
+            {   "name": "HTML5",
+                "link": "https://html.spec.whatwg.org"
+            },
+            {   "name": "CSS3",
+                "link": "https://developer.mozilla.org/en-US/docs/Web/CSS"
+            },            
+            {   "name": "JavaScript",
+                "link": "https://developer.mozilla.org/en-US/docs/Learn/JavaScript"
+            },
+            {   "name": "Visual Studio",
+                "link": "https://code.visualstudio.com"
+            },
+            {   "name": "Git",
+                "link": "https://git-scm.com"
+            },
+            {   "name": "GitHub",
+                "link": "https://github.com"
+            }
+        ],
+        "libraries":[
+            {   "name": "jSDelivr (body-scroll-lock)",
+                "link": "https://www.jsdelivr.com/package/npm/body-scroll-lock"
+            }
+        ]
+    },
+    {
+        "id": "R_kgDOJHaXKg",
+        "name": "ANEMONE",
+        "role": "Team Leader, Developer",
+        "coverImage": "https://i.imgur.com/w73bLw4.jpg",
+        "img_url": [
+            {"url": "https://i.imgur.com/k1bktEh.jpg"},
+            {"url": "https://i.imgur.com/UGtdINk.jpg"},
+            {"url": "https://i.imgur.com/YRue2Z4.jpg"},
+            {"url": "https://i.imgur.com/ZoPZIuX.jpg"},
+            {"url": "https://i.imgur.com/jUUYUXH.jpg"},
+            {"url": "https://i.imgur.com/HqMydeG.jpg"}
+        ],
+        "figma_url": "https://www.figma.com/file/RDxxmxf8TTabgED6KpHfK2/Flower-studio?type=design&node-id=0-1&mode=design&t=3Vb3qE93FnTQX2jm-0",
+        "description": "Anemone is the first team project during the learning process at GoIt school for the position of Full-Stack developer. It is a single-page website with adaptive design and fully compliant with all modern requirements, including image retinization. The project also features a mobile menu / burger, several modal windows, connected sliders, and animations. The project is built using the Vite bundler. All application elements, as well as their styles, are connected modularly. The Anemone application consists of Header, Footer, and Main sections. The main part includes 5 sections: Hero, About, Store, Delivery, Blog. Each of these sections is self-contained and has its own separate functionality. The website is dedicated to floristry, where you can explore a variety of flowers, make orders, and also receive feedback.",
+        "technical_task": "https://docs.google.com/document/d/1J9HpswdNyvsLUXMxBtpoSkmn8vlDLqNC/edit?usp=sharing&ouid=106322449708075322597&rtpof=true&sd=true",
+        "technologies": [
+            {   "name": "HTML5",
+                "link": "https://html.spec.whatwg.org"
+            },
+            {   "name": "CSS3",
+                "link": "https://developer.mozilla.org/en-US/docs/Web/CSS"
+            },            
+            {   "name": "JavaScript",
+                "link": "https://developer.mozilla.org/en-US/docs/Learn/JavaScript"
+            },
+            {   "name": "Visual Studio",
+                "link": "https://code.visualstudio.com"
+            },
+            {   "name": "Git",
+                "link": "https://git-scm.com"
+            },
+            {   "name": "GitHub",
+                "link": "https://github.com"
+            }
+        ],
+        "libraries":[
+            {   "name": "Vite",
+                "link": "https://vitejs.dev"
+            },
+            {   "name": "jQuery",
+                "link": "https://jquery.com/download/"
+            },
+            {   "name": "Animate.css",
+                "link": "https://animate.style"
+            },
+            {   "name": "Animista",
+                "link": "https://animista.net"
+            },
+            {   "name": "cdnjs (simplelightbox)",
+                "link": "https://cdnjs.com/libraries/simplelightbox"
+            },
+            {   "name": "jSDelivr (slick-carousel)",
+                "link": "https://www.jsdelivr.com/package/npm/slick-carousel"
+            },
+            {   "name": "jSDelivr (body-scroll-lock)",
+                "link": "https://www.jsdelivr.com/package/npm/body-scroll-lock"
+            },
+            {   "name": "jSDelivr (smooth-scroll)",
+                "link": "https://www.jsdelivr.com/package/npm/smooth-scroll"
+            }
+        ]
+    },
+    {
+        "id": "R_kgDOJtpbxg",
+        "name": "Image Search",
+        "role": "Developer",
+        "coverImage": "https://i.imgur.com/97NRxqo.jpg",
+        "img_url": [
+            {"url": "https://i.imgur.com/bd3nujv.jpg"},
+            {"url": "https://i.imgur.com/WyaS7Wi.jpg"},
+            {"url": "https://i.imgur.com/Krhd8bb.jpg"},
+            {"url": "https://i.imgur.com/4KY8TgU.jpg"},
+            {"url": "https://i.imgur.com/g5ErU4P.jpg"},
+            {"url": "https://i.imgur.com/97NRxqo.jpg"}
+        ],
+        "figma_url": null,
+        "description": "Image Search is a single-page, adaptive web application created using JS. It allows easy and straightforward searching for any images using the 'Pixabay API' service database. To do this, simply enter the image name in the input field and perform the search. When the search based on your query is successfully completed, along with the images, a notification will be displayed indicating how many images were found based on your query. In case nothing is found for your query, a notification will also be displayed. The initial query includes 40 images. If more images are found based on the search, the remaining images can be viewed by clicking the 'Load More' button at the bottom of the screen. For each of your queries, a notification will also be displayed indicating how many images have been viewed and how many are left. All notifications are connected using the 'Notiflix' library. Clicking on any image will open a modal window with an embedded slider, allowing you to view the images in their original size and scroll through them without leaving the window. The modal window and slider are implemented using the 'Simple Lightbox' library.",
+        "technical_task": null,
+        "technologies": [
+            {   "name": "HTML5",
+                "link": "https://html.spec.whatwg.org"
+            },
+            {   "name": "CSS3",
+                "link": "https://developer.mozilla.org/en-US/docs/Web/CSS"
+            },            
+            {   "name": "JavaScript",
+                "link": "https://developer.mozilla.org/en-US/docs/Learn/JavaScript"
+            },
+            {   "name": "Visual Studio",
+                "link": "https://code.visualstudio.com"
+            },
+            {   "name": "Handlebars",
+                "link": "https://handlebarsjs.com"
+            },
+            {   "name": "SASS / SCSS",
+                "link": "https://sass-lang.com"
+            },
+            {   "name": "Axios",
+                "link": "https://axios-http.com/docs/api_intro"
+            },
+            {   "name": "Git",
+                "link": "https://git-scm.com"
+            },
+            {   "name": "GitHub",
+                "link": "https://github.com"
+            }
+        ],
+        "libraries":[
+            {   "name": "Parcel",
+                "link": "https://parceljs.org"
+            },
+            {   "name": "cdnjs (TweenMax.min.js)",
+                "link": "https://www.cdnpkg.com/gsap/file/TweenMax.min.js/"
+            },
+            {   "name": "GSAP",
+                "link": "https://gsap.com"
+            },
+            {   "name": "Notiflix",
+                "link": "https://notiflix.github.io/notify"
+            },
+            {   "name": "SimpleLightbox",
+                "link": "https://simplelightbox.com"
+            },
+            {   "name": "Modern Normalizer",
+                "link": "https://www.npmjs.com/package/modern-normalize"
+            },
+            {   "name": "Pixabay API(as backend)",
+                "link": "https://pixabay.com/api/docs/"
+            }
+        ]
+    },
+    {
+        "id": "R_kgDOJytD_w",
+        "name": "TastyTreats",
+        "role": "Team Leader, Developer",
+        "coverImage": "https://i.imgur.com/MYiU8Xk.jpg",
+        "img_url": [
+            {"url": "https://i.imgur.com/g4f15ZL.jpg"},
+            {"url": "https://i.imgur.com/un4a2J4.jpg"},
+            {"url": "https://i.imgur.com/pdXklVW.jpg"},
+            {"url": "https://i.imgur.com/617BZIy.jpg"},
+            {"url": "https://i.imgur.com/3tVYzTB.jpg"},
+            {"url": "https://i.imgur.com/kCWCnSw.jpg"},
+            {"url": "https://i.imgur.com/4xmzH0d.jpg"},
+            {"url": "https://i.imgur.com/jxSgJSv.jpg"}
+        ],
+        "figma_url": "https://www.figma.com/file/DfLTK1bjDwKKxkEJ1FTyFF/TastyTreats?type=design&mode=design&t=fsIaT2Kuqvs18w7F-0",
+        "description": "TastyTrearts is culinary craftsmanship combined with online education! A team of master chefs, passionately eager to share their knowledge through exciting culinary masterclasses, decided to create a website-application to provide everyone interested with an impeccable experience, where people can explore the world of delicious recipes and step-by-step video tutorials. This web application is a team project, with a development period of 7 days. TastyTreats is a two-page website-application that contains several sections. They help the user easily and conveniently make a choice and order delicious recipes with step-by-step video guidance on their preparation. On the main page of the website, there is an option to choose the site theme: light or dark colors and a convenient order basket. In the 'ALL CATEGORIES' section, users have the opportunity to choose dishes and ingredients. By selecting specific ingredients, the site will provide the user with dishes that include these ingredients. The 'Gallery' section has a convenient filter and search function, allowing users to find specific dishes, as well as apply filters by cooking time, country of origin, and ingredients. In addition, photos of dishes are provided along with their rating among users. Also, in the 'Gallery' section, there is an option to click on the photo of any dish, which will open a window where a video with instructions for preparing this dish will be available. The necessary ingredients and their proportions, along with a description of the cooking process for the dish, will also be provided. Plus, the cooking time and rating are indicated. After visiting the 'Gallery', choosing a dish, and watching the instructional video, users have the opportunity to write a review of the dish and rate it. And this option is available in a convenient modal window. The 'POPULAR RECIPES' section displays photos, names, and descriptions of the most popular dishes. On the second page, titled 'FAVORITES', users can see the dishes they marked as interesting in the 'Gallery' section. Also, on this page, there is a convenient filter that allows users to find dishes by categories. Plus, if a dish is no longer of interest to the user, it can be easily removed from this section.",
+        "technical_task": "https://docs.google.com/spreadsheets/d/1kRAq5bP7X4DqQ-ORzrWMvcqrqwqlXRTe5dba0VHEkK4/edit?usp=sharing",
+        "technologies": [
+            {   "name": "HTML5",
+                "link": "https://html.spec.whatwg.org"
+            },
+            {   "name": "CSS3",
+                "link": "https://developer.mozilla.org/en-US/docs/Web/CSS"
+            },            
+            {   "name": "JavaScript",
+                "link": "https://developer.mozilla.org/en-US/docs/Learn/JavaScript"
+            },
+            {   "name": "Visual Studio",
+                "link": "https://code.visualstudio.com"
+            },
+            {   "name": "Handlebars",
+                "link": "https://handlebarsjs.com"
+            },
+            {   "name": "SASS / SCSS",
+                "link": "https://sass-lang.com"
+            },
+            {   "name": "Axios",
+                "link": "https://axios-http.com/docs/api_intro"
+            },
+            {   "name": "Git",
+                "link": "https://git-scm.com"
+            },
+            {   "name": "GitHub",
+                "link": "https://github.com"
+            },
+            {   "name": "Postman",
+                "link": "https://www.postman.com"
+            }
+        ],
+        "libraries":[
+            {   "name": "Parcel",
+                "link": "https://parceljs.org"
+            },
+            {   "name": "Modern Normalizer",
+                "link": "https://www.npmjs.com/package/modern-normalize"
+            },
+            {   "name": "Notiflix",
+                "link": "https://notiflix.github.io/notify"
+            },
+            {   "name": "Swiper",
+                "link": "https://swiperjs.com"
+            },
+            {   "name": "Tui Pagination",
+                "link": "https://www.npmjs.com/package/tui-pagination"
+            },
+            {   "name": "jSDelivr (body-scroll-lock)",
+                "link": "https://www.jsdelivr.com/package/npm/body-scroll-lock"
+            },
+            {   "name": "cdnjs (animate.min.css)",
+                "link": "https://cdnjs.com/libraries/animate.css"
+            },
+            {   "name": "lodash.debounce",
+                "link": "https://www.npmjs.com/package/lodash.debounce"
+            },
+            {   "name": "Tasty Treats API(as backend)",
+                "link": "https://tasty-treats-backend.p.goit.global/api-docs/"
+            }
+        ]
+    },
+    {
+        "id": "R_kgDOKGJh7w",
+        "name": "Ruh",
+        "role": "Developer",
+        "coverImage": "https://i.imgur.com/PbqGDpH.jpg",
+        "img_url": [
+            {"url": "https://i.imgur.com/kn5pSta.jpg"},
+            {"url": "https://i.imgur.com/NAH7cBn.jpg"},
+            {"url": "https://i.imgur.com/QcIyyPS.jpg"},
+            {"url": "https://i.imgur.com/Vjl6GlU.jpg"},
+            {"url": "https://i.imgur.com/gBs9fxh.jpg"},
+            {"url": "https://i.imgur.com/PbqGDpH.jpg"}
+        ],
+        "figma_url": "https://www.figma.com/file/lIqGEEOrEBBk5otVi1NG64/%7C-R-O-O-H-%7C-(Copy)-(Copy)?type=design&node-id=0-1&mode=design&t=3GjejMOtxEJxewxC-0",
+        "description": "Ruh is a 3-page web application with responsive design implemented using HTML, CSS, and JS. The use of JS in this project is minimal and is mainly related to basic application management tasks such as opening and closing modal windows, rendering files within the modal window, and implementing an accordion on the main page in the Hero section. The main page features 2 sliders connected using the 'Swiper' library. The remaining part of the JS code is used for more flexible and smooth slider control, as well as setting up responsive design on the 2nd page.",
+        "technical_task": null,
+        "technologies": [
+            {   "name": "HTML5",
+                "link": "https://html.spec.whatwg.org"
+            },
+            {   "name": "CSS3",
+                "link": "https://developer.mozilla.org/en-US/docs/Web/CSS"
+            },            
+            {   "name": "JavaScript",
+                "link": "https://developer.mozilla.org/en-US/docs/Learn/JavaScript"
+            },
+            {   "name": "Visual Studio",
+                "link": "https://code.visualstudio.com"
+            },
+            {   "name": "SASS / SCSS",
+                "link": "https://sass-lang.com"
+            },
+            {   "name": "Git",
+                "link": "https://git-scm.com"
+            },
+            {   "name": "GitHub",
+                "link": "https://github.com"
+            },
+            {   "name": "Postman",
+                "link": "https://www.postman.com"
+            }
+        ],
+        "libraries":[
+            {   "name": "Parcel",
+                "link": "https://parceljs.org"
+            },
+            {   "name": "Modern Normalizer",
+                "link": "https://www.npmjs.com/package/modern-normalize"
+            },
+            {   "name": "Swiper",
+                "link": "https://swiperjs.com"
+            }
+        ]
+    },
+    {
+        "id": "R_kgDOKKmljg",
+        "name": "Image Finder",
+        "role": "Developer",
+        "coverImage": "https://i.imgur.com/E8416Nl.jpg",
+        "img_url": [
+            {"url": "https://i.imgur.com/PvGadS9.jpg"},
+            {"url": "https://i.imgur.com/6vmSxNG.jpg"},
+            {"url": "https://i.imgur.com/RuYfswy.jpg"},
+            {"url": "https://i.imgur.com/E8416Nl.jpg"},
+            {"url": "https://i.imgur.com/gJwYoCj.jpg"},
+            {"url": "https://i.imgur.com/BuFsFaZ.jpg"}
+        ],
+        "figma_url": null,
+        "description": "Image Finder is a single-page, responsive web application created entirely using the React library. It allows users to easily search for any images using the Pixabay API database. To perform a search, users simply need to enter the image name in the input field and initiate the search. When the search is successfully completed based on the user's query, a notification will be displayed along with the images. In case nothing is found based on the user's query, a notification will also be displayed. The initial query includes 12 images. If more images are found based on the search, the remaining images can be viewed by clicking the 'Load More' button at the bottom of the screen. All notifications are connected using the 'React Toastify' library. When clicking on any image, a modal window will open, allowing users to view the images in their original size. During low internet speeds, users can observe a Loader while waiting, which is connected using the 'React Spinners' library.",
+        "technical_task": null,
+        "technologies": [
+            {   "name": "HTML5",
+                "link": "https://html.spec.whatwg.org"
+            },
+            {   "name": "CSS3",
+                "link": "https://developer.mozilla.org/en-US/docs/Web/CSS"
+            },            
+            {   "name": "JavaScript",
+                "link": "https://developer.mozilla.org/en-US/docs/Learn/JavaScript"
+            },
+            {   "name": "React",
+                "link": "https://react.dev"
+            },
+            {   "name": "Styled Components",
+                "link": "https://styled-components.com"
+            },
+            {   "name": "Axios",
+                "link": "https://axios-http.com/docs/api_intro"
+            },
+            {   "name": "Visual Studio",
+                "link": "https://code.visualstudio.com"
+            },
+            {   "name": "Git",
+                "link": "https://git-scm.com"
+            },
+            {   "name": "GitHub",
+                "link": "https://github.com"
+            }
+        ],
+        "libraries":[
+            {   "name": "React",
+                "link": "https://react.dev"
+            },
+            {   "name": "React Spinners",
+                "link": "https://www.npmjs.com/package/react-spinners"
+            },
+            {   "name": "React Toastify",
+                "link": "https://www.npmjs.com/package/react-toastify"
+            },
+            {   "name": "Pixabay API(as backend)",
+                "link": "https://pixabay.com/api/docs/"
+            }
+        ]
+    },
+        {
+        "id": "R_kgDOKQ8EIQ",
+        "name": "Phonebook",
+        "role": "Developer",
+        "coverImage": "https://i.imgur.com/LP44Lh4.jpg",
+        "img_url": [
+            {"url": "https://i.imgur.com/YqiSwi1.jpg"},
+            {"url": "https://i.imgur.com/AUsJIgf.jpg"},
+            {"url": "https://i.imgur.com/f7zZ11m.jpg"},
+            {"url": "https://i.imgur.com/gfgPs6R.jpg"},
+            {"url": "https://i.imgur.com/AiVxNyF.jpg"},
+            {"url": "https://i.imgur.com/ckgWgGg.jpg"},
+            {"url": "https://i.imgur.com/LP44Lh4.jpg"}
+        ],
+        "figma_url": null,
+        "description": "Phonebook is a responsive web application consisting of five pages, built using the REACT/REDUX libraries. Initially, it started as an educational project, but thanks to the idea of creating something more than just a learning exercise, it evolved into a fully-fledged, stylized application. Unfortunately, it is only adapted for tablet and desktop devices. The application requires users to be registered in order to use it. However, this is more of a plus than a minus, as it ensures the confidentiality of your contacts, allowing only you to see and manage them. The website features convenient navigation, making it easy for users to move around and find what they need. All main parameters and data are easily accessible and intuitively understandable. The application includes a database of all countries in the world with their respective phone codes, allowing users not only to easily find the country code they need but also the country itself. Additionally, there is filtering and search functionality for both countries (by country name or code) and contacts. Group contact management is also available. Users can edit contacts via a pop-up control window by hovering over the contact and clicking on it. In the editing window, users can change the country code, username, and phone number.",
+        "technical_task": null,
+        "technologies": [
+            {   "name": "HTML5",
+                "link": "https://html.spec.whatwg.org"
+            },            
+            {   "name": "JavaScript",
+                "link": "https://developer.mozilla.org/en-US/docs/Learn/JavaScript"
+            },
+            {   "name": "React",
+                "link": "https://react.dev"
+            },
+            {   "name": "Redux",
+                "link": "https://redux.js.org"
+            },
+            {   "name": "Styled Components",
+                "link": "https://styled-components.com"
+            },
+            {   "name": "Axios",
+                "link": "https://axios-http.com/docs/api_intro"
+            },
+            {   "name": "Visual Studio",
+                "link": "https://code.visualstudio.com"
+            },
+            {   "name": "Git",
+                "link": "https://git-scm.com"
+            },
+            {   "name": "GitHub",
+                "link": "https://github.com"
+            },
+            {   "name": "Postman",
+                "link": "https://www.postman.com"
+            }
+        ],
+        "libraries":[
+            {   "name": "React",
+                "link": "https://react.dev"
+            },
+            {   "name": "Redux",
+                "link": "https://redux.js.org"
+            },
+            {   "name": "React Spinners",
+                "link": "https://www.npmjs.com/package/react-spinners"
+            },
+            {   "name": "React Toastify",
+                "link": "https://www.npmjs.com/package/react-toastify"
+            },
+            {   "name": "Eslint Plugin Import",
+                "link": "https://www.npmjs.com/package/eslint-plugin-import"
+            },
+            {   "name": "Modern Normalize",
+                "link": "https://www.npmjs.com/package/modern-normalize"
+            },
+            {   "name": "NanoId",
+                "link": "https://www.npmjs.com/package/nanoid"
+            },
+            {   "name": "Country Codes List",
+                "link": "https://www.npmjs.com/package/country-codes-list"
+            },
+            {   "name": "Herokuapp API(as beckend)",
+                "link": "https://connections-api.herokuapp.com/docs/"
+            }
+        ]
+    },
+    {
+        "id": "R_kgDOK45HWQ",
+        "name": "HEALTH_EN",
+        "role": "Team Leader, Developer",
+        "coverImage": "https://i.imgur.com/HwKGlqr.jpg",
+        "img_url": [
+            {"url": "https://i.imgur.com/ACSsviu.jpg"},
+            {"url": "https://i.imgur.com/H1oJZFN.jpg"},
+            {"url": "https://i.imgur.com/lXyIewE.jpg"},
+            {"url": "https://i.imgur.com/ggtghpK.jpg"},
+            {"url": "https://i.imgur.com/3DRo504.jpg"},
+            {"url": "https://i.imgur.com/UP6jJ4h.jpg"},
+            {"url": "https://i.imgur.com/1aJeRRQ.jpg"},
+            {"url": "https://i.imgur.com/JcBO7qF.jpg"},
+            {"url": "https://i.imgur.com/NYyLTwM.jpg"},
+            {"url": "https://i.imgur.com/Rb2NiBT.jpg"},
+            {"url": "https://i.imgur.com/r4FNqp4.jpg"},
+            {"url": "https://i.imgur.com/MI2C4ck.jpg"},
+            {"url": "https://i.imgur.com/HwKGlqr.jpg"}
+        ],
+        "figma_url": "https://www.figma.com/file/TY1tlWppyNqqV3HDMs2hWX/HealthyHub?type=design&node-id=0-1&mode=design&t=DjHVg3QtQV3TBpVF-0",
+        "description": "HEALTH_EN is a team exam project of the GoIt school. It was implemented by a team of 10 developers over a period of 2 weeks. The entire project, specifically both the Front-End and Back-End, was built from scratch based on the technical specifications and a Figma design. HEALTH_EN is an 8-page application with responsive design, fully compliant with all modern requirements. This site is designed for those who want to normalize their nutrition, monitor their daily calorie intake needed to maintain their current body mass, or according to the selected mode. This application cannot be used without a personal account. To start, the user will need to go through 5 stages of registration and enter their data such as email, password, username, height, weight, age, the diet mode the user will use, choice of gender, and the user's activity level. All this is necessary to provide the user with as accurate information as possible for calculations. In case the user forgets the password, they can easily change it even before logging in. To do this, they just need to go to the 'Forgot Your Password' page and enter their email. They will receive an email with a temporary password allowing them to log into the system. This temporary password can be easily changed on the 'Settings' page, along with any other data previously entered by the user. Also on the 'Settings' page, the user can change their avatar if desired. With daily use of this application, updating their current weight is a mandatory part. This should be the first action of the user when logging into the system for the first time each day. On the 'Recommended Food' page, there is a list of recommended products, taking into account their caloric content. The 'Dashboard' page represents a summary statistics of weight changes, the amount of water consumed, and food intake over the selected period. On the main page, the user can enter and edit the amount of water consumed per day, as well as see the necessary limits of its consumption. The same applies to food. The user is provided with the opportunity to see the required calories, fats, carbohydrates, and how much they have already consumed and how much is left. Convenient graphs help with this. On the 'Diary' page, the user can see all their food intakes throughout the day and also manage them independently. They can fill them in, edit, or even delete them.",
+        "technical_task": "https://docs.google.com/spreadsheets/d/11ue6Gk9E-Wt4ZfzEn7RdqajlrdLgEXoM/edit?usp=sharing&ouid=106322449708075322597&rtpof=true&sd=true",
+        "technologies": [
+            {   "name": "HTML5",
+                "link": "https://html.spec.whatwg.org"
+            },            
+            {   "name": "JavaScript",
+                "link": "https://developer.mozilla.org/en-US/docs/Learn/JavaScript"
+            },
+            {   "name": "React",
+                "link": "https://react.dev"
+            },
+            {   "name": "Redux",
+                "link": "https://redux.js.org"
+            },
+            {   "name": "Styled Components",
+                "link": "https://styled-components.com"
+            },
+            {   "name": "Axios",
+                "link": "https://axios-http.com/docs/api_intro"
+            },
+            {   "name": "Visual Studio",
+                "link": "https://code.visualstudio.com"
+            },
+            {   "name": "Git",
+                "link": "https://git-scm.com"
+            },
+            {   "name": "GitHub",
+                "link": "https://github.com"
+            },
+            {   "name": "Postman",
+                "link": "https://www.postman.com"
+            },
+            {   "name": "MongoDB",
+                "link": "https://www.mongodb.com/cloud/atlas/register?utm_source=google&utm_campaign=search_gs_pl_evergreen_atlas_core_prosp-brand_gic-null_emea-ua_ps-all_desktop_eng_lead&utm_term=mongodb&utm_medium=cpc_paid_search&utm_ad=e&utm_ad_campaign_id=12212624575&adgroup=115749710823&cq_cmp=12212624575&gad_source=1&gclid=CjwKCAiA_OetBhAtEiwAPTeQZy-VKImwt1qJHg8yNCl4a_hX5XmBxUh821Oa4HKoboH2OUpctL_ewhoCh7kQAvD_BwE"
+            },
+            {   "name": "Node.js",
+                "link": "https://nodejs.org/en"
+            },
+            {   "name": "HEALTH_EN_BACKEND",
+                "link": "https://github.com/Sheremeta-Ivan/HEALTH_EN_BACKEND"
+            }
+            
+        ],
+        "libraries":[
+            {   "name": "React",
+                "link": "https://react.dev"
+            },
+            {   "name": "Redux",
+                "link": "https://redux.js.org"
+            },
+            {   "name": "React Spinners",
+                "link": "https://www.npmjs.com/package/react-spinners"
+            },
+            {   "name": "React Toastify",
+                "link": "https://www.npmjs.com/package/react-toastify"
+            },
+            {   "name": "Eslint Plugin Import",
+                "link": "https://www.npmjs.com/package/eslint-plugin-import"
+            },
+            {   "name": "Modern Normalize",
+                "link": "https://www.npmjs.com/package/modern-normalize"
+            },
+            {   "name": "Normalize.css",
+                "link": "https://www.npmjs.com/package/normalize.css?activeTab=versions"
+            },
+            {   "name": "NanoId",
+                "link": "https://www.npmjs.com/package/nanoid"
+            },
+            {   "name": "Formik",
+                "link": "https://www.npmjs.com/package/formik"
+            },
+            {   "name": "Yup",
+                "link": "https://www.npmjs.com/package/yup"
+            },
+            {   "name": "React Charts 2",
+                "link": "https://www.npmjs.com/package/react-chartjs-2"
+            },
+            {   "name": "HEALTH_EN API(swagger)",
+                "link": "https://healthy-hub-backend-fs5j.onrender.com/api-docs/"
+            }
+        ]
+    },
+    {
+        "id": "R_kgDOK_6p1w",
+        "name": "HealthyHub",
+        "role": "Developer",
+        "coverImage": "https://i.imgur.com/HwKGlqr.jpg",
+        "img_url": [
+            {"url": "https://i.imgur.com/ACSsviu.jpg"},
+            {"url": "https://i.imgur.com/H1oJZFN.jpg"},
+            {"url": "https://i.imgur.com/lXyIewE.jpg"},
+            {"url": "https://i.imgur.com/ggtghpK.jpg"},
+            {"url": "https://i.imgur.com/3DRo504.jpg"},
+            {"url": "https://i.imgur.com/UP6jJ4h.jpg"},
+            {"url": "https://i.imgur.com/1aJeRRQ.jpg"},
+            {"url": "https://i.imgur.com/JcBO7qF.jpg"},
+            {"url": "https://i.imgur.com/NYyLTwM.jpg"},
+            {"url": "https://i.imgur.com/Rb2NiBT.jpg"},
+            {"url": "https://i.imgur.com/r4FNqp4.jpg"},
+            {"url": "https://i.imgur.com/MI2C4ck.jpg"},
+            {"url": "https://i.imgur.com/HwKGlqr.jpg"}
+        ],
+        "figma_url": "https://www.figma.com/file/TY1tlWppyNqqV3HDMs2hWX/HealthyHub?type=design&node-id=0-1&mode=design&t=DjHVg3QtQV3TBpVF-0",
+        "description": "HealthyHub is an enhanced version of the team project HEALTH_EN. This web application has exactly the same functionality, layout, and Back-End as HEALTH_EN. It has the same technical implementation. The difference lies in the improved functionality, bug fixes, and the addition of custom animations. Here, shortcomings in the operation of dropdowns were addressed, with the logic of their operation completely rewritten. Issues and errors on the 'Settings' page in handling requests to change user data and change user avatar were resolved. A preview of the new avatar when changing it has been added. Custom animations have been added on the main page. Redirect flaws on pages have been fixed (now when the user reloads the page, they remain on it instead of being redirected to the main page). Styling issues, particularly with scrollbars, have been resolved.",
+        "technical_task": "https://docs.google.com/spreadsheets/d/11ue6Gk9E-Wt4ZfzEn7RdqajlrdLgEXoM/edit?usp=sharing&ouid=106322449708075322597&rtpof=true&sd=true",
+        "technologies": [
+            {   "name": "HTML5",
+                "link": "https://html.spec.whatwg.org"
+            },            
+            {   "name": "JavaScript",
+                "link": "https://developer.mozilla.org/en-US/docs/Learn/JavaScript"
+            },
+            {   "name": "React",
+                "link": "https://react.dev"
+            },
+            {   "name": "Redux",
+                "link": "https://redux.js.org"
+            },
+            {   "name": "Styled Components",
+                "link": "https://styled-components.com"
+            },
+            {   "name": "Axios",
+                "link": "https://axios-http.com/docs/api_intro"
+            },
+            {   "name": "Visual Studio",
+                "link": "https://code.visualstudio.com"
+            },
+            {   "name": "Git",
+                "link": "https://git-scm.com"
+            },
+            {   "name": "GitHub",
+                "link": "https://github.com"
+            },
+            {   "name": "Postman",
+                "link": "https://www.postman.com"
+            },
+            {   "name": "MongoDB",
+                "link": "https://www.mongodb.com/cloud/atlas/register?utm_source=google&utm_campaign=search_gs_pl_evergreen_atlas_core_prosp-brand_gic-null_emea-ua_ps-all_desktop_eng_lead&utm_term=mongodb&utm_medium=cpc_paid_search&utm_ad=e&utm_ad_campaign_id=12212624575&adgroup=115749710823&cq_cmp=12212624575&gad_source=1&gclid=CjwKCAiA_OetBhAtEiwAPTeQZy-VKImwt1qJHg8yNCl4a_hX5XmBxUh821Oa4HKoboH2OUpctL_ewhoCh7kQAvD_BwE"
+            },
+            {   "name": "Node.js",
+                "link": "https://nodejs.org/en"
+            },
+            {   "name": "HEALTH_EN_BACKEND",
+                "link": "https://github.com/Sheremeta-Ivan/HEALTH_EN_BACKEND"
+            }
+            
+        ],
+        "libraries":[
+            {   "name": "React",
+                "link": "https://react.dev"
+            },
+            {   "name": "Redux",
+                "link": "https://redux.js.org"
+            },
+            {   "name": "React Spinners",
+                "link": "https://www.npmjs.com/package/react-spinners"
+            },
+            {   "name": "React Toastify",
+                "link": "https://www.npmjs.com/package/react-toastify"
+            },
+            {   "name": "Eslint Plugin Import",
+                "link": "https://www.npmjs.com/package/eslint-plugin-import"
+            },
+            {   "name": "Modern Normalize",
+                "link": "https://www.npmjs.com/package/modern-normalize"
+            },
+            {   "name": "Normalize.css",
+                "link": "https://www.npmjs.com/package/normalize.css?activeTab=versions"
+            },
+            {   "name": "NanoId",
+                "link": "https://www.npmjs.com/package/nanoid"
+            },
+            {   "name": "Formik",
+                "link": "https://www.npmjs.com/package/formik"
+            },
+            {   "name": "Yup",
+                "link": "https://www.npmjs.com/package/yup"
+            },
+            {   "name": "React Charts 2",
+                "link": "https://www.npmjs.com/package/react-chartjs-2"
+            },
+            {   "name": "HEALTH_EN API(swagger)",
+                "link": "https://healthy-hub-backend-fs5j.onrender.com/api-docs/"
+            }
+        ]
+    },
+    {
+        "id": "R_kgDOLG9kRA",
+        "name": "CV_WebSite",
+        "role": "Developer",
+        "coverImage": "https://i.imgur.com/YsbOt42.jpg",
+        "img_url": [
+            {"url": "https://i.imgur.com/m5Rkpk2.png"},
+            {"url": "https://i.imgur.com/YsbOt42.jpg"},
+            {"url": "https://i.imgur.com/dBu2OU2.jpg"},
+            {"url": "https://i.imgur.com/CTGCKYu.jpg"},
+            {"url": "https://i.imgur.com/YPv9yKZ.jpg"},
+            {"url": "https://i.imgur.com/HOE7VaU.jpg"},
+            {"url": "https://i.imgur.com/nRPvSFS.jpg"},
+            {"url": "https://i.imgur.com/KG2Ygne.jpg"},
+            {"url": "https://i.imgur.com/qWlTjD5.jpg"}
+        ],
+        "figma_url": null,
+        "description": "CV_WebSite is a 6-page web application created as a developer portfolio website. It can serve as both a primary and supplementary tool for your resume. The site is fully responsive and meets all modern requirements for such development, looking equally good on all types of devices. The application was built using the REACT/REDUX library with full imitation of server-side functionality. All data displayed in the application is stored in three JSON files (simulating data retrieval from a backend) and can be easily modified or tailored to another user. In case of a deployed backend or if needed, this application can be easily connected to it, thanks to the pre-configured REDUX state management library. Each page of this site is self-contained and contains all the necessary information about the developer. Upon entering the site, you are greeted with the 'Home' page, featuring the developer's name, a brief description, and the ability to view their resume. The 'About' page contains more detailed information about the developer, including GitHub statistics. This page also features subtle, non-intrusive animation, giving it a livelier appearance. On the 'Education' page, you can find information about the developer's education and the institutions they attended. Animated sliders are present on this page, giving it a more atmospheric look. All photos can be viewed in a separate window by simply clicking on the button on the photo itself. The 'Skills' page contains information about the developer's professional skills, as well as official GitHub statistics for all repositories and programming languages. The 'Portfolio' page is a collection of all the developer's projects. To get information about a particular project, simply hover over the project of interest and open it. This will open a separate window where you can find all the detailed information about the project. The 'Contact' page allows you to contact the developer directly.",
+        "technical_task": null,
+        "technologies": [
+            {   "name": "HTML5",
+                "link": "https://html.spec.whatwg.org"
+            },            
+            {   "name": "JavaScript",
+                "link": "https://developer.mozilla.org/en-US/docs/Learn/JavaScript"
+            },
+            {   "name": "React",
+                "link": "https://react.dev"
+            },
+            {   "name": "Redux",
+                "link": "https://redux.js.org"
+            },
+            {   "name": "Styled Components",
+                "link": "https://styled-components.com"
+            },
+            {   "name": "Visual Studio",
+                "link": "https://code.visualstudio.com"
+            },
+            {   "name": "Git",
+                "link": "https://git-scm.com"
+            },
+            {   "name": "GitHub",
+                "link": "https://github.com"
+            }
+            
+        ],
+        "libraries":[
+            {   "name": "React",
+                "link": "https://react.dev"
+            },
+            {   "name": "Redux",
+                "link": "https://redux.js.org"
+            },
+            {   "name": "React Spinners",
+                "link": "https://www.npmjs.com/package/react-spinners"
+            },
+            {   "name": "Eslint Plugin Import",
+                "link": "https://www.npmjs.com/package/eslint-plugin-import"
+            },
+            {   "name": "Modern Normalize",
+                "link": "https://www.npmjs.com/package/modern-normalize"
+            },
+            {   "name": "Normalize.css",
+                "link": "https://www.npmjs.com/package/normalize.css?activeTab=versions"
+            },
+            {   "name": "NanoId",
+                "link": "https://www.npmjs.com/package/nanoid"
+            },
+            {   "name": "React Charts 2",
+                "link": "https://www.npmjs.com/package/react-chartjs-2"
+            },
+            {   "name": "Anime.js",
+                "link": "https://www.npmjs.com/package/animejs"
+            },
+            {   "name": "React GitHub Calendar",
+                "link": "https://www.npmjs.com/package/react-github-calendar"
+            },
+            {   "name": "React Intersection Observer",
+                "link": "https://www.npmjs.com/package/react-intersection-observer"
+            },
+            {   "name": "React Tooltip",
+                "link": "https://www.npmjs.com/package/react-tooltip"
+            },
+            {   "name": "Typewriter Effect",
+                "link": "https://www.npmjs.com/package/typewriter-effect"
+            },
+            {   "name": "Swiper",
+                "link": "https://swiperjs.com"
+            },
+            {   "name": "Formik",
+                "link": "https://www.npmjs.com/package/formik"
+            },
+            {   "name": "Yup",
+                "link": "https://www.npmjs.com/package/yup"
+            }
+        ]
+    }
+]
