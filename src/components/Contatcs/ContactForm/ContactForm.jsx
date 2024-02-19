@@ -8,11 +8,20 @@ import { useFormik } from "formik";
 import { ContactFormSchema } from "../../../utils/ValidationSchema";
 import { ShowRules } from "../../../utils/ShowRules";
 import { useState, useEffect } from "react";
-// import emailjs from '@emailjs/browser';
+import emailjs from '@emailjs/browser';
+import { openLoader, closeLoader } from "../../../redux/Data/data-slice";
+import { setSuccsessTrue, setSuccsessFalse, openModalContact } from "../../../redux/Modal/modal-slice";
+import { useDispatch } from "react-redux";
 
+
+const SERVICE_ID = 'service_c66ogc6';
+const TEMPLATE_ID = 'template_r2jcm2g';
+const PUBLIC_KEY = 'acQGHeSWb2XDF5MDI';
 
 
 export const ContactForm = () => {
+    const dispatch = useDispatch();
+
     const [formChanged, setFormChanged] = useState(false);
     const {
         values,
@@ -36,21 +45,37 @@ export const ContactForm = () => {
         validationSchema: ContactFormSchema,
 
         onSubmit: (values) => {
-            console.log(values.name);
-            console.log(values.email);
-            console.log(values.subject);
-            console.log(values.user_comment);
-            console.log(values.user_agreement);
-            setFormChanged(false);
-            resetForm({
-                values: {
-                    name: '',
-                    email: '',
-                    subject: '',
-                    user_comment: '',
-                    user_agreement: false
-                },
-            });
+            dispatch(openLoader());
+            emailjs.send(SERVICE_ID, TEMPLATE_ID, {
+                from_name: values.name,
+                to_name: 'Oleg',
+                from_email: values.email,
+                to_email: 'okoshevy@gmail.com',
+                subject: values.subject,
+                message: values.user_comment
+            }, PUBLIC_KEY)
+            .then(() => {
+                dispatch(closeLoader());
+                dispatch(setSuccsessTrue());
+                dispatch(openModalContact());
+                setFormChanged(false);
+                resetForm({
+                    values: {
+                        name: '',
+                        email: '',
+                        subject: '',
+                        user_comment: '',
+                        user_agreement: false
+                    },
+                })
+                }, 
+                (error) => {
+                    dispatch(closeLoader());
+                    dispatch(setSuccsessFalse());
+                    dispatch(openModalContact());
+                    console.error(error);
+                }
+            )
         },
     });
 
@@ -70,7 +95,7 @@ export const ContactForm = () => {
         ) {
             setFormChanged(true);
         } 
-      },[values.email, values.name, values.subject, values.user_agreement]);
+    },[values.email, values.name, values.subject, values.user_agreement]);
 
 
     return(

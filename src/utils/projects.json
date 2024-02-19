@@ -748,6 +748,9 @@
             },
             {   "name": "Yup",
                 "link": "https://www.npmjs.com/package/yup"
+            },
+            {   "name": "EmailJS",
+                "link": "https://www.npmjs.com/package/@emailjs/browser"
             }
         ]
     }

@@ -6,6 +6,8 @@ const modalSlice = createSlice({
     initialState: {
         isEducationModal: false,
         isPortfolioModal: false,
+        isContactModal: false,
+        isSuccsess: true,
         aboutPictureData: {},
         portfolioModalData: null, 
     },
@@ -23,6 +25,12 @@ const modalSlice = createSlice({
         closeModalPortfolio: (state) => {
             state.isPortfolioModal = false;
         },
+        openModalContact: (state) => {
+            state.isContactModal = true;
+        },
+        closeModalContact: (state) => {
+            state.isContactModal = false;
+        },
         updateAboutPictureData: (state, action) => {
             const { id, img_url, url } = action.payload;
             state.aboutPictureData = {id, img_url, url};
@@ -30,11 +38,18 @@ const modalSlice = createSlice({
         updatePortfolioModalData: (state, action) => {
             state.portfolioModalData = action.payload;
         },
+        setSuccsessTrue: (state) => {
+            state.isSuccsess = true;
+        },
+        setSuccsessFalse: (state) => {
+            state.isSuccsess = false;
+        },
     }
 });
 
 
 export const modalReducer = modalSlice.reducer;
+
 
 export const {
     openModalEducation,
@@ -43,4 +58,8 @@ export const {
     closeModalPortfolio,
     updateAboutPictureData,
     updatePortfolioModalData,
+    openModalContact,
+    closeModalContact,
+    setSuccsessTrue,
+    setSuccsessFalse,
 } = modalSlice.actions;

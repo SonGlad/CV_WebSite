@@ -11,7 +11,7 @@ export const ModalStyled = styled.div`
     justify-content: center;
     align-items: center;
     color: #ffffff;
-    background-color: rgba(0, 0, 0, 0.8);
-    backdrop-filter: blur(5px) ;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
     z-index: 100;
 `

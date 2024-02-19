@@ -8,7 +8,7 @@ import {
     selectIsPortfolioData,
     selectPortfolioRefactoredData,
     selectIsPortfolioRefactoredData,
-
+    selectIsLoading,
 } from "../redux/Data/data-selectors";
 
 
@@ -21,6 +21,7 @@ export const useData = () => {
     const isPortfolioData = useSelector(selectIsPortfolioData);
     const portfolioRefactoredData = useSelector(selectPortfolioRefactoredData);
     const isPortfolioRefactoredData = useSelector(selectIsPortfolioRefactoredData);
+    const isLoading = useSelector(selectIsLoading);
 
     
     return{
@@ -31,6 +32,7 @@ export const useData = () => {
         portfolioData,
         isPortfolioData,
         portfolioRefactoredData,
-        isPortfolioRefactoredData
+        isPortfolioRefactoredData,
+        isLoading,
     }
 };

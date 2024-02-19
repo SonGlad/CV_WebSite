@@ -1,12 +1,10 @@
-import { Navigate, Route, Routes} from "react-router-dom";
+import { Navigate, Route, Routes, useLocation} from "react-router-dom";
 import { lazy } from "react";
 import { SharedLayout } from "./SharedLayout";
 import { Modal } from "./Modal/Modal";
 import { useModal } from "../hooks/useModal";
-// import { useEffect } from "react";
-// import { useDispatch} from "react-redux";
-// import { PrivateRoute } from "./PrivateRoute";
-// import { RestrictedRoute } from "./RestrictedRoute";
+import { useData } from "../hooks/useData";
+import { RefreshLoading } from "../components/CustomLoaders/CustomLoaders";
 
 
 const HomePage = lazy(() => import('../pages/Home/Home'));
@@ -17,13 +15,15 @@ const PortfolioPage = lazy(() => import('../pages/Portfolio/Portfolio'));
 const ContactPage = lazy(() => import('../pages/Contact/Contact'));
 
 
-
 export const App= () => {
-  const {isEducationModalOpen, isPortfolioModalOpen} = useModal();
+  const {isEducationModalOpen, isPortfolioModalOpen, isContactModalOpen} = useModal();
+  const {isLoading} = useData();
+  const currentPath = useLocation().pathname;
 
 
   return (
     <>
+      {(isLoading && currentPath === '/contact') && <RefreshLoading />}
       <Routes>
         <Route path='/' element = {<SharedLayout/>}>
           <Route index element={<HomePage/>}/>
@@ -35,7 +35,7 @@ export const App= () => {
           <Route path ='/contact' element={<ContactPage/>}/>
         </Route>    
       </Routes>
-      {(isEducationModalOpen || isPortfolioModalOpen) && <Modal/>}
+      {(isEducationModalOpen || isPortfolioModalOpen || isContactModalOpen) && <Modal/>}
     </>
   );
 };

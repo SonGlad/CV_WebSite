@@ -18,6 +18,8 @@ export const theme = {
         dark_theme4: '#a83206',
         dark_theme5: '#cc3900',
         black: "#000000",
+        green: "#3cbc81",
+        red: "#e74a3b",
     },
 
     transition: {

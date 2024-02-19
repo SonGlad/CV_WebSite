@@ -2,9 +2,10 @@ import { createPortal } from "react-dom";
 import { ModalStyled } from "./Modal.styled";
 import { EducationModal } from "./EducationModal/EducationModal";
 import { PortfolioModal } from "./PortfolioModal/PortfolioModal";
+import { ContactModal } from "./CotactModal/ContactModal";
 import { useDispatch } from "react-redux";
 import { useEffect, useCallback } from "react";
-import {closeModalEducation, closeModalPortfolio} from "../../redux/Modal/modal-slice";
+import {closeModalEducation, closeModalPortfolio, closeModalContact} from "../../redux/Modal/modal-slice";
 import { useModal } from "../../hooks/useModal";
 
 
@@ -13,7 +14,7 @@ const modalRoot = document.querySelector("#modal-root");
 
 export const Modal = () => {
     const dispatch = useDispatch();
-    const {isEducationModalOpen, isPortfolioModalOpen} = useModal();
+    const {isEducationModalOpen, isPortfolioModalOpen, isContactModalOpen} = useModal();
 
 
 
@@ -24,7 +25,10 @@ export const Modal = () => {
         if(isPortfolioModalOpen) {
             dispatch(closeModalPortfolio());
         }
-    }, [dispatch, isEducationModalOpen, isPortfolioModalOpen]);
+        if(isContactModalOpen) {
+            dispatch(closeModalContact());
+        }
+    }, [dispatch, isContactModalOpen, isEducationModalOpen, isPortfolioModalOpen]);
 
 
 
@@ -54,13 +58,16 @@ export const Modal = () => {
 
 
     return createPortal(
-        (isEducationModalOpen || isPortfolioModalOpen) && (
+        (isEducationModalOpen || isPortfolioModalOpen || isContactModalOpen) && (
             <ModalStyled onClick={handleBackdropClick}>
                 {isEducationModalOpen && (
                     <EducationModal handleClickClose={handleClickClose}/>
                 )}
                 {isPortfolioModalOpen && (
                     <PortfolioModal handleClickClose={handleClickClose}/>
+                )}
+                {isContactModalOpen && (
+                    <ContactModal handleClickClose={handleClickClose}/>
                 )}
             </ModalStyled>
         ),

@@ -13,3 +13,5 @@ export const selectPortfolioRefactoredData = state => state.data.portfolioRefact
 export const selectPortfolioData = state => state.data.portfolioData;
 
 export const selectIsPortfolioData = state => state.data.isPortfolioData;
+
+export const selectIsLoading = state => state.data.isLoading;

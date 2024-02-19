@@ -11,7 +11,8 @@ export const ContactFormStyled = styled.form`
         max-width: 440px;
         padding: 20px;
         outline-offset: -1px;
-        animation: BoxshadowAppear 1s 2s ease forwards;
+        animation: BoxshadowAppear 1s 2s ease forwards,
+        BoxShadowColorChange 3.2s 2.5s ease forwards;
     }
 
     @media screen and (min-width: 768px){
@@ -21,16 +22,23 @@ export const ContactFormStyled = styled.form`
     @keyframes BoxshadowAppear {
         0%{
             border-radius: 0px;
-            box-shadow: 0px 0px 0px 0px rgba(0,0,2,0.5);
+            box-shadow: 0px 0px 0px 0px rgba(255,255,255,0.5);
             outline: 2px solid rgba(237,237,237, 1);
         }
         100%{
             border-radius: 20px;
-            box-shadow: 0px 0px 10px 10px rgba(0,0,2,0.5);
+            box-shadow: 0px 0px 10px 10px rgba(255,255,255,0.5);
             outline: 2px solid rgba(237,237,237, 0);
         }
     }
-
+    @keyframes BoxShadowColorChange {
+        0%{
+            box-shadow: 0px 0px 10px 10px rgba(255,255,255,0.5);
+        }
+        100%{
+            box-shadow: 0px 0px 10px 10px rgba(0,0,0,0.5);
+        }
+    }
 
 
     .form-label{
@@ -43,7 +51,7 @@ export const ContactFormStyled = styled.form`
         transform: scale(0.5);
         opacity: 0;
         animation: OpacityAppear 1s ease forwards;
-        animation-delay: calc((0.3s * var(--i) + 3s));
+        animation-delay: calc((0.3s * var(--i) + 2.5s));
 
         @media screen and (min-width: 768px){
             font-weight: 500;
@@ -144,7 +152,7 @@ export const ContactFormStyled = styled.form`
         margin-bottom: 25px;
         gap: 10px;
         position: relative;
-        animation: CheckboxSlideLeft 1s ease forwards 4.2s;
+        animation: CheckboxSlideLeft 1s ease forwards 3.7s;
         opacity: 0;
     }
 
@@ -210,7 +218,7 @@ export const ContactFormStyled = styled.form`
         transition: color ${p => p.theme.transition.main_transition}, 
                     background-color ${p => p.theme.transition.main_transition},
                     box-shadow ${p => p.theme.transition.main_transition};
-        animation: ScaleAppear 1s ease forwards 4.2s;
+        animation: ScaleAppear 1s ease forwards 3.7s;
         transform: scale(0);
 
         &:hover{

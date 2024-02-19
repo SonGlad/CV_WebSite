@@ -23,7 +23,7 @@ export const Loading = () => {
 export const RefreshLoading = () => {
     return (
         <RingLoaderStyled
-            style={{backgroundColor: 'rgba(0, 0, 0, 0.8)',}}
+            style={{backgroundColor: 'rgba(0, 0, 0, 0.5)', backdropFilter: 'blur(5px)'}}
         >
             <RingLoader 
                 color={"#36d7b7"}

@@ -10,6 +10,7 @@ const initialState = {
     isRefactoredData: false,
     isPortfolioRefactoredData: false,
     isPortfolioData: false,
+    isLoading: false,
 };
 
 
@@ -36,7 +37,15 @@ const dataSlice = createSlice({
         statePortfolioDataProjects: (state, action) => {
             state.portfolioData = action.payload;
             state.isPortfolioData = true;  
-        }
+        },
+
+        openLoader: (state) => {
+            state.isLoading = true;
+        },
+
+        closeLoader: (state) => {
+            state.isLoading = false;
+        },
     },
 
 
@@ -55,5 +64,6 @@ export const {
     stateRefactoredProjects,
     statePortfolioRefactoredData,
     statePortfolioDataProjects,
-
+    openLoader,
+    closeLoader,
 } = dataSlice.actions;

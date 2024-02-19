@@ -39,16 +39,24 @@ export const ContactsStyled = styled.div`
     }
     
     
-
     .animated-span-upper,
     .animated-span-lower{
         display: flex;
         justify-content: center;
         width: 100%;
+        max-width: 400px;
         height: auto;
         border: none;
         outline: none;
         position: relative;
+
+        @media screen and (min-width: 468px){
+            max-width: 440px;
+        }
+
+        @media screen and (min-width: 768px){
+            max-width: 800px;
+        }
     }
 
     .animated-span-upper::before{
