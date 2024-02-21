@@ -1,6 +1,6 @@
 # CV_WebSite - Personal CV & Portfolio WevSite
 
-![Preview](./assets/asset4.jpg)
+![Preview](./assets/asset5.jpg)
 
 CV_WebSite is a 6-page web application created as a developer portfolio website. It can serve as both a primary and supplementary tool for your resume. The site is fully responsive and meets all modern requirements for such development, looking equally good on all types of devices. The application was built using the REACT/REDUX library with full imitation of server-side functionality. All data displayed in the application is stored in three JSON files (simulating data retrieval from a backend) and can be easily modified or tailored to another user. In case of a deployed backend or if needed, this application can be easily connected to it, thanks to the pre-configured REDUX state management library. Each page of this site is self-contained and contains all the necessary information about the developer. 
 
