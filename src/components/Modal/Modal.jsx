@@ -4,7 +4,7 @@ import { EducationModal } from "./EducationModal/EducationModal";
 import { PortfolioModal } from "./PortfolioModal/PortfolioModal";
 import { ContactModal } from "./CotactModal/ContactModal";
 import { useDispatch } from "react-redux";
-import { useEffect, useCallback } from "react";
+import { useEffect, useCallback} from "react";
 import {closeModalEducation, closeModalPortfolio, closeModalContact} from "../../redux/Modal/modal-slice";
 import { useModal } from "../../hooks/useModal";
 
@@ -17,7 +17,6 @@ export const Modal = () => {
     const {isEducationModalOpen, isPortfolioModalOpen, isContactModalOpen} = useModal();
 
 
-
     const handleClickClose = useCallback(() => {
         if (isEducationModalOpen){
             dispatch(closeModalEducation());
@@ -28,32 +27,32 @@ export const Modal = () => {
         if(isContactModalOpen) {
             dispatch(closeModalContact());
         }
-    }, [dispatch, isContactModalOpen, isEducationModalOpen, isPortfolioModalOpen]);
+    },[dispatch, isContactModalOpen, isEducationModalOpen, isPortfolioModalOpen]);
 
 
-
-    const handleBackdropClick = (e) => {
-        if (e.target === e.currentTarget) {
-          handleClickClose();
+    const handleBackdropClick = useCallback(event => {
+        if (event.target === event.currentTarget) {
+            handleClickClose();
         }
-    };
+    },[handleClickClose]);
+
+
+    const handleKeyDown = useCallback(event => {
+        if (event.key === "Escape") {
+            handleClickClose();
+        }
+    },[handleClickClose]);
 
 
     useEffect(() => {
-        const handleKeyDown = (e) => {
-          if (e.code === "Escape") {
-            handleClickClose();
-          }
-        };
-    
         document.addEventListener("keydown", handleKeyDown);
-        document.body.style.cssText = `overflow: hidden; `;
+        document.addEventListener('click', handleBackdropClick);
     
         return () => {
-          document.removeEventListener("keydown", handleKeyDown);
-          document.body.style.cssText = `overflow: auto; `;
+            document.removeEventListener("keydown", handleKeyDown);
+            document.removeEventListener('click', handleBackdropClick);
         };
-    }, [handleClickClose]);
+    },[handleBackdropClick, handleKeyDown]);
 
 
 

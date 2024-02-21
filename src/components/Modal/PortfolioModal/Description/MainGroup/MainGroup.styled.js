@@ -31,7 +31,7 @@ export const MainGroupStyled = styled.ul`
     
 
     .class-for-animation{
-        max-width: 229px;
+        max-width: 252px;
         color: ${p => p.theme.color.text_color};
         background: url(${backgroundtextImage}) repeat-y;
         -webkit-background-clip: text;

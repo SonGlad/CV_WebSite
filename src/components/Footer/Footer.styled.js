@@ -3,7 +3,7 @@ import { styled } from "styled-components";
 
 export const FooterStyled = styled.footer`
     padding-bottom: 3px;
-    overflow: hidden;
+    /* overflow: hidden; */
     
     .footer-container{
         padding: 40px 0;
@@ -204,7 +204,7 @@ export const FooterStyled = styled.footer`
             transform: translate(250%, -400%) scale(8);
         }
         @media screen and (min-width: 768px){
-            transform: translate(-150%, -450%) scale(10);
+            transform: translate(-150%, -450%) scale(9);
         }
     }
 

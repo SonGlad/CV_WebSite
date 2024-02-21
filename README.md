@@ -1,70 +1,75 @@
-# Getting Started with Create React App
+# CV_WebSite - Personal CV & Portfolio WevSite
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![Preview](./assets/asset4.jpg)
 
-## Available Scripts
+CV_WebSite is a 6-page web application created as a developer portfolio website. It can serve as both a primary and supplementary tool for your resume. The site is fully responsive and meets all modern requirements for such development, looking equally good on all types of devices. The application was built using the REACT/REDUX library with full imitation of server-side functionality. All data displayed in the application is stored in three JSON files (simulating data retrieval from a backend) and can be easily modified or tailored to another user. In case of a deployed backend or if needed, this application can be easily connected to it, thanks to the pre-configured REDUX state management library. Each page of this site is self-contained and contains all the necessary information about the developer. 
 
-In the project directory, you can run:
+## Links
 
-### `npm start`
+- 🖼️ FRONTEND - https://songlad.github.io/CV_WebSite/
+- ✨ FRONTEND REPO - https://github.com/SonGlad/CV_WebSite
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Features
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+:information_desk_person: **About Page**: Contains more detailed information about the developer, including GitHub statistics. This page also features subtle, non-intrusive animation, giving it a livelier appearance.<br />
 
-### `npm test`
+:mortar_board: **Education Page**: On this page, you can find information about the developer's education and the institutions they attended. Animated sliders are present on this page, giving it a more atmospheric look. All photos can be viewed in a separate window by simply clicking on the button on the photo itself.<br />
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+:rocket: **Skills Page**: This page contains information about the developer's professional skills, as well as official GitHub statistics for all repositories and programming languages.<br/>
 
-### `npm run build`
+:briefcase: **Portfolio Page**: Portfolio page is a collection of all the developer's projects. To get information about a particular project, simply hover over the project of interest and open it. This will open a separate window where you can find all the detailed information about the project.<br/>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+:telephone_receiver: **Contacts Page**: The 'Contact' page allows you to contact the developer directly.<br />
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Technologies
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<p align="center">
+  <b>Cv_Website is built using the following technologies & tools:</b>
+</p>
+<p align="center">
+  <img alt="React" src="https://img.shields.io/badge/React-%2320232a.svg?style=for-the-badge&logo=react&logoColor=white">&nbsp;
+  <img alt="Redux" src="https://img.shields.io/badge/Redux-%23593d88.svg?style=for-the-badge&logo=redux&logoColor=white">&nbsp;
+  <img alt="Styled-Components" src="https://img.shields.io/badge/Styled_Components-%23DB7093.svg?style=for-the-badge&logo=styled-components&logoColor=white">&nbsp;
+  <img alt="Chart.js" src="https://img.shields.io/badge/Chart.js-%23FF6384.svg?style=for-the-badge&logo=chart-dot-js&logoColor=white">&nbsp;
+  <img alt="Create React App" src="https://img.shields.io/badge/Create%20React%20App-%2361DAFB.svg?style=for-the-badge&logo=react&logoColor=white">&nbsp;
+  <img alt="React Router" src="https://img.shields.io/badge/React_Router-%23CA4245.svg?style=for-the-badge&logo=react-router&logoColor=white">&nbsp;
+  <img alt="React Redux" src="https://img.shields.io/badge/React_Redux-%23593d88.svg?style=for-the-badge&logo=redux&logoColor=white">&nbsp;
+  <img alt="React Spinners" src="https://img.shields.io/badge/React_Spinners-%23000000.svg?style=for-the-badge&logo=react&logoColor=white">&nbsp;
+  <img a;t="Yup" src="https://img.shields.io/badge/Yup-%23FF6C37.svg?style=for-the-badge&logo=yup&logoColor=white">&nbsp;
+  <img alt="Formik" src="https://img.shields.io/badge/Formik-%23FF6C37.svg?style=for-the-badge&logo=formik&logoColor=white">&nbsp;
+  <img alt="Nano ID" src="https://img.shields.io/badge/Nano_ID-%23FF6C37.svg?style=for-the-badge&logo=nano-id&logoColor=white">&nbsp;
+  <img alt="Redux Toolkit" src="https://img.shields.io/badge/Redux_Toolkit-%23593d88.svg?style=for-the-badge&logo=redux&logoColor=white">&nbsp;
+</p>
 
-### `npm run eject`
+## Installation
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+1. Clone the repo
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```sh
+git clone
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+2. Install NPM packages
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```sh
+npm install
+```
 
-## Learn More
+3. Run the app
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```sh
+npm start
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+4. Open the app in your browser
 
-### Code Splitting
+```sh
+http://localhost:3000
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+5. Enjoy!
 
-### Analyzing the Bundle Size
+## Contributor & Developer
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- **Developer:** [Oleg Koshevy](https://github.com/SonGlad)
+- **Designed:** [Oleg Koshevy](https://github.com/SonGlad)

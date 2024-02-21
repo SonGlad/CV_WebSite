@@ -2,6 +2,7 @@ import { HomeStyledContainer } from "./Home.styled"
 import Profile from "../../utils/profile.json";
 import { NavLink } from "react-router-dom";
 import Typewriter from 'typewriter-effect';
+import {ReactComponent as FingerIcon} from "../../images/svg-icons/finger.svg";
 
 
 
@@ -41,6 +42,24 @@ export const HomeSection = () => {
                     </NavLink>
                     <NavLink className="redirect-link" to='/contact'>
                         Contact Me
+                    </NavLink>
+                </div>
+                <div className="redirect-cont">
+                    <NavLink className="redirect-link redirect" to='/about'>
+                        <FingerIcon className="redirect-icon" width={24} height={24}/>    
+                        <span>About</span>
+                    </NavLink>
+                    <NavLink className="redirect-link redirect" to='/education'>
+                        <FingerIcon className="redirect-icon" width={24} height={24}/>    
+                        <span>Education</span>
+                    </NavLink>
+                    <NavLink className="redirect-link redirect" to='/skills'>
+                        <FingerIcon className="redirect-icon" width={24} height={24}/>    
+                        <span>Skills</span>
+                    </NavLink>
+                    <NavLink className="redirect-link redirect" to='/portfolio'>
+                        <FingerIcon className="redirect-icon" width={24} height={24}/>    
+                        <span>Portfolio</span>
                     </NavLink>
                 </div>
             </div>

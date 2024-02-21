@@ -47,8 +47,8 @@ export const ContactForm = () => {
         onSubmit: (values) => {
             dispatch(openLoader());
             emailjs.send(SERVICE_ID, TEMPLATE_ID, {
-                from_name: values.name,
                 to_name: 'Oleg',
+                from_name: values.name,
                 from_email: values.email,
                 to_email: 'okoshevy@gmail.com',
                 subject: values.subject,

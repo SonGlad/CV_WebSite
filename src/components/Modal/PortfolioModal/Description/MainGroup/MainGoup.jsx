@@ -1,6 +1,6 @@
 import { MainGroupStyled } from "./MainGroup.styled";
 import { NavLink } from "react-router-dom";
-
+import {ReactComponent as Link2Icon} from "../../../../../images/svg-icons/link2.svg"
 
 
 export const MainGroup = ({github, name, homepage}) => {
@@ -14,6 +14,7 @@ export const MainGroup = ({github, name, homepage}) => {
                     target="_blank"
                     rel="noreferrer noopener"
                 >
+                    <Link2Icon className="svg-link" width={16} height={16}/>
                     <strong>GitHub Repository</strong>
                 </NavLink>
             </li>
@@ -23,6 +24,7 @@ export const MainGroup = ({github, name, homepage}) => {
                     target="_blank"
                     rel="noreferrer noopener"
                 >
+                    <Link2Icon className="svg-link" width={16} height={16}/>
                     <strong>{name}</strong>
                 </NavLink>
             </li>

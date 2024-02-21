@@ -32,7 +32,7 @@ export const HomeStyledContainer = styled.div`
         overflow: hidden;
 
         @media screen and (min-width: 768px){
-            padding: 100px 0 50px 0;
+            padding: 50px 0 25px 0;
             max-width: 50%;
         }
     }
@@ -179,13 +179,15 @@ export const HomeStyledContainer = styled.div`
         color: ${p => p.theme.color.main_color};
         box-shadow: 0px 0px 10px 10px rgba(0,0,0,0.3) inset,
                     0px 0px 0px 0px rgba(0,0,0,0.3);
-        transition: color ${p => p.theme.transition.main_transition}, 
+        transition: color ${p => p.theme.transition.main_transition},
+                    fill ${p => p.theme.transition.main_transition}, 
                     background-color ${p => p.theme.transition.main_transition},
                     box-shadow ${p => p.theme.transition.main_transition};
 
         &:hover{
             background-color: ${p => p.theme.color.main_color};
             color: ${p => p.theme.color.text_color};
+            fill: ${p => p.theme.color.text_color};
             box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.3) inset,
                         0px 0px 10px 10px rgba(0,0,0,0.3);
         }
@@ -194,6 +196,27 @@ export const HomeStyledContainer = styled.div`
             margin: auto;
         }
     }
+
+    .redirect-cont{
+        margin-top: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        column-gap: 10px;
+        row-gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    .redirect{
+        padding: 5px 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+        fill: ${p => p.theme.color.second_bg_color};
+        /* stroke: blue; */
+    }
+
 
     .right-container{
         animation: homePhotoAppear 2s ease forwards;
