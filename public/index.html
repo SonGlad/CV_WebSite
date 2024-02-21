@@ -75,5 +75,13 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+    <!-- The following script will redirect all unknown paths to index.html -->
+    <script>
+      (function() {
+        if (window.location.pathname !== '/' && window.location.pathname !== '/index.html') {
+          window.location = '/index.html' + window.location.hash;
+        }
+      })();
+    </script>
   </body>
 </html>
