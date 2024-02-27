@@ -72,6 +72,7 @@ export const IconsStyledList = styled.div`
         align-items: center;
         justify-content: space-between;
         flex-direction: column;
+        border-radius: 15px;
         transform: translateY(150px);
         visibility: hidden;
         opacity: 0;

@@ -227,11 +227,7 @@ export const PortfolioStyled = styled.div`
         justify-content: center;
         gap: 32px;
         padding: 20px 0;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        -ms-flex-wrap: wrap;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
+
 
         @media screen and (min-width: 480px){
             gap: 17px;
@@ -280,8 +276,6 @@ export const PortfolioStyled = styled.div`
     .container {
         transform-style: preserve-3d;
         perspective: 1000px;
-        -webkit-transform-style: preserve-3d;
-        -webkit-perspective: 1000px;
     }
 
     .front,
@@ -298,17 +292,11 @@ export const PortfolioStyled = styled.div`
         font-size: 24px;
         backface-visibility: hidden;
         transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
-        -webkit-backface-visibility: hidden;
-        -webkit-transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
-        transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
-        -o-transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
     }
 
     .back{
         background: #cedce7;
         background: linear-gradient(45deg,  #cedce7 0%, #596a72 100%);
-        background: -webkit-linear-gradient(45deg,  #cedce7 0%, #596a72 100%);
-        background: -o-linear-gradient(45deg,  #cedce7 0%, #596a72 100%);
     }
 
     /* .front:after{
@@ -328,11 +316,7 @@ export const PortfolioStyled = styled.div`
 
     .container:hover .front,
     .container:hover .back{
-        -webkit-transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
-        transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
-        -o-transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
         transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
-        transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1), -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
     }
 
     .back{
@@ -356,9 +340,6 @@ export const PortfolioStyled = styled.div`
         display: flex;
         align-items: center;
         flex-direction: column;
-        -webkit-transform: translateY(-50%) translateZ(60px) scale(0.94);
-        -webkit-box-sizing: border-box;
-        -webkit-perspective: inherit;
 
 
         @media screen and (min-width: 900px){
@@ -369,29 +350,21 @@ export const PortfolioStyled = styled.div`
     .container .back{
         transform: rotateY(180deg);
         transform-style: preserve-3d;
-        -webkit-transform: rotateY(180deg);
-        -webkit-transform-style: preserve-3d;
     }
 
     .container .front{
         transform: rotateY(0deg);
         transform-style: preserve-3d;
-        -webkit-transform: rotateY(0deg);
-        -webkit-transform-style: preserve-3d;
     }
 
     .container:hover .back{
         transform: rotateY(0deg);
         transform-style: preserve-3d;
-        -webkit-transform: rotateY(0deg);
-        -webkit-transform-style: preserve-3d;
     }
 
     .container:hover .front{
         transform: rotateY(-180deg);
         transform-style: preserve-3d;
-        -webkit-transform: rotateY(-180deg);
-        -webkit-transform-style: preserve-3d;
     }
 
     .front .inner p{
