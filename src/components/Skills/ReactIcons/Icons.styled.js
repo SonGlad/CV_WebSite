@@ -26,6 +26,7 @@ export const IconsStyledList = styled.div`
         animation: zoomIn .5s ease forwards;
         animation-delay: calc(0.1s * var(--i));
 
+
         @media screen and (min-width: 768px){
             width: 150px;
             height: 150px;
@@ -72,6 +73,8 @@ export const IconsStyledList = styled.div`
         justify-content: space-between;
         flex-direction: column;
         transform: translateY(150px);
+        visibility: hidden;
+        opacity: 0;
         transition: transform ${p => p.theme.transition.main_transition};
 
         @media screen and (min-width: 768px) {
@@ -85,6 +88,8 @@ export const IconsStyledList = styled.div`
 
     .icons-item:hover .value-cont{
         transform: translateY(0px);
+        opacity: 1;
+        visibility: visible;
     }
     
     .value-text{

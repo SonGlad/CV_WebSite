@@ -76,11 +76,11 @@ export const HomeStyledContainer = styled.div`
         @media screen and (min-width: 525px){
             height: auto;
         }
-
         @media screen and (min-width: 768px){
             text-align: start;
             font-size: 30px;
             font-weight: 600;
+            margin-left: 10px;
         }
         @media screen and (min-width: 910px){
             font-size: 37px;
@@ -89,6 +89,7 @@ export const HomeStyledContainer = styled.div`
         @media screen and (min-width: 1050px){
             font-size: 44px;
             font-weight: 700;
+            margin-left: 15px;
         }
     }
 
@@ -163,10 +164,24 @@ export const HomeStyledContainer = styled.div`
         flex-wrap: wrap;
         gap: 40px;
         justify-content: space-around;
+        animation: btnContSlideToTop 1s ease forwards;
+        opacity: 0;
 
         @media screen and (max-width: 767px){
             width: 100%;
             display: flex; 
+        }
+    }
+
+    @keyframes  btnContSlideToTop{
+        0%{
+            opacity: 0;
+            transform: translateY(200%);
+
+        }
+        100%{
+            opacity: 1;
+            transform: translateY(0);
         }
     }
 
@@ -183,6 +198,9 @@ export const HomeStyledContainer = styled.div`
                     fill ${p => p.theme.transition.main_transition}, 
                     background-color ${p => p.theme.transition.main_transition},
                     box-shadow ${p => p.theme.transition.main_transition};
+        animation: redirectLinkAppear 1s ease forwards;
+        animation-delay: calc((0.3s * var(--i) + 0.5s));
+        opacity: 0;
 
         &:hover{
             background-color: ${p => p.theme.color.main_color};
@@ -194,6 +212,17 @@ export const HomeStyledContainer = styled.div`
 
         @media screen and (max-width: 767px){
             margin: auto;
+        }
+    }
+
+    @keyframes redirectLinkAppear {
+        0%{
+            scale: 0.5;
+            opacity: 0;
+        }
+        100%{
+            scale: 1;
+            opacity: 1;
         }
     }
 

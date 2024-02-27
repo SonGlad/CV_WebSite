@@ -45,19 +45,19 @@ export const HomeSection = () => {
                     </NavLink>
                 </div>
                 <div className="redirect-cont">
-                    <NavLink className="redirect-link redirect" to='/about'>
+                    <NavLink className="redirect-link redirect" to='/about' style={{'--i': 1}}>
                         <FingerIcon className="redirect-icon" width={24} height={24}/>    
                         <span>About</span>
                     </NavLink>
-                    <NavLink className="redirect-link redirect" to='/education'>
+                    <NavLink className="redirect-link redirect" to='/education' style={{'--i': 2}}>
                         <FingerIcon className="redirect-icon" width={24} height={24}/>    
                         <span>Education</span>
                     </NavLink>
-                    <NavLink className="redirect-link redirect" to='/skills'>
+                    <NavLink className="redirect-link redirect" to='/skills' style={{'--i': 3}}>
                         <FingerIcon className="redirect-icon" width={24} height={24}/>    
                         <span>Skills</span>
                     </NavLink>
-                    <NavLink className="redirect-link redirect" to='/portfolio'>
+                    <NavLink className="redirect-link redirect" to='/portfolio' style={{'--i': 4}}>
                         <FingerIcon className="redirect-icon" width={24} height={24}/>    
                         <span>Portfolio</span>
                     </NavLink>
