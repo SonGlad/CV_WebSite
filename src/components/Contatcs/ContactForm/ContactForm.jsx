@@ -14,9 +14,9 @@ import { setSuccsessTrue, setSuccsessFalse, openModalContact } from "../../../re
 import { useDispatch } from "react-redux";
 
 
-const SERVICE_ID = 'service_c66ogc6';
-const TEMPLATE_ID = 'template_r2jcm2g';
-const PUBLIC_KEY = 'acQGHeSWb2XDF5MDI';
+const SERVICE_ID = process.env.REACT_APP_SERVICE_ID;
+const TEMPLATE_ID = process.env.REACT_APP_TEMPLATE_ID;
+const PUBLIC_KEY = process.env.REACT_APP_PUBLIC_KEY;
 
 
 export const ContactForm = () => {
