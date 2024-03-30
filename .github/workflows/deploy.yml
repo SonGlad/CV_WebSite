@@ -26,3 +26,13 @@ jobs:
         with:
           branch: gh-pages
           folder: build
+        env:
+          REACT_APP_PUBLIC_KEY: ${{ secrets.REACT_APP_PUBLIC_KEY }}
+          REACT_APP_SERVICE_ID: ${{ secrets.REACT_APP_SERVICE_ID }}
+          REACT_APP_TEMPLATE_ID: ${{ secrets.REACT_APP_TEMPLATE_ID }}
+
+      - name: Access environment variables
+        run: |
+          echo "REACT_APP_PUBLIC_KEY: ${{ vars.REACT_APP_PUBLIC_KEY }}"
+          echo "REACT_APP_SERVICE_ID: ${{ vars.REACT_APP_SERVICE_ID }}"
+          echo "REACT_APP_TEMPLATE_ID: ${{ vars.REACT_APP_TEMPLATE_ID }}"
