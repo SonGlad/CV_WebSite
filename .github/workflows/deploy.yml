@@ -7,6 +7,7 @@ on:
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
+    environment: secrets
     steps:
       - name: Checkout 🛎️
         uses: actions/checkout@v2.3.1
@@ -33,6 +34,6 @@ jobs:
 
       - name: Access environment variables
         run: |
-          echo "REACT_APP_PUBLIC_KEY: ${{ vars.REACT_APP_PUBLIC_KEY }}"
-          echo "REACT_APP_SERVICE_ID: ${{ vars.REACT_APP_SERVICE_ID }}"
-          echo "REACT_APP_TEMPLATE_ID: ${{ vars.REACT_APP_TEMPLATE_ID }}"
+          echo "REACT_APP_PUBLIC_KEY: ${{ secrets.REACT_APP_PUBLIC_KEY }}"
+          echo "REACT_APP_SERVICE_ID: ${{ secrets.REACT_APP_SERVICE_ID }}"
+          echo "REACT_APP_TEMPLATE_ID: ${{ secrets.REACT_APP_TEMPLATE_ID }}"
