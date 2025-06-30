@@ -35,7 +35,7 @@ const Portfolio = () => {
         collaborators: nodes.map(({ name, url }) => ({ name, url })),
         languages: edges.map(({ size, node: { name} }) => ({ name, size }))
     }));
-    const filteredRepositories = repositoriesData.filter(repo => repo.type === "individual" || repo.type === "team");
+    const filteredRepositories = repositoriesData.filter(repo => repo.type === "individual" || repo.type === "team" || repo.type === "commercial");
 
 
     const mergedData = useMemo(() => {

@@ -6,6 +6,7 @@ import { ReactComponent as GitIcon } from "../../images/svg-icons/github.svg";
 import { ReactComponent as FacebookIcon } from "../../images/svg-icons/facebook.svg";
 import { ReactComponent as TelegramIcon } from "../../images/svg-icons/telegram.svg";
 import { ReactComponent as LinkedinIcon } from "../../images/svg-icons/linkedin.svg";
+import { ReactComponent as DiscordIcon } from "../../images/svg-icons/discord.svg";
 import Logo from "../../images/images/iReX_logo.png";
 import Profile from "../../utils/profile.json";
 import { useCallback, useEffect, useRef, useState } from "react";
@@ -20,7 +21,7 @@ export const Footer = () => {
     });
 
 
-    const {github_link, facebook_link, linkedin_link, telegram_link} = Profile;
+    const {github_link, facebook_link, linkedin_link, telegram_link, discord_link} = Profile;
     const [footerPicture, setFooterPicture] = useState(false);
     const contRef = useRef();
 
@@ -115,6 +116,14 @@ export const Footer = () => {
                                     target="_blank"
                                     rel="noreferrer noopener">
                                     <TelegramIcon className="footer-icon" width={20} height={20}/>
+                                </NavLink>
+                            </li>
+                            <li className="footer-social-item">
+                                <NavLink className="footer-social-link" to={discord_link}
+                                    aria-label="Discord link"
+                                    target="_blank"
+                                    rel="noreferrer noopener">
+                                    <DiscordIcon className="footer-icon" width={20} height={20}/>
                                 </NavLink>
                             </li>
                         </ul>

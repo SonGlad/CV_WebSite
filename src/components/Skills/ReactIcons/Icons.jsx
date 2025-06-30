@@ -21,6 +21,13 @@ import IconVue from "./IconsList/VueIcon";
 import IconNext from "./IconsList/NextjsIcon";
 import IconStyled from "./IconsList/StyledIcon";
 import IconGraphql from "./IconsList/GraphQlIcon";
+import IconVite from "./IconsList/Vite";
+import IconGSAP from "./IconsList/GSAP";
+import IconThreejs from "./IconsList/ThreeJS";
+import IconFigma from "./IconsList/FigmaIcon";
+import IconNetlify from "./IconsList/IconNetlify";
+import IconGodaddy from "./IconsList/GoDaddyIcon";
+import IconCoronarenderer from "./IconsList/RenderIcon";
 import Profile from "../../../utils/profile.json";
 import { useEffect, useState, useMemo } from "react";
 
@@ -35,17 +42,24 @@ const IconComponents = [
     {"id": "IconGitHub", Element: IconGitHub}, 
     {"id": "IconNode", Element: IconNode }, 
     {"id": "IconVS", Element: IconVS}, 
+    {"id": "IconVite", Element: IconVite, "type": "Dev-Tools"},
+    {"id": "IconGSAP", Element: IconGSAP, "type": "Frontend"},
+    {"id": "IconThreeJS", Element: IconThreejs, "type": "Frontend"},
     {"id": "IconSASS", Element: IconSASS}, 
     {"id": "IconStyled", Element: IconStyled}, 
     {"id": "IconHandlebars", Element: IconHandlebars}, 
     {"id": "IconMongoDB", Element: IconMongoDB}, 
     {"id": "IconAxios", Element: IconAxios}, 
-    {"id": "IconPostman", Element: IconPostman}, 
-    {"id": "IconReactNative", Element: IconReactNative}, 
-    {"id": "IconTypeScript", Element: IconTypeScript}, 
-    {"id": "IconVue", Element: IconVue}, 
-    {"id": "IconNext", Element: IconNext},
-    {"id": "IconGraphql", Element: IconGraphql}
+    {"id": "IconPostman", Element: IconPostman, "type": "DevOps"}, 
+    {"id": "IconFigma", Element: IconFigma, "type": "Dev-Tools"},
+    {"id": "IconNetlify", Element: IconNetlify, "type": "DevOps"},
+    {"id": "IconGoDaddy", Element: IconGodaddy, "type": "DevOps"},
+    {"id": "IconRender", Element: IconCoronarenderer, "type": "DevOps"},
+    {"id": "IconReactNative", Element: IconReactNative, "type": "Frontend, Mobile-Development"}, 
+    {"id": "IconTypeScript", Element: IconTypeScript, "type": "Frontend"}, 
+    {"id": "IconVue", Element: IconVue, "type": "Frontend"}, 
+    {"id": "IconNext", Element: IconNext, "type": "Frontend"},
+    {"id": "IconGraphql", Element: IconGraphql, "type": "Backend"},
 ];
 
 

@@ -753,5 +753,648 @@
                 "link": "https://www.npmjs.com/package/@emailjs/browser"
             }
         ]
+    },
+    {
+        "id": "R_kgDOLeXpTQ",
+        "name": "Neuralink",
+        "role": "Developer",
+        "coverImage": "https://i.imgur.com/JC8ENHh.jpg",
+        "img_url": [
+            {"url": "https://i.imgur.com/JC8ENHh.jpg"},
+            {"url": "https://i.imgur.com/tpRRXoc.jpg"},
+            {"url": "https://i.imgur.com/AYnZGEO.jpg"},
+            {"url": "https://i.imgur.com/88majMv.jpg"},
+            {"url": "https://i.imgur.com/F3kownq.jpg"}
+        ],
+        "figma_url": null,
+        "description": "NEURALINK is an excellent solution for effectively promoting your business. It grabs attention from the very first second, highlights the key advantages of your offer, and encourages users to take action. Its simple and clear structure allows users to easily navigate, while the emphasis on innovation and value helps create a positive impression. This advertising format enhances trust in your product, creates a sense of exclusivity, and sets you apart from competitors. It is the perfect tool for promotion, combining an attractive design with powerful marketing messages.",
+        "technical_task": null,
+        "technologies": [
+            {   "name": "HTML5",
+                "link": "https://html.spec.whatwg.org"
+            },            
+            {   "name": "JavaScript",
+                "link": "https://developer.mozilla.org/en-US/docs/Learn/JavaScript"
+            },
+            {   "name": "React",
+                "link": "https://react.dev"
+            },
+            {   "name": "Redux",
+                "link": "https://redux.js.org"
+            },
+            {   "name": "Styled Components",
+                "link": "https://styled-components.com"
+            },
+            {   "name": "Visual Studio",
+                "link": "https://code.visualstudio.com"
+            },
+            {   "name": "Git",
+                "link": "https://git-scm.com"
+            },
+            {   "name": "GitHub",
+                "link": "https://github.com"
+            }
+            
+        ],
+        "libraries":[
+            {   "name": "React",
+                "link": "https://react.dev"
+            },
+            {   "name": "Redux",
+                "link": "https://redux.js.org"
+            },
+            {   "name": "React Spinners",
+                "link": "https://www.npmjs.com/package/react-spinners"
+            },
+            {   "name": "Eslint Plugin Import",
+                "link": "https://www.npmjs.com/package/eslint-plugin-import"
+            },
+            {   "name": "Modern Normalize",
+                "link": "https://www.npmjs.com/package/modern-normalize"
+            },
+            {   "name": "Normalize.css",
+                "link": "https://www.npmjs.com/package/normalize.css?activeTab=versions"
+            },
+            {   "name": "React Intersection Observer",
+                "link": "https://www.npmjs.com/package/react-intersection-observer"
+            },
+            {   "name": "Formik",
+                "link": "https://www.npmjs.com/package/formik"
+            },
+            {   "name": "Yup",
+                "link": "https://www.npmjs.com/package/yup"
+            },
+            {   "name": "React Phone Input 2",
+                "link": "https://www.npmjs.com/package/react-phone-input-2"
+            },
+            {   "name": "React Facebook Pixel",
+                "link": "https://www.npmjs.com/package/react-facebook-pixel"
+            },
+            {   "name": "React Ipgeolocation",
+                "link": "https://www.npmjs.com/package/react-ipgeolocation"
+            },
+            {   "name": "Crypto Js",
+                "link": "https://www.npmjs.com/package/crypto-js#crypto-js"
+            },
+            {   "name": "Video React",
+                "link": "https://www.npmjs.com/package/video-react"
+            }
+        ]
+    },
+    {
+        "id": "R_kgDOLjpJsA",
+        "name": "CRM V1.0",
+        "role": "Developer",
+        "coverImage": "https://i.imgur.com/oKRKFqU.jpg",
+        "img_url": [
+            {"url": "https://i.imgur.com/oKRKFqU.jpg"},
+            {"url": "https://i.imgur.com/mZvg3EE.jpg"},
+            {"url": "https://i.imgur.com/sN4fM90.jpg"},
+            {"url": "https://i.imgur.com/5JwxU5G.jpg"},
+            {"url": "https://i.imgur.com/UwuRGc1.jpg"},
+            {"url": "https://i.imgur.com/5X8bB1m.jpg"},
+            {"url": "https://i.imgur.com/wmQFjoH.jpg"},
+            {"url": "https://i.imgur.com/DaOD097.jpg"}
+        ],
+        "figma_url": null,
+        "description": "CRM V1.0 is a lightweight CRM system (web application) designed for managing and processing data from landing pages similar to NEURALINK. It is built specifically for desktop use and is not adapted for tablets or mobile devices. Registration in this CRM system is not open to external users, as it is tailored for specific users only. If you manage just a few landing pages where you promote your product or want to start attracting clients for trading on the financial market, this system is perfect for you. Its user-friendly and intuitive interface makes it easy to manage the data of users who have provided their contact information for follow-up. The system includes a convenient filtering, search, and sorting feature, allowing you to organize data based on the source from which it was collected. Additionally, you can manually input user data and easily edit it as needed.",
+        "technical_task": null,
+        "technologies": [
+            {   "name": "HTML5",
+                "link": "https://html.spec.whatwg.org"
+            },            
+            {   "name": "JavaScript",
+                "link": "https://developer.mozilla.org/en-US/docs/Learn/JavaScript"
+            },
+            {   "name": "React",
+                "link": "https://react.dev"
+            },
+            {   "name": "Redux",
+                "link": "https://redux.js.org"
+            },
+            {   "name": "Styled Components",
+                "link": "https://styled-components.com"
+            },
+            {   "name": "Axios",
+                "link": "https://axios-http.com/docs/api_intro"
+            },
+            {   "name": "Visual Studio",
+                "link": "https://code.visualstudio.com"
+            },
+            {   "name": "Git",
+                "link": "https://git-scm.com"
+            },
+            {   "name": "GitHub",
+                "link": "https://github.com"
+            },
+            {   "name": "Postman",
+                "link": "https://www.postman.com"
+            },
+            {   "name": "MongoDB",
+                "link": "https://www.mongodb.com/cloud/atlas/register?utm_source=google&utm_campaign=search_gs_pl_evergreen_atlas_core_prosp-brand_gic-null_emea-ua_ps-all_desktop_eng_lead&utm_term=mongodb&utm_medium=cpc_paid_search&utm_ad=e&utm_ad_campaign_id=12212624575&adgroup=115749710823&cq_cmp=12212624575&gad_source=1&gclid=CjwKCAiA_OetBhAtEiwAPTeQZy-VKImwt1qJHg8yNCl4a_hX5XmBxUh821Oa4HKoboH2OUpctL_ewhoCh7kQAvD_BwE"
+            },
+            {   "name": "Node.js",
+                "link": "https://nodejs.org/en"
+            }
+        ],
+        "libraries":[
+            {   "name": "React",
+                "link": "https://react.dev"
+            },
+            {   "name": "Redux",
+                "link": "https://redux.js.org"
+            },
+            {   "name": "React Spinners",
+                "link": "https://www.npmjs.com/package/react-spinners"
+            },
+            {   "name": "Eslint Plugin Import",
+                "link": "https://www.npmjs.com/package/eslint-plugin-import"
+            },
+            {   "name": "Modern Normalize",
+                "link": "https://www.npmjs.com/package/modern-normalize"
+            },
+            {   "name": "Normalize.css",
+                "link": "https://www.npmjs.com/package/normalize.css?activeTab=versions"
+            },
+            {   "name": "Formik",
+                "link": "https://www.npmjs.com/package/formik"
+            },
+            {   "name": "Yup",
+                "link": "https://www.npmjs.com/package/yup"
+            },
+            {   "name": "React Phone Input 2",
+                "link": "https://www.npmjs.com/package/react-phone-input-2"
+            },
+            {   "name": "LibPhoneNumber Js",
+                "link": "https://www.npmjs.com/package/libphonenumber-js"
+            },
+            {   "name": "Crypto Js",
+                "link": "https://www.npmjs.com/package/crypto-js#crypto-js"
+            },
+            {   "name": "Bcrypt Js",
+                "link": "https://www.npmjs.com/package/bcryptjs"
+            },
+            {   "name": "Express",
+                "link": "https://www.npmjs.com/package/express"
+            },
+            {   "name": "MongoDB",
+                "link": "https://www.npmjs.com/package/mongodb"
+            },
+            {   "name": "Mongoose",
+                "link": "https://www.npmjs.com/package/mongoose"
+            },
+            {   "name": "Nodemailer",
+                "link": "https://www.npmjs.com/package/nodemailer"
+            },
+            {   "name": "Cloudinary",
+                "link": "https://www.npmjs.com/package/cloudinary"
+            }
+        ]
+    },
+    {
+        "id": "R_kgDOMDIqug",
+        "name": "CRM V2.0",
+        "role": "Developer",
+        "coverImage": "https://i.imgur.com/UdnKEcO.jpg",
+        "img_url": [
+            {"url": "https://i.imgur.com/UdnKEcO.jpg"},
+            {"url": "https://i.imgur.com/MnvEJB3.jpg"},
+            {"url": "https://i.imgur.com/L2MCHJF.jpg"},
+            {"url": "https://i.imgur.com/w90YVGU.jpg"},
+            {"url": "https://i.imgur.com/jmBQeXy.jpg"},
+            {"url": "https://i.imgur.com/wZ6r5Gs.jpg"},
+            {"url": "https://i.imgur.com/Pefnbfc.jpg"},
+            {"url": "https://i.imgur.com/K5JgNoy.jpg"},
+            {"url": "https://i.imgur.com/dMqPhGK.jpg"},
+            {"url": "https://i.imgur.com/Y9eGRZJ.jpg"},
+            {"url": "https://i.imgur.com/ERczuo8.jpg"},
+            {"url": "https://i.imgur.com/coj4QNG.jpg"},
+            {"url": "https://i.imgur.com/bbvDGsa.jpg"},
+            {"url": "https://i.imgur.com/7LbYE1t.jpg"}
+        ],
+        "figma_url": null,
+        "description": "CRM V-2.0 is a powerful and multifunctional platform designed to optimize customer relationship management processes. This system provides a complete cycle for processing user and lead data, as well as tools for effective management. Here are the key capabilities and features of CRM V-2.0: (1) User Registration: a) The system allows for external registration of primary users such as 'Developer', 'Administrator', and 'Manager'. The registration process is carried out through strictly defined email addresses and passwords for user validation. b) Internal user registration is performed through users with a higher access level, ensuring control and security of the process. (2) Registration Confirmation: a) After registering a new user, the administrator receives an email notification for confirmation. Without this confirmation, the new user will not be able to log in to the system. (3) Authorization and Session Management: a) The system requires an email and password for authorization, resulting in the creation of a unique access token that includes the user ID, their role, and the database branch. b) Upon logging in, the user receives basic information about themselves, such as name, avatar, role, and branch. (4) Retrieving Current User Data: When the page is reloaded, the system automatically retrieves information about the current user based on the provided token, eliminating the need for re-entering data. (5) Managing Avatar and User Data: a) Users have the option to change their avatar by sending an image file and receiving a link to the new image. b) Users can modify their data, including changing their password, with confirmation of the current password. (6) Managing Offices and Roles: The system provides information about available offices and roles based on the user's access level. Users with a higher access level can view more roles and offices. (7) Working with Leads and Contacts: a) CRM V-2.0 allows users to obtain information about assigned and created leads. Advanced lead management features, including assigning them to specific managers or agents, are available to users with high access levels (e.g., 'Administrators' and 'Managers'). b) The system supports the creation of contacts from external resources and their distribution across offices. (8) Managing Verification and Password Reset: The system allows for resending verification emails and performing password resets, ensuring security and convenience for users. (9) User Deletion: Access to delete users is restricted for users with the highest access level. When a user is deleted, the system automatically clears all bindings to leads and adds comments to the relevant records. (10) Data Analysis and Filtering: Users can filter data by various parameters, allowing them to obtain relevant information based on their access level and roles. CRM V-2.0 is a universal solution for customer relationship management that ensures security, control, and convenience for all user levels. The system offers powerful tools for data management and optimizing business processes, making it an indispensable tool for modern companies.",
+        "technical_task": null,
+        "technologies": [
+            {   "name": "HTML5",
+                "link": "https://html.spec.whatwg.org"
+            },            
+            {   "name": "JavaScript",
+                "link": "https://developer.mozilla.org/en-US/docs/Learn/JavaScript"
+            },
+            {   "name": "React",
+                "link": "https://react.dev"
+            },
+            {   "name": "Redux",
+                "link": "https://redux.js.org"
+            },
+            {   "name": "Styled Components",
+                "link": "https://styled-components.com"
+            },
+            {   "name": "Axios",
+                "link": "https://axios-http.com/docs/api_intro"
+            },
+            {   "name": "Visual Studio",
+                "link": "https://code.visualstudio.com"
+            },
+            {   "name": "Git",
+                "link": "https://git-scm.com"
+            },
+            {   "name": "GitHub",
+                "link": "https://github.com"
+            },
+            {   "name": "Postman",
+                "link": "https://www.postman.com"
+            },
+            {   "name": "MongoDB",
+                "link": "https://www.mongodb.com/cloud/atlas/register?utm_source=google&utm_campaign=search_gs_pl_evergreen_atlas_core_prosp-brand_gic-null_emea-ua_ps-all_desktop_eng_lead&utm_term=mongodb&utm_medium=cpc_paid_search&utm_ad=e&utm_ad_campaign_id=12212624575&adgroup=115749710823&cq_cmp=12212624575&gad_source=1&gclid=CjwKCAiA_OetBhAtEiwAPTeQZy-VKImwt1qJHg8yNCl4a_hX5XmBxUh821Oa4HKoboH2OUpctL_ewhoCh7kQAvD_BwE"
+            },
+            {   "name": "Node.js",
+                "link": "https://nodejs.org/en"
+            }
+        ],
+        "libraries":[
+            {   "name": "React",
+                "link": "https://react.dev"
+            },
+            {   "name": "Redux",
+                "link": "https://redux.js.org"
+            },
+            {   "name": "React Spinners",
+                "link": "https://www.npmjs.com/package/react-spinners"
+            },
+            {   "name": "Eslint Plugin Import",
+                "link": "https://www.npmjs.com/package/eslint-plugin-import"
+            },
+            {   "name": "Modern Normalize",
+                "link": "https://www.npmjs.com/package/modern-normalize"
+            },
+            {   "name": "Normalize.css",
+                "link": "https://www.npmjs.com/package/normalize.css?activeTab=versions"
+            },
+            {   "name": "Formik",
+                "link": "https://www.npmjs.com/package/formik"
+            },
+            {   "name": "Yup",
+                "link": "https://www.npmjs.com/package/yup"
+            },
+            {   "name": "React Phone Input 2",
+                "link": "https://www.npmjs.com/package/react-phone-input-2"
+            },
+            {   "name": "LibPhoneNumber Js",
+                "link": "https://www.npmjs.com/package/libphonenumber-js"
+            },
+            {   "name": "Date FNS",
+                "link": "https://www.npmjs.com/package/date-fns"
+            },
+            {   "name": "React Flatpickr",
+                "link": "https://www.npmjs.com/package/react-flatpickr"
+            },
+            {   "name": "Crypto Js",
+                "link": "https://www.npmjs.com/package/crypto-js#crypto-js"
+            },
+            {   "name": "Bcrypt Js",
+                "link": "https://www.npmjs.com/package/bcryptjs"
+            },
+            {   "name": "Express",
+                "link": "https://www.npmjs.com/package/express"
+            },
+            {   "name": "MongoDB",
+                "link": "https://www.npmjs.com/package/mongodb"
+            },
+            {   "name": "Mongoose",
+                "link": "https://www.npmjs.com/package/mongoose"
+            },
+            {   "name": "Nodemailer",
+                "link": "https://www.npmjs.com/package/nodemailer"
+            },
+            {   "name": "Cloudinary",
+                "link": "https://www.npmjs.com/package/cloudinary"
+            }
+        ]
+    },
+    {
+        "id": "R_kgDOM6E2Sg",
+        "name": "Calendar",
+        "role": "Developer",
+        "coverImage": "https://i.imgur.com/EHTkRS1.jpg",
+        "img_url": [
+            {"url": "https://i.imgur.com/EHTkRS1.jpg"},
+            {"url": "https://i.imgur.com/USPDVs8.jpg"},
+            {"url": "https://i.imgur.com/gMcZiTF.jpg"},
+            {"url": "https://i.imgur.com/6PtOnYV.jpg"},
+            {"url": "https://i.imgur.com/pz1L6uc.jpg"},
+            {"url": "https://i.imgur.com/00FxqMb.jpg"},
+            {"url": "https://i.imgur.com/CbYbb7S.jpg"}
+        ],
+        "figma_url": null,
+        "description": "Calendar is just a small part of the web application development, designed to demonstrate how easily and simply you can implement your daily planner. This application allows you to schedule tasks for each day of the week, organizing them by priority and time. You can input tasks either for the entire day or for a specific time. All these tasks will automatically be displayed on both the monthly and weekly calendars, including full-day events and those scheduled by the hour. It features user-friendly navigation, allowing you to switch between months using the 'Back' and 'Next' buttons and quickly return to the current month via the 'Today' button. You can also quickly switch between views—month, week, or even day—and access a list of all events for the current day. The app includes a convenient form for adding and editing tasks. You can also change the color of your events to signify their priority. The only required fields are the event title and notes. The date and time fields are optional, as the events will adjust based on your preferences and will be displayed accordingly. If no date is entered, the event's date will automatically be set to the one you were viewing when the form was opened. If no time is entered, the event will be considered an all-day event. If you specify the date and time, the event will automatically be assigned to the chosen date and time. Additionally, you can freely move your events across different dates and times. To delete an event, simply open the event for editing and click the 'Discard' button.",
+        "technical_task": null,
+        "technologies": [
+            {   "name": "HTML5",
+                "link": "https://html.spec.whatwg.org"
+            },            
+            {   "name": "JavaScript",
+                "link": "https://developer.mozilla.org/en-US/docs/Learn/JavaScript"
+            },
+            {   "name": "React",
+                "link": "https://react.dev"
+            },
+            {   "name": "Styled Components",
+                "link": "https://styled-components.com"
+            },
+            {   "name": "Visual Studio",
+                "link": "https://code.visualstudio.com"
+            },
+            {   "name": "Git",
+                "link": "https://git-scm.com"
+            },
+            {   "name": "GitHub",
+                "link": "https://github.com"
+            }
+        ],
+        "libraries":[
+            {   "name": "React",
+                "link": "https://react.dev"
+            },
+            {   "name": "Eslint Plugin Import",
+                "link": "https://www.npmjs.com/package/eslint-plugin-import"
+            },
+            {   "name": "Modern Normalize",
+                "link": "https://www.npmjs.com/package/modern-normalize"
+            },
+            {   "name": "Normalize.css",
+                "link": "https://www.npmjs.com/package/normalize.css?activeTab=versions"
+            },
+            {   "name": "Full Calendar",
+                "link": "https://fullcalendar.io"
+            }
+        ]
+    },
+    {
+        "id": "R_kgDON0x9xQ",
+        "name": "Green-Garden",
+        "role": "Developer",
+        "coverImage": "https://i.ibb.co/gLybTN94/image.jpg",
+        "img_url": [
+            {"url": "https://i.ibb.co/gLybTN94/image.jpg"},
+            {"url": "https://i.ibb.co/hxQ1YSry/image.jpg"},
+            {"url": "https://i.ibb.co/d47SX4Lh/1.jpg"},
+            {"url": "https://i.ibb.co/Mx6VcFL7/2.jpg"},
+            {"url": "https://i.ibb.co/jPPGRLDV/3.jpg"},
+            {"url": "https://i.ibb.co/jZqjcV7p/4.jpg"}
+        ],
+        "figma_url": null,
+        "description": "Green-Garden (originally — “נוף גנים”, translated from Hebrew as “Garden Views”) is a landing page created for a small business in Israel, aimed at expanding its customer base and serving as the owner's digital business card. The main goal of the project was to achieve a minimalistic yet bold and eye-catching design with essential functionality for the client: the ability to quickly contact the owner via phone or WhatsApp and place an order. The website is multilingual, targeting Israeli residents who speak not only Hebrew, but also English and Russian. Depending on the selected language, the interface adjusts to the relevant reading direction: left-to-right or right-to-left. An accessibility widget is also integrated into the website, allowing users with disabilities to easily customize the interface to their needs. To bring the site to life and enhance its visual appeal, 3D graphics were implemented as the background, along with a full-screen slider showcasing the available services.",
+        "technical_task": null,
+        "technologies": [
+            {   "name": "HTML5",
+                "link": "https://html.spec.whatwg.org"
+            },            
+            {   "name": "JavaScript",
+                "link": "https://developer.mozilla.org/en-US/docs/Learn/JavaScript"
+            },
+            {   "name": "React",
+                "link": "https://react.dev"
+            },
+            {   "name": "Styled Components",
+                "link": "https://styled-components.com"
+            },
+            {   "name": "Visual Studio",
+                "link": "https://code.visualstudio.com"
+            },
+            {   "name": "Git",
+                "link": "https://git-scm.com"
+            },
+            {   "name": "GitHub",
+                "link": "https://github.com"
+            }
+        ],
+        "libraries":[
+            {   "name": "React",
+                "link": "https://react.dev"
+            },
+            {   "name": "React Spinners",
+                "link": "https://www.npmjs.com/package/react-spinners"
+            },
+            {   "name": "Eslint Plugin Import",
+                "link": "https://www.npmjs.com/package/eslint-plugin-import"
+            },
+            {   "name": "Modern Normalize",
+                "link": "https://www.npmjs.com/package/modern-normalize"
+            },
+            {   "name": "Normalize.css",
+                "link": "https://www.npmjs.com/package/normalize.css?activeTab=versions"
+            },
+            {   "name": "React-Three/Drei",
+                "link": "https://drei.docs.pmnd.rs/getting-started/introduction"
+            },
+            {   "name": "React-Three/Fiber",
+                "link": "https://r3f.docs.pmnd.rs/getting-started/introduction"
+            },
+            {   "name": "i18next",
+                "link": "https://react.i18next.com"
+            },
+            {   "name": "React Intersection Observer",
+                "link": "https://react-intersection-observer.vercel.app/?path=/docs/intro--docs"
+            },
+            {   "name": "React Scroll Into View",
+                "link": "https://www.npmjs.com/package/react-scroll-into-view"
+            },
+            {   "name": "Swiper",
+                "link": "https://swiperjs.com"
+            }
+        ]
+    },
+    {
+        "id": "R_kgDOOeftwQ",
+        "name": "ATLAS",
+        "role": "Developer",
+        "coverImage": "https://i.ibb.co/ch5SWT2B/image.jpg",
+        "img_url": [
+            {"url": "https://i.ibb.co/ch5SWT2B/image.jpg"},
+            {"url": "https://i.ibb.co/Qv6cDVpS/image.jpg"},
+            {"url": "https://i.ibb.co/4nN1J2YY/1.jpg"},
+            {"url": "https://i.ibb.co/Cs4DVQD6/2.jpg"},
+            {"url": "https://i.ibb.co/VpkTrkP0/3.jpg"},
+            {"url": "https://i.ibb.co/Hf45Tjp1/4.jpg"},
+            {"url": "https://i.ibb.co/SXY44vjh/5.jpg"}
+        ],
+        "figma_url": null,
+        "description": "ATLAS is a landing page for a small business in Romania, designed to expand the client base and serve as the owner’s digital business card. The main goal of the project was to create a minimalist, yet vibrant and memorable design with all the necessary functionality: a quick way to contact the owner via phone, WhatsApp, Instagram, or Telegram, and to place an order. The website is multilingual, tailored for Romanian residents who speak not only Romanian, but also English, Russian, and Ukrainian. To make the site more dynamic and visually engaging, 3D graphics were used — allowing users to not just view locations as static 2D images, but to immerse themselves inside the environment and explore the photoshoot location in advance. For convenience, Google Maps was integrated and configured with the studio’s exact geolocation. The website is fully responsive across all screen types, including mobile, tablet, and desktop devices. Content and elements dynamically adjust to screen resolution, ensuring a consistent and polished appearance on every device.",
+        "technical_task": null,
+        "technologies": [
+            {   "name": "HTML5",
+                "link": "https://html.spec.whatwg.org"
+            },            
+            {   "name": "JavaScript",
+                "link": "https://developer.mozilla.org/en-US/docs/Learn/JavaScript"
+            },
+            {   "name": "React",
+                "link": "https://react.dev"
+            },
+            {   "name": "Vite",
+                "link": "https://vite.dev/guide/"
+            },
+            {   "name": "Styled Components",
+                "link": "https://styled-components.com"
+            },
+            {   "name": "Visual Studio",
+                "link": "https://code.visualstudio.com"
+            },
+            {   "name": "Git",
+                "link": "https://git-scm.com"
+            },
+            {   "name": "GitHub",
+                "link": "https://github.com"
+            }
+        ],
+        "libraries":[
+            {   "name": "React",
+                "link": "https://react.dev"
+            },
+            {   "name": "React Spinners",
+                "link": "https://www.npmjs.com/package/react-spinners"
+            },
+            {   "name": "Eslint Plugin Import",
+                "link": "https://www.npmjs.com/package/eslint-plugin-import"
+            },
+            {   "name": "Modern Normalize",
+                "link": "https://www.npmjs.com/package/modern-normalize"
+            },
+            {   "name": "Normalize.css",
+                "link": "https://www.npmjs.com/package/normalize.css?activeTab=versions"
+            },
+            {   "name": "React-Three/Drei",
+                "link": "https://drei.docs.pmnd.rs/getting-started/introduction"
+            },
+            {   "name": "React-Three/Fiber",
+                "link": "https://r3f.docs.pmnd.rs/getting-started/introduction"
+            },
+            {   "name": "i18next",
+                "link": "https://react.i18next.com"
+            },
+            {   "name": "React Intersection Observer",
+                "link": "https://react-intersection-observer.vercel.app/?path=/docs/intro--docs"
+            },
+            {   "name": "React Scroll Into View",
+                "link": "https://www.npmjs.com/package/react-scroll-into-view"
+            },
+            {   "name": "React Google Maps",
+                "link": "https://www.npmjs.com/package/@react-google-maps/api"
+            }
+        ]
+    },
+    {
+        "id": "R_kgDOO55KPg",
+        "name": "iReX Web-Development",
+        "role": "Developer",
+        "coverImage": "https://i.ibb.co/20FZR6RD/image.jpg",
+        "img_url": [
+            {"url": "https://i.ibb.co/20FZR6RD/image.jpg"},
+            {"url": "https://i.ibb.co/MknpXtf8/image.jpg"},
+            {"url": "https://i.ibb.co/YF0SdNjJ/1.jpg"},
+            {"url": "https://i.ibb.co/KppcJFff/2.jpg"},
+            {"url": "https://i.ibb.co/6KCG0Ph/3.jpg"},
+            {"url": "https://i.ibb.co/hxpXFrX4/4.jpg"},
+            {"url": "https://i.ibb.co/Jwzz7H4z/5.jpg"},
+            {"url": "https://i.ibb.co/vxznjHPc/6.jpg"},
+            {"url": "https://i.ibb.co/Swq52B7G/7.jpg"},
+            {"url": "https://i.ibb.co/jvMKfqmj/8.jpg"}
+        ],
+        "figma_url": null,
+        "description": "iReX Web-Development is a landing page/web application designed as a portfolio site for a developer or company. It can serve as both a primary and supplementary tool for presenting services and a résumé. The site is fully responsive and adheres to all modern web development standards, ensuring excellent display across all types of devices — from mobile phones to desktop screens. The application is multilingual and supports three main languages: English, Russian, and Ukrainian. Developed using the React library and Vite build tool, the project includes full server-side logic simulation. All displayed data is loaded from a JSON file, making the content easy to adapt for another user. If a backend is available, the app can be easily connected to it. Each section of the website is self-contained and provides all necessary information — from service descriptions and portfolios to contact forms. To add visual dynamism, the project integrates 3D graphics and animations applied to individual elements, blocks, and entire sections.",
+        "technical_task": null,
+        "technologies": [
+            {   "name": "HTML5",
+                "link": "https://html.spec.whatwg.org"
+            },            
+            {   "name": "JavaScript",
+                "link": "https://developer.mozilla.org/en-US/docs/Learn/JavaScript"
+            },
+            {   "name": "React",
+                "link": "https://react.dev"
+            },
+            {   "name": "Vite",
+                "link": "https://vite.dev/guide/"
+            },
+            {   "name": "Styled Components",
+                "link": "https://styled-components.com"
+            },
+            {   "name": "Visual Studio",
+                "link": "https://code.visualstudio.com"
+            },
+            {   "name": "Git",
+                "link": "https://git-scm.com"
+            },
+            {   "name": "GitHub",
+                "link": "https://github.com"
+            }
+        ],
+        "libraries":[
+            {   "name": "React",
+                "link": "https://react.dev"
+            },
+            {   "name": "React Spinners",
+                "link": "https://www.npmjs.com/package/react-spinners"
+            },
+            {   "name": "Eslint Plugin Import",
+                "link": "https://www.npmjs.com/package/eslint-plugin-import"
+            },
+            {   "name": "Modern Normalize",
+                "link": "https://www.npmjs.com/package/modern-normalize"
+            },
+            {   "name": "Normalize.css",
+                "link": "https://www.npmjs.com/package/normalize.css?activeTab=versions"
+            },
+            {   "name": "React-Three/Drei",
+                "link": "https://drei.docs.pmnd.rs/getting-started/introduction"
+            },
+            {   "name": "React-Three/Fiber",
+                "link": "https://r3f.docs.pmnd.rs/getting-started/introduction"
+            },
+            {   "name": "i18next",
+                "link": "https://react.i18next.com"
+            },
+            {   "name": "React Intersection Observer",
+                "link": "https://react-intersection-observer.vercel.app/?path=/docs/intro--docs"
+            },
+            {   "name": "React Scroll Into View",
+                "link": "https://www.npmjs.com/package/react-scroll-into-view"
+            },
+            {   "name": "Formik",
+                "link": "https://www.npmjs.com/package/formik"
+            },
+            {   "name": "Yup",
+                "link": "https://www.npmjs.com/package/yup"
+            },
+            {   "name": "NanoId",
+                "link": "https://www.npmjs.com/package/nanoid"
+            },
+            {   "name": "React Charts 2",
+                "link": "https://www.npmjs.com/package/react-chartjs-2"
+            },
+            {   "name": "Anime.js",
+                "link": "https://www.npmjs.com/package/animejs"
+            },
+            {   "name": "React Tooltip",
+                "link": "https://www.npmjs.com/package/react-tooltip"
+            },
+            {   "name": "Swiper",
+                "link": "https://swiperjs.com"
+            },
+            {   "name": "EmailJS",
+                "link": "https://www.npmjs.com/package/@emailjs/browser"
+            },
+            {   "name": "React IP Geolocation",
+                "link": "https://www.npmjs.com/package/react-ipgeolocation"
+            },
+            {   "name": "React Particles",
+                "link": "https://www.npmjs.com/package/@tsparticles/react"
+            },
+            {   "name": "GSAP",
+                "link": "https://gsap.com/"
+            }
+        ]
     }
 ]

@@ -33,7 +33,7 @@ const Skills = () => {
     }));
 
 
-    const filteredRepositories = repositoriesData.filter(repo => repo.type === "individual" || repo.type === "team");
+    const filteredRepositories = repositoriesData.filter(repo => repo.type === "individual" || repo.type === "team" || repo.type === "commercial" || repo.type === "backend");
     
     
     useEffect(() => {

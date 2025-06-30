@@ -4,6 +4,7 @@ import { ReactComponent as GitIcon } from "../../../images/svg-icons/github.svg"
 import { ReactComponent as FacebookIcon } from "../../../images/svg-icons/facebook.svg";
 import { ReactComponent as TelegramIcon } from "../../../images/svg-icons/telegram.svg";
 import { ReactComponent as LinkedinIcon } from "../../../images/svg-icons/linkedin.svg";
+import { ReactComponent as DiscordIcon } from "../../../images/svg-icons/discord.svg";
 import {ReactComponent as PhoneIcon} from "../../../images/svg-icons/phone.svg";
 import {ReactComponent as EmailIcon} from "../../../images/svg-icons/contact.svg";
 import Profile from "../../../utils/profile.json";
@@ -14,7 +15,8 @@ export const ContactInfo = () => {
         github_link, 
         facebook_link, 
         linkedin_link, 
-        telegram_link, 
+        telegram_link,
+        discord_link, 
         download_link,
         phone,
         email,
@@ -73,6 +75,14 @@ export const ContactInfo = () => {
                         target="_blank"
                         rel="noreferrer noopener">
                         <TelegramIcon className="contact-social-icon" width={24} height={24}/>
+                    </NavLink>
+                </li>
+                <li className="contact-social-item">
+                    <NavLink className="contact-social-link" to={discord_link}
+                        aria-label="Discrod link"
+                        target="_blank"
+                        rel="noreferrer noopener">
+                        <DiscordIcon className="contact-social-icon" width={24} height={24}/>
                     </NavLink>
                 </li>
             </ul>

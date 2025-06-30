@@ -25,6 +25,8 @@ export const Projects = () => {
     const [teamPercent, setTeamPercent] = useState();
     const [otherPercent, setOtherPercent] = useState();
     const [openPercent, setOpenPercent] = useState();
+    const [backendPercent, setBackendPercent] = useState();
+    
 
 
     const countByType = refactoredData.reduce((acc, current) => {
@@ -35,7 +37,7 @@ export const Projects = () => {
         acc[type]++;
         return acc;
     }, {});
-    const { individual = 0, educational = 0, team = 0, other = 0, open = 0 } = countByType;
+    const { individual = 0, educational = 0, team = 0, other = 0, commercial = 0, backend = 0 } = countByType;
 
 
     const calculateTotalPercent = useCallback(() => {
@@ -69,9 +71,15 @@ export const Projects = () => {
 
 
     const calculateOpenPercent = useCallback(() => {
-        const openPercent = Math.round((open / totalCount) * 100);
+        const openPercent = Math.round((commercial / totalCount) * 100);
         setOpenPercent(openPercent);
-    }, [open, totalCount]);
+    }, [commercial, totalCount]);
+
+
+    const calculateBackendPercent = useCallback(() => {
+        const backendPercent = Math.round((backend / totalCount) * 100);
+        setBackendPercent(backendPercent);
+    }, [backend, totalCount]);
 
 
     useEffect(() => {
@@ -81,6 +89,7 @@ export const Projects = () => {
         calculateTeamPercent();
         calculateOtherPercent();
         calculateOpenPercent();
+        calculateBackendPercent();
     }, [
         calculateEducationalPercent, 
         calculateIndividualPercent, 
@@ -88,6 +97,7 @@ export const Projects = () => {
         calculateTotalPercent,
         calculateOtherPercent,
         calculateOpenPercent,
+        calculateBackendPercent,
     ]);
 
     
@@ -97,6 +107,7 @@ export const Projects = () => {
     const validTeamPercent = isNaN(teamPercent) ? 0 : teamPercent;
     const validOtherPercent = isNaN(otherPercent) ? 0 : otherPercent;
     const validOpenPercent = isNaN(openPercent) ? 0 : openPercent;
+    const validBackendPercent = isNaN(backendPercent) ? 0 : backendPercent;
 
 
     return(
@@ -180,7 +191,7 @@ export const Projects = () => {
                 <li className="item">
                     <div className="descr-cont">
                         <OpenIcon className="item-svg" width={20} height={20}/>
-                        <p className="text">Open Projects</p>
+                        <p className="text">Commercial Projects</p>
                     </div>
                     <div className="colored-area">
                         <div className="area-for-open"
@@ -188,7 +199,22 @@ export const Projects = () => {
                             style={{ width: `${validOpenPercent}%`}} 
                         >
                             <span></span>
-                            <p>{open}</p>
+                            <p>{commercial}</p>
+                        </div>
+                    </div>
+                </li>
+                <li className="item">
+                    <div className="descr-cont">
+                        <OpenIcon className="item-svg" width={20} height={20}/>
+                        <p className="text">Backend Projects</p>
+                    </div>
+                    <div className="colored-area">
+                        <div className="area-for-open"
+                            width={validBackendPercent}
+                            style={{ width: `${validBackendPercent}%`}} 
+                        >
+                            <span></span>
+                            <p>{backend}</p>
                         </div>
                     </div>
                 </li>

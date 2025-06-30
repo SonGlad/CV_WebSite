@@ -11,9 +11,10 @@ ChartJS.register(ArcElement, Tooltip, Legend);
 export const CSSChart = () => {
   const {individualAndTeamData} = useData();
   const componentLanguage = "CSS";
+  
 
 
-  const projectsWithCSS = individualAndTeamData.filter(project => {
+  const projectsWithCSS = individualAndTeamData.filter(project => {       
     return project.languages.some(language => language.name === componentLanguage);
   });
   const projectsCountWithCSS = projectsWithCSS.length;

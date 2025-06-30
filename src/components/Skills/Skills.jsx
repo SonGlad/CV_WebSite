@@ -16,7 +16,7 @@ export const SkillsComponent = () => {
             <h3 className="title"><span>GitHub</span> Repositories</h3>
             <Projects/>
             <h3 className="title">Programming <span>Language</span> Diagrams</h3>
-            <h4 className="title-descr">Based <span>on</span> Individual <span>&</span> Team projects only</h4>
+            <h4 className="title-descr">Based <span>on</span> Individual, Team, Commercial <span>&</span> Backend projects only</h4>
             <CodingCharts/>
         </SkillsStyled>
     )

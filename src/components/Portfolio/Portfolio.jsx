@@ -24,6 +24,8 @@ export const PortfolioSection = () => {
                 return item.type === 'individual';
             case 'Team':
                 return item.type === 'team';
+            case 'Commercial':
+                return item.type === 'commercial';
             case 'Early':
                 return true;
             default:
@@ -65,6 +67,12 @@ export const PortfolioSection = () => {
                     <button className="filter-button team-animation" type="button" 
                     onClick={() => handleFilter('Team')}
                     >Team
+                    </button>
+                </li>
+                <li className="filter-item">
+                    <button className="filter-button team-animation" type="button" 
+                    onClick={() => handleFilter('Commercial')}
+                    >Commercial
                     </button>
                 </li>
                 <li className="filter-item">

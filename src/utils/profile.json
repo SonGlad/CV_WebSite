@@ -13,6 +13,7 @@
   "facebook_link": "https://www.facebook.com/profile.php?id=100024930558745",
   "linkedin_link": "https://www.linkedin.com/in/oleg-koshevy/",
   "telegram_link": "https://t.me/SonGlad",
+  "discord_link": "https://discord.gg/Erfg3fydXf",
   "education":[
     { "id": "1",
       "year": "2022-2023",
@@ -119,6 +120,48 @@
     { "id": "IconStyled",
       "value": "Styled Components",
       "link": "https://styled-components.com"
+    },
+    { "id": "IconFigma",
+      "value": "Figma",
+      "link": "https://www.figma.com",
+      "translatedType": "Dev-Tools",
+      "description": "A tool for creating designs and prototypes."
+    },
+    { "id": "IconRender",
+      "value": "Render",
+      "link": "https://render.com",
+      "translatedType": "DevOps",
+      "description": "A cloud platform for hosting and automatic application deployment."
+    },
+    { "id": "IconNetlify",
+      "value": "Netlify",
+      "link": "https://app.netlify.com",
+      "translatedType": "DevOps",
+      "description": "A platform for automatically deploying static sites."
+    },
+    { "id": "IconGoDaddy",
+      "value": "GoDaddy",
+      "link": "https://www.godaddy.com/en-uk",
+      "translatedType": "DevOps",
+      "description": "A provider of domains and hosting services."
+    },
+    { "id": "IconThreeJS",
+      "value": "ThreeJS",
+      "link": "https://r3f.docs.pmnd.rs/getting-started/introduction",
+      "translatedType": "Frontend",
+      "description": "A 3D rendering library and React renderer for building interactive graphics in the browser."
+    },
+    { "id": "IconGSAP",
+      "value": "GSAP",
+      "link": "https://gsap.com",
+      "translatedType": "Frontend",
+      "description": "A wildly robust JavaScript animation library built for professionals"
+    },
+    { "id": "IconVite",
+      "value": "Vite",
+      "link": "https://vite.dev/guide/",
+      "translatedType": "Dev-Tools",
+      "description": "It is a build tool that aims to provide a faster and leaner development experience for modern web projects"
     }
   ]
 }
