@@ -8,7 +8,7 @@ import { ReactComponent as TelegramIcon } from "../../images/svg-icons/telegram.
 import { ReactComponent as LinkedinIcon } from "../../images/svg-icons/linkedin.svg";
 import { ReactComponent as DiscordIcon } from "../../images/svg-icons/discord.svg";
 import Logo from "../../images/images/iReX_logo.png";
-import Profile from "../../utils/profile.json";
+// import Profile from "../../utils/profile.json";
 import { useCallback, useEffect, useRef, useState } from "react";
 import { useInView } from 'react-intersection-observer';
 
@@ -21,7 +21,7 @@ export const Footer = () => {
     });
 
 
-    const {github_link, facebook_link, linkedin_link, telegram_link, discord_link} = Profile;
+    // const {github_link, facebook_link, linkedin_link, telegram_link, discord_link} = Profile;
     const [footerPicture, setFooterPicture] = useState(false);
     const contRef = useRef();
 
@@ -64,7 +64,8 @@ export const Footer = () => {
         };
     },[handleBackgroundClick, handleKeyPress]);
 
-
+    const year = new Date().getFullYear();
+    
 
     return (
         <FooterStyled>
@@ -78,7 +79,7 @@ export const Footer = () => {
                         </NavLink>
                     </div>
                     <div className="footer-center-cont order-two" onClick={stopPropagation}>
-                        <p className="footer-text-center">Copyright<span> &#169; </span>2024</p>
+                        <p className="footer-text-center">Copyright<span> &#169; </span>{year}</p>
                         <div className="cont-for-foo-pic" onClick={toggleFooterPicture} ref={contRef}>
                             <img className={`footer-img ${classForFooterPicture()}`} src={Logo} alt="irex_logo"/>
                         </div>
@@ -87,7 +88,7 @@ export const Footer = () => {
                         <p className="footer-text-right">Find <span>me</span> On:</p>
                         <ul className="footer-social-list">
                             <li className="footer-social-item">
-                                <NavLink className="footer-social-link" to={github_link}
+                                <NavLink className="footer-social-link" to={"#"}
                                     aria-label="Github link"
                                     target="_blank"
                                     rel="noreferrer noopener">
@@ -95,7 +96,7 @@ export const Footer = () => {
                                 </NavLink>
                             </li>
                             <li className="footer-social-item">
-                                <NavLink className="footer-social-link" to={facebook_link}
+                                <NavLink className="footer-social-link" to={"#"}
                                     aria-label="Facebook link"
                                     target="_blank"
                                     rel="noreferrer noopener">
@@ -103,7 +104,7 @@ export const Footer = () => {
                                 </NavLink>
                             </li>
                             <li className="footer-social-item">
-                                <NavLink className="footer-social-link" to={linkedin_link}
+                                <NavLink className="footer-social-link" to={"#"}
                                     aria-label="Linkedin link"
                                     target="_blank"
                                     rel="noreferrer noopener">
@@ -111,7 +112,7 @@ export const Footer = () => {
                                 </NavLink>
                             </li>
                             <li className="footer-social-item">
-                                <NavLink className="footer-social-link" to={telegram_link}
+                                <NavLink className="footer-social-link" to={"#"}
                                     aria-label="Telegram link"
                                     target="_blank"
                                     rel="noreferrer noopener">
@@ -119,7 +120,7 @@ export const Footer = () => {
                                 </NavLink>
                             </li>
                             <li className="footer-social-item">
-                                <NavLink className="footer-social-link" to={discord_link}
+                                <NavLink className="footer-social-link" to={"#"}
                                     aria-label="Discord link"
                                     target="_blank"
                                     rel="noreferrer noopener">

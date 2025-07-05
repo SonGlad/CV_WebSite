@@ -12,14 +12,14 @@ import Profile from "../../../utils/profile.json";
 
 export const ContactInfo = () => {
     const {
-        github_link, 
-        facebook_link, 
-        linkedin_link, 
-        telegram_link,
-        discord_link, 
-        download_link,
-        phone,
-        email,
+        // github_link, 
+        // facebook_link, 
+        // linkedin_link, 
+        // telegram_link,
+        // discord_link, 
+        // download_link,
+        // phone,
+        // email,
         about4,
     } = Profile;
 
@@ -31,22 +31,24 @@ export const ContactInfo = () => {
             <address className="page-contact">
                 <ul className="contact-links">
                     <li className="contact-link-mail">
-                        <NavLink className="contact-link" to="mailto:okoshevy@gmail.com">
+                        <NavLink className="contact-link" to="#">
+                            {/* mailto:okoshevy@gmail.com */}
                             <EmailIcon className="contact-icon" width={18} height={18}/>
-                            <span>{email}</span>
+                            <span>testtest@gmail.com</span>
                         </NavLink>
                     </li>
                     <li className="contact-link-tel">
-                        <NavLink className="contact-link" to="tel:+30674838965">
+                        <NavLink className="contact-link" to="tel:#">
+                            {/* tel:+30674838965 */}
                             <PhoneIcon className="contact-icon" width={18} height={18}/>
-                            <span>{phone}</span>
+                            <span>+11 (000) 111-11-113221</span>
                         </NavLink>
                     </li>
                 </ul>
             </address>
             <ul className="contact-social-list">
                 <li className="contact-social-item">
-                    <NavLink className="contact-social-link" to={github_link}
+                    <NavLink className="contact-social-link" to={"#"}
                         aria-label="Github link"
                         target="_blank"
                         rel="noreferrer noopener">
@@ -54,7 +56,7 @@ export const ContactInfo = () => {
                     </NavLink>
                 </li>
                 <li className="contact-social-item">
-                    <NavLink className="contact-social-link" to={facebook_link}
+                    <NavLink className="contact-social-link" to={"#"}
                         aria-label="Facebook link"
                         target="_blank"
                         rel="noreferrer noopener">
@@ -62,7 +64,7 @@ export const ContactInfo = () => {
                     </NavLink>
                 </li>
                 <li className="contact-social-item">
-                    <NavLink className="contact-social-link" to={linkedin_link}
+                    <NavLink className="contact-social-link" to={"#"}
                         aria-label="Linkedin link"
                         target="_blank"
                         rel="noreferrer noopener">
@@ -70,7 +72,7 @@ export const ContactInfo = () => {
                     </NavLink>
                 </li>
                 <li className="contact-social-item">
-                    <NavLink className="contact-social-link" to={telegram_link}
+                    <NavLink className="contact-social-link" to={"#"}
                         aria-label="Telegram link"
                         target="_blank"
                         rel="noreferrer noopener">
@@ -78,7 +80,7 @@ export const ContactInfo = () => {
                     </NavLink>
                 </li>
                 <li className="contact-social-item">
-                    <NavLink className="contact-social-link" to={discord_link}
+                    <NavLink className="contact-social-link" to={"#"}
                         aria-label="Discrod link"
                         target="_blank"
                         rel="noreferrer noopener">
@@ -87,7 +89,7 @@ export const ContactInfo = () => {
                 </li>
             </ul>
             <div className="redirect-cont">
-                <NavLink className="redirect-link" to={download_link}
+                <NavLink className="redirect-link" to={"#"}
                     aria-label="CV Douwnload link"
                     target="_blank"
                     rel="noreferrer noopener"

@@ -8,21 +8,21 @@ import { useFormik } from "formik";
 import { ContactFormSchema } from "../../../utils/ValidationSchema";
 import { ShowRules } from "../../../utils/ShowRules";
 import { useState, useEffect } from "react";
-import emailjs from '@emailjs/browser';
-import { openLoader, closeLoader } from "../../../redux/Data/data-slice";
-import { setSuccsessTrue, setSuccsessFalse, openModalContact } from "../../../redux/Modal/modal-slice";
-import { useDispatch } from "react-redux";
+// import emailjs from '@emailjs/browser';
+// import { openLoader, closeLoader } from "../../../redux/Data/data-slice";
+// import { setSuccsessTrue, setSuccsessFalse, openModalContact } from "../../../redux/Modal/modal-slice";
+// import { useDispatch } from "react-redux";
 
 
 
-const SERVICE_ID = process.env.REACT_APP_SERVICE_ID;
-const TEMPLATE_ID = process.env.REACT_APP_TEMPLATE_ID;
-const PUBLIC_KEY = process.env.REACT_APP_PUBLIC_KEY;
+// const SERVICE_ID = process.env.REACT_APP_SERVICE_ID;
+// const TEMPLATE_ID = process.env.REACT_APP_TEMPLATE_ID;
+// const PUBLIC_KEY = process.env.REACT_APP_PUBLIC_KEY;
 
 
 
 export const ContactForm = () => {
-    const dispatch = useDispatch();
+    // const dispatch = useDispatch();
 
     const [formChanged, setFormChanged] = useState(false);
     const {
@@ -46,39 +46,51 @@ export const ContactForm = () => {
 
         validationSchema: ContactFormSchema,
 
-        onSubmit: (values) => {
-            dispatch(openLoader());
-            emailjs.send(SERVICE_ID, TEMPLATE_ID, {
-                to_name: 'Oleg',
-                from_name: values.name,
-                from_email: values.email,
-                to_email: 'okoshevy@gmail.com',
-                subject: values.subject,
-                message: values.user_comment
-            }, PUBLIC_KEY)
-            .then(() => {
-                dispatch(closeLoader());
-                dispatch(setSuccsessTrue());
-                dispatch(openModalContact());
-                setFormChanged(false);
-                resetForm({
-                    values: {
-                        name: '',
-                        email: '',
-                        subject: '',
-                        user_comment: '',
-                        user_agreement: false
-                    },
-                })
-                }, 
-                (error) => {
-                    dispatch(closeLoader());
-                    dispatch(setSuccsessFalse());
-                    dispatch(openModalContact());
-                    console.error(error);
-                }
-            )
-        },
+        onSubmit: () =>{
+            resetForm({
+                values: {
+                    name: '',
+                    email: '',
+                    subject: '',
+                    user_comment: '',
+                    user_agreement: false
+                },
+            })
+        }
+
+        // onSubmit: (values) => {
+        //     dispatch(openLoader());
+        //     emailjs.send(SERVICE_ID, TEMPLATE_ID, {
+        //         to_name: 'Oleg',
+        //         from_name: values.name,
+        //         from_email: values.email,
+        //         to_email: 'okoshevy@gmail.com',
+        //         subject: values.subject,
+        //         message: values.user_comment
+        //     }, PUBLIC_KEY)
+        //     .then(() => {
+        //         dispatch(closeLoader());
+        //         dispatch(setSuccsessTrue());
+        //         dispatch(openModalContact());
+        //         setFormChanged(false);
+        //         resetForm({
+        //             values: {
+        //                 name: '',
+        //                 email: '',
+        //                 subject: '',
+        //                 user_comment: '',
+        //                 user_agreement: false
+        //             },
+        //         })
+        //         }, 
+        //         (error) => {
+        //             dispatch(closeLoader());
+        //             dispatch(setSuccsessFalse());
+        //             dispatch(openModalContact());
+        //             console.error(error);
+        //         }
+        //     )
+        // },
     });
 
 

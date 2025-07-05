@@ -7,7 +7,9 @@ import {ReactComponent as FingerIcon} from "../../images/svg-icons/finger.svg";
 
 
 export const HomeSection = () => {
-    const { name, position1, position2, about1, about2, download_link } = Profile;
+    const { name, position1, position2, about1, about2, 
+        // download_link 
+    } = Profile;
 
 
     const TypeWriterFunction = () => {
@@ -34,7 +36,7 @@ export const HomeSection = () => {
                 <p className="text-description upper-text">{about1}</p>
                 <p className="text-description lower-text">{about2}</p>
                 <div className="btn-cont">
-                    <NavLink className="redirect-link" to={download_link}
+                    <NavLink className="redirect-link" to={"#"}
                         aria-label="CV Douwnload link"
                         target="_blank"
                         rel="noreferrer noopener"
